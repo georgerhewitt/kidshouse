@@ -1,0 +1,117 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+$topnav-color: #FFCC66;
+$discover-color: #D11B6A;
+$discover-color-light: #EC8584;
+
+$home-color: #FDB913;
+$home-color-light: #F3A612;
+
+$explore-color: #00ABB9;
+$explore-color-light: #75CCD0;
+
+$challenge-color: #214B76;
+$challenge-color-light: #3B69A2;
+
+$circle-green: #9FCC3B;
+$circle-green-light: #8CB533;
+
+$circle-blue: #00ABB9;
+$circle-blue-light: #75CCD0;
+
+$start-color: #8CB533;
+$main: #FFF;
+
+$gold: #FDB913;
+$gold-dark: #E3A612;
+
+$pink: #D11B6A;
+$pink-light: #EC8584;
+
+$aqua: #00ABB9;
+$aqua-light: #75CCD0;
+
+$green: #9FCC3B;
+$green-dark: #8CB533;
+
+$blue-dark: #214B76;
+$blue-light: #3B69A2;
+
+
+@import "nav";
+@import "slider";
+@import "circles";
+@import "discover";
+@import "explore";
+@import "challenge";
+
+body{
+  font-size: 18px;
+}
+ul{
+  list-style-type: none;
+}
+
+/*.pull-right{
+  padding: 15px 0 0 15px;
+}*/
+.pull-left{
+  padding: 15px 15px 0 0;
+}
+.founding{
+  float: none; 
+  display: inline-block; 
+}
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+
+.main-header{
+  /*background-color: #ffad33;*/
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.main{
+  margin-top:20px;
+  padding: 10px;
+  background-color: $main;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h1{
+  font: 400 3.5em/125% 'Just Another Hand', cursive;
+  font-size: 4em;
+  padding: 20px;
+  color: #FFF;
+}
+nav h2{
+  font-size: 1.5em;
+}
+
+// .home{
+//   background-color: $home-color;
+
+// }
+.active{
+  border: solid 1px red;
+}
+
+
+
+
+
+
+
+

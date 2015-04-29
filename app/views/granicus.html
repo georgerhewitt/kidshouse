@@ -1,0 +1,60 @@
+<div class="content">
+
+<!-- <div ng-controller="GranicusCtrl">
+      <select ng-model="selectedColumn">
+        <option value="name">A-Z</option>
+        <option value="-name">Z-A</option>
+    </select>
+   <pre>Sorting predicate = {{predicate}}; reverse = {{reverse}}</pre>
+  <hr/>
+  [ <a href="" ng-click="predicate=''">unsorted</a> ] 
+  <table class="table">
+    <tr>
+      <th><a href="" ng-click="predicate = '_source.name'; reverse=false">Name</a>
+          (<a href="" ng-click="predicate = '-name'; reverse=false">^</a>)</th>
+      <th><a href="" ng-click="predicate = '_source.datetime'; reverse=!reverse">datetime</a></th>
+      <th><a href="" ng-click="predicate = '_source.duration'; reverse=!reverse">duration</a></th>
+    </tr>
+    
+    <tr ng-repeat="artist in artists | orderBy:predicate:reverse">
+      <td>{{ artist._source.name}}</td>
+      <td>{{ artist._source.datetime}}</td>
+      <td>{{ artist._source.duration}}</td>
+    </tr>
+
+  </table>
+
+  <pre>{{ artists }}</pre>
+</div> -->
+
+<div ng-controller="GranicusCtrl">
+      <select ng-model="selectedColumn">
+        <option value="name">A-Z</option>
+        <option value="-name">Z-A</option>
+    </select>
+   <pre>Sorting predicate = {{predicate}}; reverse = {{reverse}}</pre>
+  <hr/>
+  [ <a href="" ng-click="predicate=''">unsorted</a> ] 
+  <table class="table">
+    <tr>
+      <th><a href="" ng-click="predicate = '_source.name'; reverse=false">Name</a>
+          (<a href="" ng-click="predicate = '-name'; reverse=false">^</a>)</th>
+      <th><a href="" ng-click="predicate = '_source.datetime'; reverse=!reverse">datetime</a></th>
+      <th><a href="" ng-click="predicate = '_source.duration'; reverse=!reverse">duration</a></th>
+    </tr>
+    
+    <!-- <tr ng-repeat="artist in artists | orderBy:predicate:reverse"> -->
+    <tr ng-repeat="artist in artists | orderBy:predicate:reverse">
+      <td>{{ artist.name}}</td>
+      <td>{{ artist.datetime}}</td>
+      <td>{{ artist.duration}}</td>
+    </tr>
+
+  </table>
+
+  <pre>{{ artists }}</pre>
+</div>
+
+</div><!-- /container -->
+
+

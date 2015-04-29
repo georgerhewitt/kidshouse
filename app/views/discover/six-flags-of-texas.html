@@ -1,0 +1,38 @@
+<div class="main row" id="discover">
+    <h3>DISCOVER THE SIX FLAGS OF TEXAS</h3>
+    <div class="row">
+    <div ng-controller="Slide600Ctrl">
+
+      <div class="container image-slider w800">
+          <img ng-repeat="slide in slides" class="image-slide img-responsive"
+              ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+
+          <a class="arrow prev" href="#{{ location.path() }}" ng-click="nextSlide()"></a>
+          <a class="arrow next" href="#{{ location.path() }}" ng-click="prevSlide()"></a>
+          <nav class="slider-nav">
+              <div class="slider-wrapper">
+                  <ul class="dots">
+                      <li class="dot" ng-repeat="slide in slides">
+                          <a href="#{{ location.path() }}" ng-class="{'active':isCurrentSlideIndex($index)}"
+                            ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+
+    </div> <!-- slideCtrl -->
+
+    <H4>Texas in the Confederacy (1861 - 1865)</H4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
+    
+        </div> <!-- row -->
+</div> <!-- discover -->
+
+        
+
