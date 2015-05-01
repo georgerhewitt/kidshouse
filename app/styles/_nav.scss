@@ -44,8 +44,28 @@
     pointer-events: none;
   }
 }
-#capitol-logo{
-  margin-top: -50px; 
+.capitol-outline{
+  fill: $explore-color;
+}
+.capitol-outline-fill{
+  fill: #FFF;
+}
+.capitol-logo{
+  width: 118px;
+  height: 100px;
+  background: url(../images/capitol-logo-home.svg) no-repeat center center;
+}
+.capitol-logo-home{
+  background: url(../images/capitol-logo-home.svg) no-repeat center center;
+}
+.capitol-logo-discover{
+  background: url(../images/capitol-logo-discover.svg) no-repeat center center;
+}
+.capitol-logo-explore{
+  background: url(../images/capitol-logo-explore.svg) no-repeat center center;
+}
+.capitol-logo-challenge{
+  background: url(../images/capitol-logo-challenge.svg) no-repeat center center;
 }
 
 

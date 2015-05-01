@@ -36,17 +36,17 @@
         </div>
         <div class="navbar-collapse collapse nav-center">
           <ul class="nav navbar-nav">
-            <li><a href="/#/" ng-click="myCssVar='home-animate'">HOME</a></li>
-            <li><a href="/#/glossary" ng-click="myCssVar='home-animate'">GET INVOLVED</a></li>
-            <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'">RESOURCES</a></li>
-            <li class="capitol-logo-svg">
-           </li>
-<!--             <li id="capitol-logo"><a href="/#/"><img class="capitol-svg" src="images/capitol.svg"/></a></li> -->
+            <li><a href="/#/" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">HOME</a></li>
+            <li><a href="/#/glossary" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">GET INVOLVED</a></li>
+            <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">RESOURCES</a></li>
+            <li class="capitol-logo" ng-class="myCssVar2">
+            </li>
+            <!-- <li id="capitol-logo"><a href="/#/"><img class="capitol-svg" src="images/capitol-flat.svg"/></a></li> -->
 <!--             <li id="capitol-logo">
   
             </li> -->
 
-            <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'">GLOSSARY</a></li>
+            <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">GLOSSARY</a></li>
             <li>  
               <form class="navbar-form" role="form">
                 <div class="right-inner-addon">
@@ -67,7 +67,7 @@
       <nav class="mainpage col-md-8 col-md-offset-2">
         <div class="col-sm-4 col-md-4 nav3 discover">
             <div class="nav3-sub">
-                <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='discover-animate'"><h2>DISCOVER<b class="caret"></b></h2></a>
+                <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover'"><h2>DISCOVER<b class="caret"></b></h2></a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                 <li><a href="#/discover/texas-state-government">TEXAS STATE<br /> GOVERNMENT</a></li>
                 <li><a href="#/discover/house-of-representatives">TEXAS HOUSE OF<br /> REPRESENTATIVES</a></li>
@@ -79,7 +79,7 @@
         </div>
         <div class="col-sm-4 col-md-4 nav3 explore">
             <div class="nav3-sub">
-              <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='explore-animate'"><h2>EXPLORE<b class="caret"></b></h2></a>
+              <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore'"><h2>EXPLORE<b class="caret"></b></h2></a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                   <li><a href="#/explore/texas-capitol">TEXAS CAPITOL</a></li>
                   <li><a href="#/explore/capitol-grounds">CAPITOL GROUNDS</a></li>
@@ -93,7 +93,7 @@
         </div>
         <div class="col-sm-4 col-md-4 nav3 challenge">
           <div class="nav3-sub">
-              <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='challenge-animate'"><h2>CHALLENGE<b class="caret"></b></h2></a>
+              <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge'"><h2>CHALLENGE<b class="caret"></b></h2></a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                   <li><a href="">QUIZZES</a></li>
                   <li><a href="">CROSSWORD PUZZLE</a></li>
