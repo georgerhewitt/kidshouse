@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Texas Kids' Guide!</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -21,50 +21,49 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <!-- Add your site or application content here -->
-
-    <header class="navbar" role="navigation">
-      <nav>
-        <div>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse nav-center">
-          <ul class="nav navbar-nav">
-            <li><a href="/#/" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">HOME</a></li>
-            <li><a href="/#/glossary" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">GET INVOLVED</a></li>
-            <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">RESOURCES</a></li>
-            <li class="capitol-logo" ng-class="myCssVar2">
-            </li>
-            <!-- <li id="capitol-logo"><a href="/#/"><img class="capitol-svg" src="images/capitol-flat.svg"/></a></li> -->
-<!--             <li id="capitol-logo">
-  
-            </li> -->
-
-            <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">GLOSSARY</a></li>
-            <li>  
-              <form class="navbar-form" role="form">
-                <div class="right-inner-addon">
-                  <i class="glyphicon glyphicon-search"></i>
-                  <input type="text" placeholder="Search" class="form-control" />
-                </div>
-              </form>
-            </li>
-            <li class="visible-xs"><a href="">Search</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </nav><!--/.container -->
-    </header>
-
+  <header class="navbar" role="navigation">
+    <nav>
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-align-justify" aria-hidden="true">MENU</span>
+      </button>
+      <a href="/#/" class="navbar-brand visible-xs-block">Texas Kids' Guide!</a>
+    </div>
+    <div class="navbar-collapse collapse nav-center bs-navbar-collapse">
+      <div class="nav-top">
+        <ul class="nav navbar-nav">
+          <li class="hidden-xs visible-sm-block visible-md-block visible-lg-block"><a href="/#/" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">HOME</a></li>
+          <li class="visible-xs-block">  
+            <form class="navbar-form" role="form">
+              <div class="right-inner-addon">
+                <i class="glyphicon glyphicon-search"></i>
+                <input type="text" placeholder="Search" class="form-control" />
+              </div>
+            </form>
+          </li>
+          <li><a href="/#/glossary" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">GET INVOLVED</a></li>
+          <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">RESOURCES</a></li>
+          <li class="capitol-logo visible-md-block visible-lg-block" ng-class="myCssVar2"></li>
+          <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">GLOSSARY</a></li>
+          <li class="visible-xs-block"><a href="#/discover/" ng-click="myCssVar='discover-animate'">DISCOVER</a></li>
+          <li class="visible-xs-block"><a href="#/explore/" ng-click="myCssVar='explore-animate'">EXPLORE</a></li>
+          <li class="visible-xs-block"><a href="#/challenge/" ng-click="myCssVar='challenge-animate'">CHALLENGE</a></li>
+   
+          <li class="visible-sm-block visible-md-block visible-lg-block">  
+            <form class="navbar-form" role="form">
+              <div class="right-inner-addon">
+                <i class="glyphicon glyphicon-search"></i>
+                <input type="text" placeholder="Search" class="form-control" />
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="row mainpage">
-      <h1 class="text-center">Texas Kids' Guide!</h1>
-
-      <nav class="mainpage col-md-8 col-md-offset-2">
+      <h1 class="text-center visible-sm-block visible-md-block visible-lg-block">Texas Kids' Guide!</h1>
+      <div class="mainpage col-md-8 col-md-offset-2 visible-sm-block visible-md-block visible-lg-block">
         <div class="col-sm-4 col-md-4 nav3 discover">
             <div class="nav3-sub">
                 <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover'"><h2>DISCOVER<b class="caret"></b></h2></a>
@@ -102,9 +101,11 @@
                 </ul>
             </div>
         </div>
-      </nav>
-
+      </div>
     </div>
+    </div><!--/.navbar-collapse -->
+    </nav><!--/.container -->
+  </header>
     <div ui-view="main" class="content">
     <div class="col-md-8 col-md-offset-2 main-header">
     <div ui-view></div>

@@ -30,6 +30,7 @@ var kidshouse = angular
         })
         .state('challenge', {
           url: '/challenge',
+          name: 'challenge',
           templateUrl: 'views/challenge/challenge.html'
         })
 
