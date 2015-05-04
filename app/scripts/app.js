@@ -36,7 +36,7 @@ var kidshouse = angular
 
         // discover section 
         .state('discover', {
-        url: '/discover',
+        url: '/discover/',
         name: 'discover',
         templateUrl: 'views/discover/discover.html'
         })
