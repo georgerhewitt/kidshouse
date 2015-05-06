@@ -26,7 +26,7 @@
     <div class="navbar-header">
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
-        <span class="glyphicon glyphicon-align-justify" aria-hidden="true"> MENU</span>
+        <span class="glyphicon glyphicon-align-justify" aria-hidden="true">MENU</span>
       </button>
       <a href="/#/" class="navbar-brand visible-xs-block">Texas Kids' Guide!</a>
     </div>
@@ -46,8 +46,21 @@
           <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">RESOURCES</a></li>
           <li class="capitol-logo visible-md-block visible-lg-block" ng-class="myCssVar2"></li>
           <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">GLOSSARY</a></li>
-          <li class="visible-xs-block"><a href="#/discover/" ng-click="myCssVar='discover-animate'">DISCOVER</a></li>
-          <li class="visible-xs-block"><a href="#/explore/" ng-click="myCssVar='explore-animate'">EXPLORE</a></li>
+          <li class="visible-xs-block dropdown-submenu"><a href="#/discover/" class="dropdown-toggle" data-toggle="dropdown" ng-click="myCssVar='discover-animate'">DISCOVER<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/discover/texas-state-government">TEXAS STATE<br /> GOVERNMENT</a></li>
+            <li><a href="#/discover/house-of-representatives">TEXAS HOUSE OF<br /> REPRESENTATIVES</a></li>
+            <li><a href="#/discover/how-a-bill-becomes-law">HOW A BILL BECOMES</br > A LAW</a></li>
+            <li><a href="#/discover/founding-fathers">FOUNDING FATHERS</a></li>
+            <li><a href="#/discover/six-flags-of-texas">SIX FLAGS OF TEXAS</a></li>
+          </ul>
+
+          </li>
+          <li class="visible-xs-block"><a href="#/explore/" ng-click="myCssVar='explore-animate'">EXPLORE</a>
+          <ul class="dropdown-menu">
+
+          </ul>
+          </li>
           <li class="visible-xs-block"><a href="#/challenge/" ng-click="myCssVar='challenge-animate'">CHALLENGE</a></li>
    
           <li class="visible-sm-block visible-md-block visible-lg-block">  
