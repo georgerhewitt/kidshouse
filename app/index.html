@@ -24,11 +24,11 @@
   <header class="navbar" role="navigation">
     <nav>
     <div class="navbar-header">
+      <a href="/#/" class="navbar-brand visible-xs-block">Texas Kids' Guide!</a>
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="glyphicon glyphicon-align-justify" aria-hidden="true">MENU</span>
       </button>
-      <a href="/#/" class="navbar-brand visible-xs-block">Texas Kids' Guide!</a>
     </div>
     <div class="navbar-collapse collapse nav-center bs-navbar-collapse">
       <div class="nav-top">
@@ -46,7 +46,8 @@
           <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">RESOURCES</a></li>
           <li class="capitol-logo visible-md-block visible-lg-block" ng-class="myCssVar2"></li>
           <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">GLOSSARY</a></li>
-          <li class="visible-xs-block dropdown-submenu"><a href="#/discover/" class="dropdown-toggle" data-toggle="dropdown" ng-click="myCssVar='discover-animate'">DISCOVER<span class="caret"></span></a>
+          <li class="visible-xs-block dropdown-submenu">
+          <a href="#/discover/" class="dropdown-toggle" data-toggle="dropdown" ng-click="myCssVar='discover-animate'">DISCOVER<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#/discover/texas-state-government">TEXAS STATE<br /> GOVERNMENT</a></li>
             <li><a href="#/discover/house-of-representatives">TEXAS HOUSE OF<br /> REPRESENTATIVES</a></li>
@@ -90,18 +91,7 @@
             </div>
         </div>
         <div class="col-sm-4 col-md-4 nav3 explore">
-            <div class="nav3-sub">
-              <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore'"><h2>EXPLORE<b class="caret"></b></h2></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                  <li><a href="#/explore/texas-capitol">TEXAS CAPITOL</a></li>
-                  <li><a href="#/explore/capitol-grounds">CAPITOL GROUNDS</a></li>
-                  <li><a href="#/explore/capitol-monuments-statues">MONUMENTS &amp; STATUES</a></li>
-                  <li><a href="">STATE SEAL</a></li>
-                  <li><a href="">STATE FLAG</a></li>
-                  <li><a href="">STATE STMBOLS</a></li>
-                  <li><a href="">ABOUT AUSTIN</a></li>
-                </ul>
-            </div>
+            <div class="nav3-sub" data-ng-include data-src="'views/partials/nav-explore.html'"></div>
         </div>
         <div class="col-sm-4 col-md-4 nav3 challenge">
           <div class="nav3-sub">
