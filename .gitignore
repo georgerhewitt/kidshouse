@@ -3,3 +3,6 @@ dist
 .tmp
 .sass-cache
 bower_components
+app/scripts/controllers/granicus.js
+app/scripts/controllers/granicusapi.js
+app/scripts/controllers/houseapi.js
