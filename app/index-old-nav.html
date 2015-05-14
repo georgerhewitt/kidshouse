@@ -46,6 +46,23 @@
           <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">RESOURCES</a></li>
           <li class="capitol-logo visible-md-block visible-lg-block" ng-class="myCssVar2"></li>
           <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">GLOSSARY</a></li>
+          <li class="visible-xs-block dropdown-submenu">
+          <a href="#/discover/" class="dropdown-toggle" data-toggle="dropdown" ng-click="myCssVar='discover-animate'">DISCOVER<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+            <li><a href="#/discover/texas-state-government">TEXAS STATE<br /> GOVERNMENT</a></li>
+            <li><a href="#/discover/house-of-representatives">TEXAS HOUSE OF<br /> REPRESENTATIVES</a></li>
+            <li><a href="#/discover/how-a-bill-becomes-law">HOW A BILL BECOMES</br > A LAW</a></li>
+            <li><a href="#/discover/founding-fathers">FOUNDING FATHERS</a></li>
+            <li><a href="#/discover/six-flags-of-texas">SIX FLAGS OF TEXAS</a></li>
+          </ul>
+
+          </li>
+          <li class="visible-xs-block"><a href="#/explore/" ng-click="myCssVar='explore-animate'">EXPLORE</a>
+          <ul class="dropdown-menu">
+
+          </ul>
+          </li>
+          <li class="visible-xs-block"><a href="#/challenge/" ng-click="myCssVar='challenge-animate'">CHALLENGE</a></li>
    
           <li class="visible-sm-block visible-md-block visible-lg-block">  
             <form class="navbar-form" role="form">
@@ -56,51 +73,50 @@
             </form>
           </li>
         </ul>
-  <h1 class="text-center visible-sm-block visible-md-block visible-lg-block">Texas Kids' Guide!</h1>
-      <div class="mainpage col-md-8 col-md-offset-2">
-        <div class="col-sm-4 col-md-4 nav3 discover">
-        <div class="nav3-sub">
-              <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover'"><h2>DISCOVER<b class="caret"></b></h2></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a href="#/discover/texas-state-government">TEXAS STATE<br /> GOVERNMENT</a></li>
-                <li><a href="#/discover/house-of-representatives">TEXAS HOUSE OF<br /> REPRESENTATIVES</a></li>
-                <li><a href="#/discover/how-a-bill-becomes-law">HOW A BILL BECOMES</br > A LAW</a></li>
-                <li><a href="#/discover/founding-fathers">FOUNDING FATHERS</a></li>
-                <li><a href="#/discover/six-flags-of-texas">SIX FLAGS OF TEXAS</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 nav3 explore">
-              <div class="nav3-sub">
-                <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore'"><h2>EXPLORE<b class="caret"></b></h2></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a href="#/explore/texas-capitol">TEXAS CAPITOL</a></li>
-                <li><a href="#/explore/capitol-grounds">CAPITOL GROUNDS</a></li>
-                <li><a href="#/explore/capitol-monuments-statues">MONUMENTS &amp; STATUES</a></li>
-                <li><a href="">STATE SEAL</a></li>
-                <li><a href="">STATE FLAG</a></li>
-                <li><a href="">STATE STMBOLS</a></li>
-                <li><a href="">ABOUT AUSTIN</a></li>
-              </ul>
-              </div>
-          </div>
-          <div class="col-sm-4 col-md-4 nav3 challenge">
-            <div class="nav3-sub">
-              <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge'"><h2>CHALLENGE<b class="caret"></b></h2></a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-              <li><a href="">QUIZZES</a></li>
-              <li><a href="">CROSSWORD PUZZLE</a></li>
-              <li><a href="">WORD SEARCH</a></li>
-              <li><a href="">SCAVENGER HUNT</a></li>
-            </ul>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
     <div class="row mainpage">
-
+      <h1 class="text-center visible-sm-block visible-md-block visible-lg-block">Texas Kids' Guide!</h1>
+      <div class="mainpage col-md-8 col-md-offset-2 visible-sm-block visible-md-block visible-lg-block">
+        <div class="col-sm-4 col-md-4 nav3 discover">
+  <div class="nav3-sub">
+        <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover'"><h2>DISCOVER<b class="caret"></b></h2></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+          <li><a href="#/discover/texas-state-government">TEXAS STATE<br /> GOVERNMENT</a></li>
+          <li><a href="#/discover/house-of-representatives">TEXAS HOUSE OF<br /> REPRESENTATIVES</a></li>
+          <li><a href="#/discover/how-a-bill-becomes-law">HOW A BILL BECOMES</br > A LAW</a></li>
+          <li><a href="#/discover/founding-fathers">FOUNDING FATHERS</a></li>
+          <li><a href="#/discover/six-flags-of-texas">SIX FLAGS OF TEXAS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-4 nav3 explore">
+        <div class="nav3-sub">
+          <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore'"><h2>EXPLORE<b class="caret"></b></h2></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+          <li><a href="#/explore/texas-capitol">TEXAS CAPITOL</a></li>
+          <li><a href="#/explore/capitol-grounds">CAPITOL GROUNDS</a></li>
+          <li><a href="#/explore/capitol-monuments-statues">MONUMENTS &amp; STATUES</a></li>
+          <li><a href="">STATE SEAL</a></li>
+          <li><a href="">STATE FLAG</a></li>
+          <li><a href="">STATE STMBOLS</a></li>
+          <li><a href="">ABOUT AUSTIN</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="col-sm-4 col-md-4 nav3 challenge">
+      <div class="nav3-sub">
+        <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge'"><h2>CHALLENGE<b class="caret"></b></h2></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+        <li><a href="">QUIZZES</a></li>
+        <li><a href="">CROSSWORD PUZZLE</a></li>
+        <li><a href="">WORD SEARCH</a></li>
+        <li><a href="">SCAVENGER HUNT</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </div>
     </div><!--/.navbar-collapse -->

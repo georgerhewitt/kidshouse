@@ -10,24 +10,17 @@
 .navbar-nav {
   display: inline-block;
   float: none;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-bottom: -40px;
 }
 .nav-top {
-  margin-top: 10px;
   background-color:rgba(250, 250, 250, 0.8);
   display: block;
 }
 .navbar-header button span{
   font-size: .8em;
 }
-  // 768px or larger
-  @media screen and (min-width: 768px){ 
-    .navbar-nav{
-      vertical-align: top;
-      margin-top: 10px;
-      margin-bottom: -40px;
-    }
-  }
-
 .navbar-collapse {
   text-align: center;
   padding: 0;
@@ -95,21 +88,22 @@
 .capitol-logo-challenge{
   background: url(../images/capitol-logo-challenge.svg) no-repeat center center;
 }
-
 .ng-scope{
   background-color: $home-color;
 }
 
+div.nav3-sub.ng-scope{
+  background-color: transparent;
+}
+
 .explore-animate-add, .discover-animate-add, .challenge-animate-add{
   background-image: url(/images/stars40.png);
-  transition:all linear .5s;
-  
+  transition:all linear .5s; 
 }
 
 .discover-animate{
   background-color: $discover-color-light;
   transition:all linear 1.5s;
-
 }
 
 .explore-animate{
@@ -132,7 +126,7 @@
  padding-bottom: 10px;
 
   a{
-   color: #FFF;
+    color: #FFF;
    }
 
   .nav3{
@@ -158,23 +152,21 @@
   position: static;  
   }
 
+  .dropdown-menu > ul{
+    padding: 5px;
+  }
 
-.dropdown-menu > ul{
-  padding: 5px;
-}
+  .dropdown-menu > li > a{
+    background-color: #FFF;
+    border-style: solid;
+    border-width: 4px;
+    padding: 5px;
+    text-align:center;
+  }
+  // .dropdown-menu > li > a:hover{
+  //   color: #FFF;
+  // }
 
-.dropdown-menu > li > a{
-  color: #009999;
-  background-color: #FFF;
-  border-style: solid;
-  border-width: 4px;
-  padding: 5px;
-  text-align:center;
-}
-.dropdown-menu > li > a:hover{
-  color: #FFF;
-}
-}
 .explore{
   background: url(../images/explore-image-ribbon.png) no-repeat center;
 
@@ -182,13 +174,14 @@
     background-color: $explore-color;
     
     li {
-    background-color: $explore-color;
-    color: $explore-color;
+    //background-color: $explore-color;
+    //color: $explore-color;
 
       a{
+      //background-color: #FFF;
       color: $explore-color;
 
-        a:hover{
+        &:hover{
         color: #FFF;
         background-color: $explore-color;
         }
@@ -208,7 +201,7 @@
       a{
       color: $discover-color;
 
-        a:hover{
+        &:hover{
         color: #FFF;
         background-color: $discover-color;
         }
@@ -229,11 +222,12 @@
       a{
       color: $challenge-color;
 
-        a:hover{
+        &:hover{
         color: #FFF;
         background-color: $challenge-color;
         }
       }
     }
   }
+}
 }
