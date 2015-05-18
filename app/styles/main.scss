@@ -78,12 +78,7 @@ ul{
 .main{
   background-color: $main;
 }
-@media (max-width: 768px){
-  .main{
-    margin: none;
-    padding: none;
-  }
-}
+
 @media (min-width: 768px){
   .main{
     margin-top:20px;
@@ -100,12 +95,7 @@ h1{
   font: 400 3.5em/125% 'Just Another Hand', cursive;
   color: #FFF;
 }
-@media (max-width: 768px){
-  h1{
-    padding: none;
-    font-size: 2.5em;
-  }
-}
+
 @media (min-width: 768px){
   h1{
     padding: 20px;
