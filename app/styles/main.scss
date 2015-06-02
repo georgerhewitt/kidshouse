@@ -42,72 +42,21 @@ $green-dark: #8CB533;
 $blue-dark: #214B76;
 $blue-light: #3B69A2;
 
+@import "base/_base";
+
+@import "layout/_layout";
+@import "layout/_nav";
+@import "layout/_challenge";
+@import "layout/_explore";
+@import "layout/_discover";
+
+@import "modules/_slider";
+@import "modules/_circles";
+
 @import "responsive";
-@import "nav";
-@import "slider";
-@import "circles";
-@import "discover";
-@import "explore";
-@import "challenge";
 
-body{
-  font-size: 18px;
-}
-ul{
-  list-style-type: none;
-}
 
-.pull-right{
-  padding: 15px 0 0 15px;
-}
-.pull-left{
-  padding: 15px 15px 0 0;
-}
-.founding{
-  float: none; 
-  display: inline-block; 
-}
-.col-centered{
-  float: none;
-  margin: 0 auto;
-}
-.main-header{
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.main{
-  background-color: $main;
-}
 
-@media (min-width: 768px){
-  .main{
-    margin-top:20px;
-    padding: 10px;
-  }
-}
-
-.row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-h1{
-  font: 400 3.5em/125% 'Just Another Hand', cursive;
-  color: #FFF;
-}
-
-@media (min-width: 768px){
-  h1{
-    padding: 20px;
-    font-size: 4.5em;
-  }
-}
-nav h2{
-  font-size: 1.5em;
-}
-.active{
-  border: solid 1px red;
-}
 
 
 

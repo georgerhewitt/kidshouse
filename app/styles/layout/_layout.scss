@@ -1,0 +1,41 @@
+.pull-right{
+  //padding: 15px 0 0 15px;
+}
+.pull-left{
+  padding: 15px 15px 0 0;
+}
+.founding{
+  float: none; 
+  display: inline-block; 
+}
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.active{
+  border: solid 1px red;
+}
+
+.main-header{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.main.row.ng-scope{
+  background-color: #FFF;
+}
+
+.ng-scope{
+  background-color: $home-color;
+}
+
+@media (min-width: 768px){
+  .main{
+    margin-top:20px;
+    padding: 10px;
+  }
+}
