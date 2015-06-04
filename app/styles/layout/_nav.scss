@@ -272,5 +272,8 @@ We only want a list of nav links on mobile devices
       text-align: center;
       margin-left: -20px; 
     }
-
+    .navbar-collapse {
+    border-top: none;
+    box-shadow: none;
+  }
 }
