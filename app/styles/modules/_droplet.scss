@@ -1,0 +1,22 @@
+.question{
+
+    &__title{
+        margin: -20px 0 0 0;
+    }
+    &__droplet{
+
+        &__img{
+
+        }
+        &__num{
+            margin: 10px 0 0 -55px;
+            font-size: 3.0em;
+            font-family: 'Lora', serif;
+            color: $explore-color;
+            font-style: bold;
+        }
+    }
+    &__sub-title{
+    margin: -20px 0 0 0;
+}
+}

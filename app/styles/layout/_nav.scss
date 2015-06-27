@@ -104,17 +104,17 @@
   transition:all linear .5s; 
 }
 
-.discover-animate{
+body.discover-animate{
   background-color: $discover-color-light;
   transition:all linear 1.5s;
 }
 
-.explore-animate{
+body.explore-animate{
   background-color: $explore-color-light;
   transition:all linear 1.5s;  
 
 }
-.challenge-animate{
+body.challenge-animate{
   background-color: $challenge-color-light;
   transition:all linear 1.5s;
 

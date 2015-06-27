@@ -1,10 +1,8 @@
 <div class="main row" id="discover">
-    <h3>DISCOVER THE SIX FLAGS OF TEXAS</h3>
-
-  <div class="col-lg-12 col-md-12 col-sm-12">
+    <h3>DISCOVER THE TEXAS HOUSE OF REPRESENTATIVES</h3>
   <div class="center">
-    <div ng-controller="Slide600Ctrl">
-    <div class="image-slider">
+    <div ng-controller="SlideCtrl">
+    <div class="image-slider  img-responsive">
       <img ng-repeat="slide in slides" class="image-slide"
             ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
         <a class="arrow prev" href="#{{ location.path() }}" ng-click="nextSlide()"></a>
@@ -18,19 +16,9 @@
             </ul>
           </div>
         </nav>
-    </div><!-- image-slider -->
-    </div><!-- SlideCtrl -->
-  </div><!-- center -->
-  </div><!-- col -->
-
-    <H4>Texas in the Confederacy (1861 - 1865)</H4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
-    
+    </div>
+    </div>
+  </div>
 </div> <!-- discover -->
 
         

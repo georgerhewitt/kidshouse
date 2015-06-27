@@ -22,29 +22,28 @@
           <li>sausage ribeye ball 3</li>
         </ul>
     </div>
-    <div class="col-md-8 col-sm-8">
-       <div ng-controller="SlideCtrl">
-
-          <div class="image-slider w600">
-              <img ng-repeat="slide in slides" class="image-slide img-responsive"
-                  ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
-
-              <a class="arrow prev" href="#{{ location.path() }}" ng-click="nextSlide()"></a>
-              <a class="arrow next" href="#{{ location.path() }}" ng-click="prevSlide()"></a>
-              <nav class="slider-nav">
-                  <div class="slider-wrapper">
-                      <ul class="dots">
-                          <li class="dot" ng-repeat="slide in slides">
-                              <a href="#{{ location.path() }}" ng-class="{'active':isCurrentSlideIndex($index)}"
-                                ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
-                      </ul>
-                  </div>
-              </nav>
+    <div class="col-lg-9 col-md-12 col-sm-12">
+  <div class="center">
+    <div ng-controller="SlideCtrl">
+    <div class="image-slider">
+      <img ng-repeat="slide in slides" class="image-slide"
+            ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+        <a class="arrow prev" href="#{{ location.path() }}" ng-click="nextSlide()"></a>
+        <a class="arrow next" href="#{{ location.path() }}" ng-click="prevSlide()"></a>
+        <nav class="slider-nav">
+          <div class="slider-wrapper">
+            <ul class="dots">
+              <li class="dot" ng-repeat="slide in slides">
+              <a href="#{{ location.path() }}" ng-class="{'active':isCurrentSlideIndex($index)}"
+                    ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
+            </ul>
           </div>
-
-        </div> <!-- slideCtrl -->
+        </nav>
     </div>
-    <div class="col-md-4 col-sm-4">
+    </div>
+  </div>
+    </div>
+    <div class="col-lg-2 col-md-10 col-sm-10">
     <p  class="image-caption"><em>Bacon ipsum dolor sit amet sausage t-bone turducken, bresaola jowl andouille ham shank kielbasa drumstick meatloaf.</em></p>
     <div class="circle-click-here circle-green">
       <div>

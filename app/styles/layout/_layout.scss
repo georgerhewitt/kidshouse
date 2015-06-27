@@ -1,9 +1,3 @@
-.pull-right{
-  //padding: 15px 0 0 15px;
-}
-.pull-left{
-  padding: 15px 15px 0 0;
-}
 .founding{
   float: none; 
   display: inline-block; 
@@ -28,8 +22,10 @@
 .main.row.ng-scope{
   background-color: #FFF;
 }
-
-.ng-scope{
+.main.row.ng-scope div.col-md-12 div.ng-scope{
+  background-color: #FFF;
+}
+body.ng-scope{
   background-color: $home-color;
 }
 
