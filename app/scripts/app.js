@@ -1,10 +1,6 @@
 'use strict';
 
 /**
- * @ngdoc overview
- * @name yokid2App
- * @description
- * # yokid2App
  *
  * Main module of the application.
  */
@@ -169,7 +165,31 @@ var kidshouse = angular
           name: 'capitol-monuments-statues',
           templateUrl : 'views/explore/capitol-monuments-statues.html'
         })
-
+        .state('capitol-monuments-statues.sub', {
+            url: '/sub',
+            name: 'capitol-monuments-statuessub',
+              views :{
+                  'sub' : {
+                    templateUrl: 'views/explore/partials/sub.html'
+                  }
+              }
+        })
+        .state('state-seal', {
+          url: '/explore/state-seal',
+          name: 'state-seal',
+          templateUrl : 'views/explore/state-seal.html'
+        })
+        .state('state-symbols', {
+          url: '/explore/state-symbols',
+          name: 'state-symbols',
+          templateUrl : 'views/explore/state-symbols.html'
+        })
+        .state('city-of-austin', {
+          url: '/explore/city-of-austin',
+          name: 'city-of-austin',
+          templateUrl : 'views/explore/city-of-austin.html'
+        })
+// Granicus
         .state('granicus', {
           url: '/granicus',
           templateUrl: 'views/granicus.html'

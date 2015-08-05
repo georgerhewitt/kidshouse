@@ -26,7 +26,7 @@
 
     <div class="row border">
 
-    <div class="col-md-8 col-sm-8 col-xs-8" id="question">
+    <div class="col-md-8 col-sm-8 col-xs-8">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -36,14 +36,33 @@
 
     <h5>Question about the Founding Fathers?</h5>
     <ul>
-        <li>answer 1 goes here</li>
-        <li><a href="#/discover/founding-fathers/sub2">answer 2 goes here</a></li>
-        <li>answer  3goes here</li>
+        <li><a href="" ng-click="page='wrong'">Wrong</a></li>
+        <li><a href="" ng-click="page='correct'">Correct</a></li>
+        <li><a href="" ng-click="page='wrong'">Wrong</a></li>
     </ul>
     
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4">
+       <div ng-switch on="page">
+            <div ng-switch-when="correct" class="slider">
+                <div class="circle-answer circle-answer--correct text-center">
+                    <strong class="circle-answer__title">Correct!</strong>
+                    <p class="circle-answer__answer">More information about the answer goes here. More information about the answer goes here. More information about the answer.</p>
+                    <a href="" ng-click="page=''" class="circle-answer__button">close</a>
+                </div>
+            </div>
+            <div ng-switch-when="wrong" class="slider">
+                <div class="circle-answer circle-answer--wrong text-center">
+                    <strong class="circle-answer__title">Wrong!</strong>
+                    <p class="circle-answer__answer">More information about the answer goes here. More information about the answer goes here. More information about the answer.</p>
+                    <a href="#/explore/capitol-monuments-statues" class="circle-answer__button">close</a>
+                </div>
+            </div>
+            <div ng-switch-default class="slider">
+                <img src="images/explore-tejano-monument.png" class="pull-left img-responsive"> 
+            </div>
+        </div>
     
-    <div ui-view="sub" class="slide pull-right" id="answer"></div>
-
     </div>
 </div> <!-- discover -->
 

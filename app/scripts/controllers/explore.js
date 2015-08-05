@@ -13,6 +13,7 @@ angular.module('kidshouse')
   	.controller('ExploreCtrl', function ($scope){
   		$scope.todos = ['Item1', 'Item2', 'Item3'];
   		console.log($scope);
+  		//$scope.page = 'users';
   	}
 
  );

@@ -1,42 +1,47 @@
-.circle-green{
-    background-color: $circle-green;
-}
-.circle-blue{
-    background-color: $aqua;
 
-}
-
-.circle-click-here{
+.circle{
     width:200px;
     height:200px;
     border-radius:50%;
 
+    
     div{
-        padding-left: 20px;
-
+      padding-left: 20px;
+    }
         /*  Click HERE  */
-    :nth-child(1){
-        padding-top: 40px;
+    &__action{
+        padding-top: 30px;
         color: #FFF;
       }
       /*  to learn more  */
-    :nth-child(2){
-        padding-left: 30px;
+    &__sub{
+        margin-left: 20px;
+        font-size: .8em;
       }
      /*  about th  */
-    :nth-child(2){
+    &__sub2{
         line-height: 5px;
+        font-size: .8em;
       }
       /*  Executive  */
-    .child-4{
+    &__title{
         font-family: Georgia, serif;
-        color: $discover-color;
         font-size: 1.8em;
-        margin-left: -15px;
+        color: $main;
+        
         margin-top: -10px;
+        &--texas{
+          color: $aqua-light;
+          margin-left: 35px;
+          padding-top: 10px;
+        }
+        &--exec{
+          color: $discover-color;
+          margin-left: -25px;
+        }
       }
       /*  Branch  */
-    :nth-child(5){
+    &__title-sub{
         font-family: 'Lora', serif;
         color: #FFF;
         font-size: 2em;
@@ -44,38 +49,34 @@
         margin-top: -18px;
       }
       /*  !  */
-    .exclamation-point{ 
+    &__exclamation{ 
         color: $discover-color;
         font-family: 'Lora', serif;
-        font-size: 3em;
+        font-size: 3.4em;
         line-height: 10px;
         padding-left: 140px;
         margin-top: -44px;
-        margin-left: 10px;
+        margin-left: 125px;
       }
-    .click-here-play{ 
+    &--branch{
+      background-color: $green;
+    }
+    &--senate{
+      background-color: $aqua;
+    }
+    &__play{ 
         color: $discover-color;
-        padding-left: 80px;
         font-size: 2em;
-        margin-left: -2px;
-        margin-top: -50px;
+        margin-left: 40px;
+        margin-top: -10px;
       }
     .chamber{
         font-size: 2em;
         color: #FFF;
-        margin-top: -20px;
-    }      
-  }
+        margin-top: -20px;   
+      }
 }
-#question{
-    position: relative;
-  }
-#answer{
-    position: absolute;
-    bottom: 0;
-    margin-left: 95%;
 
-  }
 .circle-click-on{
     color:$main;
     width:200px;
@@ -98,27 +99,71 @@
       }
     }
   }
-.circle-correct{
+.circle-answer{
     color:$main;
-    width:320px;
-    height:320px;
+    width:380px;
+    height:380px;
     border-radius:50%;
     border-color: #main;
     border-style: solid;
-    div{
-      padding: 30px 0 0 0px;
+    padding: 25px;
+    &__title{
+      font-size: 1.5em;
+      padding: 30px 0 0 0;
+      //margin: 20px 0 0 0;
     }
+    &__answer{
+      padding: 30px 0 0 0;
+      font-size: .9em;
+    }
+    &--correct{
+      background-color: $aqua;
+    }
+    &--wrong{
+      background-color: $pink;
+    }
+    // &--wrong{
+    //   background-color: $aqua;
+    // }
   }
+
+.slider {
+    position: absolute;
+}
+.slider.ng-enter,
+.slider.ng-leave {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.slider.ng-enter {
+    left: 100%;
+}
+.slider.ng-enter-active {
+    left: 0;
+}
+.slider.ng-leave {
+    left: 0;
+}
+.slider.ng-leave-active {
+    left: 100%;
+}
+.slider.enable-animation.ng-leave.ng-leave-active {
+    //left: 100%;
+    opacity: 0;
+}
+
+// slider pull-right ng-scope ng-animate ng-enter ng-enter-active
+// slider pull-right ng-scope ng-animate ng-leave ng-leave-active
 
 @media only screen and (max-width: 680px) {
     .circle-correct{
     width: 200px;
     height: 200px;
+    padding: 15px;
     strong, p{
       font-size: .6em;
-    }
-    div{
-      padding: 0px;
     }
   }
 }

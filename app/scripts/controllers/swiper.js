@@ -9,7 +9,7 @@
  */
     angular.module('kidshouse')
 
-    .animation('.slide', function($rootScope) {
+    .animation('.swiper', function($rootScope) {
       
       var toRoot = false;
       var fromRoot = false;
