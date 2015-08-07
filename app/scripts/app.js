@@ -13,7 +13,8 @@ var kidshouse = angular
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'cgBusy'
+    'cgBusy',
+    'memoryGameApp'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
       
@@ -23,11 +24,6 @@ var kidshouse = angular
         .state('home', {
           url: '/',
           templateUrl: 'views/home.html'
-        })
-        .state('challenge', {
-          url: '/challenge',
-          name: 'challenge',
-          templateUrl: 'views/challenge/challenge.html'
         })
 
         // discover section 
@@ -188,6 +184,17 @@ var kidshouse = angular
           url: '/explore/city-of-austin',
           name: 'city-of-austin',
           templateUrl : 'views/explore/city-of-austin.html'
+        })
+// Challenge
+        .state('challenge', {
+          url: '/challenge',
+          name: 'challenge',
+          templateUrl: 'views/challenge/challenge.html'
+        })
+        .state('flip-cards', {
+          url: '/challenge/flip-cards',
+          name: 'flip-cards',
+          templateUrl : 'views/challenge/flip-cards.html'
         })
 // Granicus
         .state('granicus', {

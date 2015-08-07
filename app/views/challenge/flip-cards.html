@@ -1,0 +1,29 @@
+<div class="main row" id="challenge" ng-controller="GameCtrl">
+
+
+  <div>Pairs left to match: {{game.unmatchedPairs}}</div>
+  <div>Matching: {{game.firstPick.title}}</div>
+
+  <table>
+    <tr ng-repeat="row in game.grid">
+      <td ng-repeat="tile in row" ng-click="game.flipTile(tile)">
+
+        <!-- this entire block can be replaced with our custom component mgCard:
+          <mg-card tile="tile"></mg-card>
+        -->
+        <div class="flip-card-container">
+          <div class="card" ng-class="{flipped: tile.flipped}">
+              <img class="front" ng-src="images/flip-cards/back.png">
+              <img class="back" ng-src="images/flip-cards/{{tile.title}}.png">
+          </div>
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+  <div class="message">{{game.message}}</div>
+ 
+</div>
+        
+
