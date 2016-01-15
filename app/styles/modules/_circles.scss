@@ -132,26 +132,28 @@
 }
 .slider.ng-enter,
 .slider.ng-leave {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    transition: all 2s ease;
+
 }
 .slider.ng-enter {
     left: 100%;
+    opacity: 0;
 }
 .slider.ng-enter-active {
     left: 0;
+    opacity: 1;
 }
 .slider.ng-leave {
     left: 0;
+    opacity: 1;
 }
 .slider.ng-leave-active {
     left: 100%;
+    opacity: 0;
 }
 .slider.enable-animation.ng-leave.ng-leave-active {
     //left: 100%;
-    opacity: 0;
+    //opacity: 0;
 }
 
 // slider pull-right ng-scope ng-animate ng-enter ng-enter-active

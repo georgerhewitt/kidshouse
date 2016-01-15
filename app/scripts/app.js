@@ -14,7 +14,8 @@ var kidshouse = angular
     'ngTouch',
     'ui.router',
     'cgBusy',
-    'memoryGameApp'
+    'memoryGameApp',  //flip-cards.js
+    'wordSearchPuzzle'   // word-search-puzzle.js
   ])
   .config(function($stateProvider, $urlRouterProvider) {
       
@@ -195,6 +196,11 @@ var kidshouse = angular
           url: '/challenge/flip-cards',
           name: 'flip-cards',
           templateUrl : 'views/challenge/flip-cards.html'
+        })
+        .state('word-search-puzzle', {
+          url: '/challenge/word-search-puzzle',
+          name: 'word-search-puzzle',
+          templateUrl : 'views/challenge/word-search-puzzle.html'
         })
 // Granicus
         .state('granicus', {

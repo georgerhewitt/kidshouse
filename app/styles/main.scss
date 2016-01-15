@@ -52,8 +52,10 @@ $blue-light: #3B69A2;
 
 @import "modules/_image-slider";
 @import "modules/_circles";
-@import "modules/_flip-cards";
 @import "modules/_question";
+
+@import "libs/_flip-cards";
+@import "libs/_puzzle";
 
 @import "responsive";
 
