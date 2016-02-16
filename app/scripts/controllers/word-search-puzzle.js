@@ -193,23 +193,47 @@
 
     wordSearchPuzzle.controller('wordSearchCtrl', function($scope) {
         $scope.matrix = [
-            ['N', 'I', 'G', 'O', 'R', 'Y', 'G', 'S', 'T', 'T', 'A', 'N'],
-            ['O', 'G', 'G', 'U', 'L', 'C', 'O', 'E', 'P', 'E', 'A', 'S'],
-            ['I', 'N', 'N', 'R', 'M', 'N', 'O', 'R', 'I', 'M', 'E', 'C'],
-            ['T', 'I', 'A', 'I', 'O', 'E', 'G', 'V', 'R', 'P', 'V', 'E'],
-            ['C', 'T', 'T', 'E', 'D', 'D', 'L', 'I', 'C', 'L', 'I', 'N'],
-            ['E', 'S', 'J', 'P', 'U', 'N', 'E', 'C', 'S', 'A', 'T', 'A'],
-            ['J', 'E', 'O', 'O', 'L', 'E', 'I', 'E', 'A', 'T', 'C', 'R'],
-            ['N', 'T', 'V', 'C', 'E', 'P', 'J', 'B', 'V', 'E', 'E', 'I'],
-            ['I', 'S', 'I', 'S', 'S', 'E', 'S', 'A', 'A', 'W', 'R', 'O'],
-            ['O', 'K', 'S', 'I', 'M', 'D', 'E', 'S', 'J', 'O', 'I', 'M'],
-            ['R', 'E', 'L', 'L', 'O', 'R', 'T', 'N', 'O', 'C', 'D', 'E']
+       ['N','H','J','G','H','I','E','L','A','N','A','T','G','S','R'],
+       ['E','O','R','E','K','A','E','P','S','M','N','Q','U','T','E'],
+       ['E','V','I','T','A','L','S','I','G','E','L','B','S','N','P'],
+       ['T','S','S','S','Y','P','N','H','M','C','T','I','E','E','R'],
+       ['A','O','N','B','S','I','O','N','O','O','Y','L','N','M','E'],
+       ['N','H','P','O','T','E','R','L','M','U','I','L','A','D','S'],
+       ['E','J','Q','S','I','E','S','M','I','E','S','S','T','N','E'],
+       ['S','Z','U','I','V','T','I','B','L','T','Q','E','O','E','N'],
+       ['X','A','V','O','C','T','U','E','R','J','I','D','R','M','T'],
+       ['L','C','G','B','T','B','C','L','P','Z','P','C','S','A','A'],
+       ['I','M','N','E','T','T','U','Q','O','T','E','X','A','S','T'],
+       ['S','D','E','X','I','P','B','U','X','S','W','Q','F','L','I'],
+       ['S','U','F','O','L','H','I','Y','R','P','E','Y','B','U','V'],
+       ['B','D','N','V','N','B','Z','Y','K','D','Y','R','X','K','E'],
+       ['Q','C','O','M','M','I','T','T','E','E','V','X','P','U','S']
         ];
         $scope.words = [
-            'BINDING', 'CONTROLLER', 'DEPENDENCY', 'DIRECTIVE', 'GOOGLE', 'IGOR', 'INJECTION', 'JAVASCRIPT',
-            'MISKO', 'MODULES', 'SCENARIO', 'SCOPE', 'SERVICE', 'TEMPLATE', 'TESTING', 'VOJTA'
+            'TEXAS','SENATE','HOUSE','REPRESENTATIVES','SENATORS','LEGISLATIVE','COMMITTEE','RESOLUTIONS','BILLS','SPEAKER',
+            'SESSION','ELECTION','AUSTIN','AMENDMENTS','POLITICAL','GOVERNMENT'
         ];
     });
+
+   // wordSearchPuzzle.controller('wordSearchCtrl', function($scope) {
+   //      $scope.matrix = [
+   //          ['N', 'I', 'G', 'O', 'R', 'Y', 'G', 'S', 'T', 'T', 'A', 'N'],
+   //          ['O', 'G', 'G', 'U', 'L', 'C', 'O', 'E', 'P', 'E', 'A', 'S'],
+   //          ['I', 'N', 'N', 'R', 'M', 'N', 'O', 'R', 'I', 'M', 'E', 'C'],
+   //          ['T', 'I', 'A', 'I', 'O', 'E', 'G', 'V', 'R', 'P', 'V', 'E'],
+   //          ['C', 'T', 'T', 'E', 'D', 'D', 'L', 'I', 'C', 'L', 'I', 'N'],
+   //          ['E', 'S', 'J', 'P', 'U', 'N', 'E', 'C', 'S', 'A', 'T', 'A'],
+   //          ['J', 'E', 'O', 'O', 'L', 'E', 'I', 'E', 'A', 'T', 'C', 'R'],
+   //          ['N', 'T', 'V', 'C', 'E', 'P', 'J', 'B', 'V', 'E', 'E', 'I'],
+   //          ['I', 'S', 'I', 'S', 'S', 'E', 'S', 'A', 'A', 'W', 'R', 'O'],
+   //          ['O', 'K', 'S', 'I', 'M', 'D', 'E', 'S', 'J', 'O', 'I', 'M'],
+   //          ['R', 'E', 'L', 'L', 'O', 'R', 'T', 'N', 'O', 'C', 'D', 'E']
+   //      ];
+   //      $scope.words = [
+   //          'binding', 'CONTROLLER', 'DEPENDENCY', 'DIRECTIVE', 'GOOGLE', 'IGOR', 'INJECTION', 'JAVASCRIPT',
+   //          'MISKO', 'MODULES', 'SCENARIO', 'SCOPE', 'SERVICE', 'TEMPLATE', 'TESTING', 'VOJTA'
+   //      ];
+   //  });
 
     /**
      * Directive

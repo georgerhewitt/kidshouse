@@ -38,7 +38,8 @@
             <form class="navbar-form" role="form">
               <div class="right-inner-addon">
                 <i class="glyphicon glyphicon-search"></i>
-                <input type="text" placeholder="Search" class="form-control" />
+                <label for="searchlarge"></label>
+                <input type="text" placeholder="Search" id="searchlarge" class="form-control" />
               </div>
             </form>
           </li>
@@ -51,7 +52,8 @@
             <form class="navbar-form" role="form">
               <div class="right-inner-addon">
                 <i class="glyphicon glyphicon-search"></i>
-                <input type="text" placeholder="Search" class="form-control" />
+                <label for="searchsmall"></label>
+                <input type="text" placeholder="Search" id="searchsmall" class="form-control" />
               </div>
             </form>
           </li>
@@ -65,13 +67,13 @@
 
             <ul class="nav navbar-nav">
               <li class="dropdown">
-              <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover'">DISCOVER<b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a href="#/discover/texas-state-government">TEXAS STATE<br /> GOVERNMENT</a></li>
-                <li><a href="#/discover/house-of-representatives">TEXAS HOUSE OF<br /> REPRESENTATIVES</a></li>
-                <li><a href="#/discover/how-a-bill-becomes-law">HOW A BILL BECOMES</br > A LAW</a></li>
-                <li><a href="#/discover/founding-fathers">FOUNDING FATHERS</a></li>
-                <li><a href="#/discover/six-flags-of-texas">SIX FLAGS OF TEXAS</a></li>
+              <a href="" data-toggle="dropdown" class="dropdown-toggle" id="discovermenu" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover'">DISCOVER<b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="discovermenu">
+                <li><a href="#/discover/texas-state-government" role="menuitem">TEXAS STATE<br /> GOVERNMENT</a></li>
+                <li><a href="#/discover/house-of-representatives" role="menuitem">TEXAS HOUSE OF<br /> REPRESENTATIVES</a></li>
+                <li><a href="#/discover/how-a-bill-becomes-law" role="menuitem">HOW A BILL BECOMES</br > A LAW</a></li>
+                <li><a href="#/discover/founding-fathers" role="menuitem">FOUNDING FATHERS</a></li>
+                <li><a href="#/discover/six-flags-of-texas" role="menuitem">SIX FLAGS OF TEXAS</a></li>
               </ul>
             </li>
           </ul>
@@ -81,15 +83,15 @@
               <div class="nav3-sub">
               <ul class="nav navbar-nav">
               <li class="dropdown">
-                <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore'">EXPLORE<b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a href="#/explore/texas-capitol">TEXAS CAPITOL</a></li>
-                <li><a href="#/explore/capitol-grounds">CAPITOL GROUNDS</a></li>
-                <li><a href="#/explore/capitol-monuments-statues">MONUMENTS &amp; STATUES</a></li>
-                <li><a href="#/explore/state-seal">STATE SEAL</a></li>
-                <li><a href="">STATE FLAG</a></li>
-                <li><a href="#/explore/state-symbols">STATE SYMBOLS</a></li>
-                <li><a href="#/explore/city-of-austin">ABOUT AUSTIN</a></li>
+                <a href="" data-toggle="dropdown" class="dropdown-toggle" id="exploremenu" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore'">EXPLORE<b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="exploremenu">
+                <li><a href="#/explore/texas-capitol" role="menuitem">TEXAS CAPITOL</a></li>
+                <li><a href="#/explore/capitol-grounds" role="menuitem">CAPITOL GROUNDS</a></li>
+                <li><a href="#/explore/capitol-monuments-statues" role="menuitem">MONUMENTS &amp; STATUES</a></li>
+                <li><a href="#/explore/state-seal" role="menuitem">STATE SEAL</a></li>
+                <li><a href="" role="menuitem">STATE FLAG</a></li>
+                <li><a href="#/explore/state-symbols" role="menuitem">STATE SYMBOLS</a></li>
+                <li><a href="#/explore/city-of-austin" role="menuitem">ABOUT AUSTIN</a></li>
               </ul>
               </li>
           </ul>
@@ -99,13 +101,13 @@
             <div class="nav3-sub">
               <ul class="nav navbar-nav">
               <li class="dropdown">
-              <a href="" data-toggle="dropdown" class="dropdown-toggle" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge'">CHALLENGE<b class="caret"></b></a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-              <li><a href="">QUIZZES</a></li>
-              <li><a href="#/challenge/flip-cards">FLIP CARD</a></li>
-              <li><a href="">CROSSWORD PUZZLE</a></li>
-              <li><a href="#/challenge/word-search-puzzle">WORD SEARCH</a></li>
-              <li><a href="">SCAVENGER HUNT</a></li>
+              <a href="" data-toggle="dropdown" class="dropdown-toggle" id="challengemenu" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge'">CHALLENGE<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="challengemenu">
+              <!-- <li><a href="" role="menuitem">QUIZZES</a></li> -->
+              <li><a href="#/challenge/flip-cards" role="menuitem">FLIP CARD</a></li>
+              <!-- <li><a href="#/challenge/word-search-puzzle" role="menuitem">CROSSWORD PUZZLE</a></li> -->
+              <li><a href="#/challenge/word-search-puzzle" role="menuitem">WORD SEARCH</a></li>
+              <li><a href="#/challenge/texas-government-test" role="menuitem">TEXAS GOVERMENT TEST</a></li>
             </ul>
             </li>
           </ul>

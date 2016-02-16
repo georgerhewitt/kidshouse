@@ -202,6 +202,11 @@ var kidshouse = angular
           name: 'word-search-puzzle',
           templateUrl : 'views/challenge/word-search-puzzle.html'
         })
+        .state('texas-government-test', {
+          url: '/challenge/texas-government-test',
+          name: 'texas-government-test',
+          templateUrl : 'views/challenge/texas-government-test.html'
+        })
 // Granicus
         .state('granicus', {
           url: '/granicus',
