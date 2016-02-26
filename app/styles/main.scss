@@ -8,63 +8,37 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $topnav-color: #FFCC66;
 $discover-color: #D11B6A;
 $discover-color-light: #EC8584;
-
 $home-color: #FDB913;
 $home-color-light: #F3A612;
-
 $explore-color: #00ABB9;
 $explore-color-light: #75CCD0;
-
 $challenge-color: #214B76;
 $challenge-color-light: #3B69A2;
-
 $circle-green: #9FCC3B;
 $circle-green-light: #8CB533;
-
 $circle-blue: #00ABB9;
 $circle-blue-light: #75CCD0;
-
 $start-color: #8CB533;
 $main: #FFF;
-
 $gold: #FDB913;
 $gold-dark: #E3A612;
-
 $pink: #D11B6A;
 $pink-light: #EC8584;
-
 $aqua: #00ABB9;
 $aqua-light: #75CCD0;
-
 $green: #9FCC3B;
 $green-dark: #8CB533;
-
 $blue-dark: #214B76;
 $blue-light: #3B69A2;
-
 @import "base/_base";
-
 @import "layout/_layout";
 @import "layout/_nav";
 @import "layout/_challenge";
 @import "layout/_explore";
 @import "layout/_discover";
-
 @import "modules/_image-slider";
 @import "modules/_circles";
 @import "modules/_question";
-
 @import "libs/_flip-cards";
 @import "libs/_puzzle";
-
 @import "responsive";
-
-
-
-
-
-
-
-
-
-

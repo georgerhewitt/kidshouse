@@ -3,12 +3,12 @@
 (function(angular) {
     'use strict';
 
-    var module = angular.module('slidingPuzzle', []);
+    var slidingPuzzle = angular.module('slidingPuzzle', []);
 
     /**
      * Service
      */
-    module.factory('slidingPuzzle', function() {
+    slidingPuzzle.factory('slidingPuzzle', function() {
         function shuffle(a) {
             var q;
             for (var j, x, i = a.length; i; j = parseInt(Math.random() * i, 10), x = a[--i], a[i] = a[j], a[j] = x) { q = 0; }
@@ -132,7 +132,7 @@
     /**
      * Directive
      */
-    module.directive('slidingPuzzle', function(slidingPuzzle) {
+    slidingPuzzle.directive('slidingPuzzle', function(slidingPuzzle) {
         return {
             restrict: 'EA',
             replace: true,
@@ -147,7 +147,7 @@
                 api: '='
             },
             link: function(scope, element, attrs) {
-                var rows, cols,
+                var rows, cols, tile,
                     loading = true,
                     image = new Image();
 

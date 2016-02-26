@@ -18,7 +18,7 @@ var kidshouse = angular
     'wordSearchPuzzle'   // word-search-puzzle.js
   ])
   .config(function($stateProvider, $urlRouterProvider) {
-      
+
       $urlRouterProvider.otherwise('/');
 
       $stateProvider
@@ -27,13 +27,13 @@ var kidshouse = angular
           templateUrl: 'views/home.html'
         })
 
-        // discover section 
+        // discover section
         .state('discover', {
         url: '/discover/',
         name: 'discover',
         templateUrl: 'views/discover/discover.html'
         })
-  
+
         .state('discover.sub', {
             url: '/sub',
             name: 'discoversub',
@@ -227,5 +227,5 @@ var kidshouse = angular
           url: '/houseapi',
           templateUrl: 'views/houseapi.html'
         });
-        
+
     });

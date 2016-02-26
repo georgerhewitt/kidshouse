@@ -3,11 +3,14 @@
 
 
 var memoryGameApp = angular.module('memoryGameApp', []);
-
+var Game;
 
 memoryGameApp.factory('game', function() {
-  var tileNames = ['marlin', 'tarpon', 'goldfish', 'guadalupebass', 'capitol', 'flag',
-    'armadillo', 'bluebonnet'];
+
+  // var tileNames = ['marlin', 'tarpon', 'goldfish', 'guadalupebass', 'capitol', 'flag',
+  //    'armadillo', 'bluebonnet'];
+
+ var tileNames = ['capitol', 'flag', 'armadillo', 'bluebonnet', 'monarch', 'mockingbird', 'paperscroll', 'podium'];
 
   return new Game(tileNames);
 });
@@ -38,5 +41,5 @@ memoryGameApp.directive('mgCard', function() {
     scope: {
       tile: '='
     }
-  }
+  };
 });

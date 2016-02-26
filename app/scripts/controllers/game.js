@@ -1,6 +1,8 @@
 'use strict';
 /* Memory Game Models and Business Logic */
 
+
+
 function Tile(title) {
   this.title = title;
   this.flipped = false;
@@ -8,9 +10,40 @@ function Tile(title) {
 
 Tile.prototype.flip = function() {
   this.flipped = !this.flipped;
+};
+
+function removeRandomTile(tileDeck) {
+  var i = Math.floor(Math.random() * tileDeck.length);
+  return tileDeck.splice(i, 1)[0];
+}
+
+/* Create an array with two of each tileName in it */
+function makeDeck(tileNames) {
+  var tileDeck = [];
+  tileNames.forEach(function(name) {
+    tileDeck.push(new Tile(name));
+    tileDeck.push(new Tile(name));
+  });
+
+  return tileDeck;
 }
 
 
+function makeGrid(tileDeck) {
+  var gridDimension = Math.sqrt(tileDeck.length),
+  //var gridDimension = 2,
+    grid = [];
+
+  for (var row = 0; row < gridDimension; row++) {
+    grid[row] = [];
+    for (var col = 0; col < gridDimension; col++) {
+      grid[row][col] = removeRandomTile(tileDeck);
+    }
+  }
+
+  //console.log(grid);
+  return grid;
+}
 
 function Game(tileNames) {
   var tileDeck = makeDeck(tileNames);
@@ -48,46 +81,11 @@ function Game(tileNames) {
         this.message = Game.MESSAGE_MISS;
       }
     }
-  }
+  };
 }
 
 Game.MESSAGE_CLICK = 'Click on a tile.';
-Game.MESSAGE_ONE_MORE = 'Pick one more card.'
+Game.MESSAGE_ONE_MORE = 'Pick one more card.';
 Game.MESSAGE_MISS = 'Try again.';
 Game.MESSAGE_MATCH = 'Good job! Keep going.';
 Game.MESSAGE_WON = 'You win!';
-
-
-
-/* Create an array with two of each tileName in it */
-function makeDeck(tileNames) {
-  var tileDeck = [];
-  tileNames.forEach(function(name) {
-    tileDeck.push(new Tile(name));
-    tileDeck.push(new Tile(name));
-  });
-
-  return tileDeck;
-}
-
-
-function makeGrid(tileDeck) {
-  var gridDimension = Math.sqrt(tileDeck.length),
-      grid = [];
-
-  for (var row = 0; row < gridDimension; row++) {
-    grid[row] = [];
-    for (var col = 0; col < gridDimension; col++) {
-        grid[row][col] = removeRandomTile(tileDeck);
-    }
-  }
-
-  return grid;
-}
-
-
-function removeRandomTile(tileDeck) {
-  var i = Math.floor(Math.random()*tileDeck.length);
-  return tileDeck.splice(i, 1)[0];
-}
-
