@@ -6,36 +6,39 @@
   color: $start-color;
   }
   h5{
-  color: $explore-color;
+  color: $start-color;
   }
   h6{
-  color: $start-color;
+  color: $explore-color;
   }
   .border{
     border: 5px $explore-color;
     border-bottom-style: dotted;
   }
 
+  .capitol-p{
+    margin-top: 30px;
+  }
+
 
   .capitol-layout{
     position: relative;
-    // top: 50px;
-    // left: 0;
-    // right: 30px; 
-    // bottom: 0;
     height: 450px;
     width: 670px;
-    // position: absolute;
-    // height: 50%;
-    // width: 50%;
-    // overflow: auto;
      margin: 0 auto;
-     background-color: red;
+  .capitol-direction{
+       position: absolute;
+       top: 20px;
+       left: 120px;
+       img:hover{
+           opacity: inherit;
+         }
+     }
 
     img:hover{
         opacity: 0.5;
       }
-    
+
     #img-top{
       position: absolute;
       top:0;
@@ -48,7 +51,7 @@
       top:200px;
       right: 425px;
       background-image: url(../images/capitol/senate-roll.png);
-      
+
     }
     #img-dome{
       position: absolute;
@@ -56,14 +59,14 @@
       right: 280px;
       z-index: 997;
       background-image: url(../images/capitol/dome-roll.png);
-      
+
     }
     #img-house{
       position: absolute;
       top:200px;
       right: 0px;
       background-image: url(../images/capitol/house-roll.png);
-      
+
     }
     #img-main{
       position: absolute;
@@ -71,14 +74,39 @@
       right: 215px;
       z-index: 998;
       background-image: url(../images/capitol/main-roll.png);
-      
+
     }
     #img-mainback{
       position: absolute;
       top:153px;
       right: 215px;
       z-index: 996;
-      
+
     }
+  }
+
+  #myAustinCarousel{
+  .carousel-indicator{
+    float: left;
+    li{
+      color: $challenge-color-light;
+    }
+    li.active {
+      color: $start-color;
+    }
+  }
+    .carousel-inner{
+      width: 600px;
+      float: right;
+    }
+  }
+  #myCapitolCarousel {
+    .carousel-indicators {
+      bottom: -20px;
+    }
+    p{
+      height: 60px;
+    }
+
   }
 }

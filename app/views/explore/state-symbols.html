@@ -1,70 +1,11 @@
 <div class="main row" id="explore">
-    <h3>EXPLORE THE TEXAS STATE SYMBOLS</h3>
+    <h3>{{ 'EXPLOREPAGE.STATE_SYMBOLS.PAGETITLE' | translate }}</h3>
     <div class="row border">
-    <p>Bacon ipsum dolor sit amet sausage t-bone turducken, bresaola jowl andouille ham shank kielbasa drumstick meatloaf. Doner jowl sausage hamburger shankle. Ham hock rump pastrami ground round fatback. Meatball drumstick cow doner, sausage chuck flank capicola spare ribs corned beef prosciutto jerky hamburger rump. Swine meatloaf filet mignon boudin beef ribs biltong pork, venison tongue. Drumstick short loin bacon frankfurter filet mignon short ribs. Pork belly rump short loin bresaola hamburger, boudin fatback capicola doner biltong pig meatball tenderloin porchetta.</p>
+    <p>{{ 'EXPLOREPAGE.STATE_SYMBOLS.P' | translate }}  <a href="http://texasalmanac.com/topics/flags-symbols">Texas Almanac</a></p>
     </div>
-    <div class="row border">
-        <div class="question col-sm-6 col-md-6">
-        <h4 class="question__title">State Bird</h4>
-        <div class="question__droplet">
-        <img src="images/droplet-explore.png" class="question__droplet__img pull-left">
-        <span class="question__droplet__num">1</span> 
-        </div>
-    <h5 class="question__sub-title">Mockingbird</h5>
-    <p>Cow drumstick short ribs, shoulder tongue spare ribs beef ribs sirloin jerky boudin pig. Hamburger cow venison, sausage ribeye ball tip pork filet mignon turducken shoulder fatback ham hock. Biltong shoulder chuck pig t-bone tri-tip bresaola brisket prosciutto boudin. Chicken turkey hamburger sausage porchetta biltong brisket cow beef ribs chuck ground round tail frankfurter. Turkey sirloin pork loin tri-tip kevin spare ribs, strip steak cow tenderloin pork shankle.</p>
-
-    <h6 class="question__sub-question">Question about the monument goes here?</h6>
-    <ul>
-        <li><a href="" ng-click="page='wrong'">Wrong</a></li>
-        <li><a href="" ng-click="page='correct'">Correct</a></li>
-        <li><a href="" ng-click="page='wrong'">Wrong</a></li>
-    </ul>
-    </div>
-    <div class="col-sm-6 col-md-6">
-        <div ng-switch on="page">
-            <div ng-switch-when="correct" class="slider">
-                <div class="circle-answer circle-answer--correct text-center">
-                    <strong class="circle-answer__title">Correct!</strong>
-                    <p class="circle-answer__answer">More information about the answer goes here. More information about the answer goes here. More information about the answer.</p>
-                    <a href="" ng-click="page=''" class="circle-answer__button">close</a>
-                </div>
-            </div>
-            <div ng-switch-when="wrong" class="slider">
-                <div class="circle-answer circle-answer--wrong text-center">
-                    <strong class="circle-answer__title">Wrong!</strong>
-                    <p class="circle-answer__answer">More information about the answer goes here. More information about the answer goes here. More information about the answer.</p>
-                    <a href="#/explore/capitol-monuments-statues" class="circle-answer__button">close</a>
-                </div>
-            </div>
-            <div ng-switch-default class="slider">
-                <img src="images/mocking-bird.png" class="pull-left img-responsive"> 
-            </div>
-        </div>
-    </div>
-
-    </div> <!-- row -->
-
-    <div class="row border">
-    <div class="col-sm-6 col-md-6">
-    <img src="images/bluebonnet.png" class="pull-left img-responsive">
-    </div>
-    <div class="question col-sm-6 col-md-6">
-    <h4 class="question__title">State Flower</h4>
-    <div class="question__droplet">
-    <img src="images/droplet-explore.png" class="question__droplet__img pull-left">
-    <span class="question__droplet__num">2</span> 
-    </div>
-    <h5 class="question__sub-title">Bluebonnet</h5>
-    <p>Cow drumstick short ribs, shoulder tongue spare ribs beef ribs sirloin jerky boudin pig. Hamburger cow venison, sausage ribeye ball tip pork filet mignon turducken shoulder fatback ham hock. Biltong shoulder chuck pig t-bone tri-tip bresaola brisket prosciutto boudin. Chicken turkey hamburger sausage porchetta biltong brisket cow beef ribs chuck ground round tail frankfurter. Turkey sirloin pork loin tri-tip kevin spare ribs, strip steak cow tenderloin pork shankle.</p>
-
-    <h6 class="question__sub-question">Question about the monument goes here?</h6>
-    <ul>
-      <li>answer 1 goes here</li>
-      <li>answer 2 here</li>
-      <li>answer 3 goes here</li>
-    </ul>
+    <div class="row border" ui-view="sub">
+      <div ng-controller="SliderSymbolsCtrl">
+       <div hs-slider-symbols></div>
+      </div>
     </div>
 </div>
-
-        
-

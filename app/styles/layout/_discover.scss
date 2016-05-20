@@ -12,11 +12,13 @@ h3{
   color: $main;
   }
   .border{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
     border: 5px $discover-color;
     border-bottom-style: dotted;
   }
   ul li{
-    padding-left: 15px;
+    //padding-left: 15px;
   }
   ul li a:hover{
     color: $pink;
@@ -29,5 +31,15 @@ h3{
     padding: 10px;
     width: 150px;
     height: 150px;
+  }
+}
+#myFlagCarousel {
+  .carousel-indicators {
+  bottom: 100px;
+  }
+  .carousel-inner{
+    p{
+      height: 100px;
+    }
   }
 }

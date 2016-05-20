@@ -1,50 +1,8 @@
 <div class="main row" id="explore">
     <h3>EXPLORE THE CITY OF AUSTIN</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-    <div class="col-sm-3 col-md-3">
-
-    <ul>
-        <li>Barton Spring</li>
-        <li>360 Bridge</li>
-        <li>Congress Avenue Bridge</li>
-        <li>Downtown Skyline</li>
-        <li>Lake Austin</li>
-        <li>Trail</li>
-        <li>Lady Bird Wildflower Center</li>
-        <li>LBJ Library</li>
-        <li>Bullock Museum</li>
-        <li>Mt. Bonnell</li>
-    </ul>
-    </div>
-    <div class="col-sm-9 col-md-9">
-  <div class="center">
-    <div ng-controller="SlideCtrl">
-    <div class="image-slider">
-      <img ng-repeat="slide in slides" class="image-slide"
-            ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
-        <a class="arrow prev" href="#{{ location.path() }}" ng-click="nextSlide()"></a>
-        <a class="arrow next" href="#{{ location.path() }}" ng-click="prevSlide()"></a>
-        <nav class="slider-nav">
-          <div class="slider-wrapper">
-            <ul class="dots">
-              <li class="dot" ng-repeat="slide in slides">
-              <a href="#{{ location.path() }}" ng-class="{'active':isCurrentSlideIndex($index)}"
-                    ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
-            </ul>
-          </div>
-        </nav>
-    </div>
-    </div>
-  </div><!-- Center-->
-  <p>Location &amp; description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.  </p>
+    <div class="col-sm-12 col-md-12">
+      <div ng-controller="ExploreAustinCtrl">
+      <div hs-image-slider-austin></div>
+      </div>
     </div>
 </div>
-
-        
-

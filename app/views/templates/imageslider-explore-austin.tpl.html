@@ -1,0 +1,47 @@
+
+<div id="myAustinCarousel" class="carousel slide" data-ride="carousel" data-interval="true">
+
+<!-- <ul class="carousel-indicator">
+<li data-slide-to="0" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">360 Bridge</li>
+<li data-slide-to="1" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Barton Spring</li>
+<li data-slide-to="2" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Congress Avenue Bridge</li>
+<li data-slide-to="3" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Bullock Museum</li>
+<li data-slide-to="4" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Downtown Skyline</li>
+<li data-slide-to="5" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Texas Governor's Mansion</li>
+<li data-slide-to="6" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">LBJ Library</li>
+<li data-slide-to="7" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Mt. Bonnell</li>
+<li data-slide-to="8" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Lady Bird Lake</li>
+<li data-slide-to="9" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Texas Capitol Visitors Center</li>
+<li data-slide-to="10" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Lady Bird Wildflower Center</li>
+</ul> -->
+<ol class="carousel-indicator">
+  <li class="{{ slide.class }}" data-ng-repeat="slide in slides" data-target="#myAustinCarousel" data-slide-to="{{$index}}">{{slide.title | translate }}</li>
+</ol>
+
+<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+  <div class="item {{ slide.class }}" data-ng-repeat="slide in slides">
+    <h4>{{slide.title | translate }}</h4>
+    <p> {{slide.description | translate }} </p>
+      <div id="subCarousel{{ $index }}" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" role="listbox">
+        <div data-ng-repeat="images in slide.images" class="item {{ images.class }}">
+              <img ng-src="{{ images.image }}" class="img-responsive">
+              <p>{{slide.title | translate }}</p>
+        </div>
+        <span class="carousel-control left" href="#subCarousel{{ $index }}" role="button" data-slide="prev">
+          <span class="arrow prev" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </span>
+        <span class="carousel-control right" href="#subCarousel{{ $index }}" role="button" data-slide="next">
+          <span class="arrow next" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </span>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+</div>

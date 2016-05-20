@@ -1,171 +1,160 @@
 
-.circle{
-    width:200px;
-    height:200px;
-    border-radius:50%;
-
-    
-    div{
-      padding-left: 20px;
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: $main;
+  margin: 20px;
+  padding: 10px;
+  @media only screen and (max-width: 980px) {
+    display: none;
+  }
+  div {
+    padding-left: 20px;
+  }
+  /*  Click HERE  */
+  &__action {
+    padding-top: 30px;
+    a{
+      color: $main;
     }
-        /*  Click HERE  */
-    &__action{
-        padding-top: 30px;
-        color: #FFF;
-      }
-      /*  to learn more  */
-    &__sub{
-        margin-left: 20px;
-        font-size: .8em;
-      }
-     /*  about th  */
-    &__sub2{
-        line-height: 5px;
-        font-size: .8em;
-      }
-      /*  Executive  */
-    &__title{
-        font-family: Georgia, serif;
-        font-size: 1.8em;
-        color: $main;
-        
-        margin-top: -10px;
-        &--texas{
-          color: $aqua-light;
-          margin-left: 35px;
-          padding-top: 10px;
-        }
-        &--exec{
-          color: $discover-color;
-          margin-left: -25px;
-        }
-      }
-      /*  Branch  */
-    &__title-sub{
-        font-family: 'Lora', serif;
-        color: #FFF;
-        font-size: 2em;
-        padding-left: 30px;
-        margin-top: -18px;
-      }
-      /*  !  */
-    &__exclamation{ 
-        color: $discover-color;
-        font-family: 'Lora', serif;
-        font-size: 3.4em;
-        line-height: 10px;
-        padding-left: 140px;
-        margin-top: -44px;
-        margin-left: 125px;
-      }
-    &--branch{
-      background-color: $green;
+  }
+  /*  to learn more  */
+  &__sub {
+    margin-left: 20px;
+    font-size: 0.7em;
+    color: $circle-sub-text;
+  }
+  /*  about th  */
+  &__sub2 {
+    line-height: 5px;
+    font-size: 0.7em;
+    color: $circle-sub-text;
+  }
+  /*  Executive  */
+  &__title {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    margin-top: -10px;
+    &--texas {
+      color: $green;
+      margin-left: 35px;
+      padding-top: 10px;
     }
-    &--senate{
-      background-color: $aqua;
+    &--exec {
+      color: $discover-color;
+      margin-left: -25px;
     }
-    &__play{ 
-        color: $discover-color;
-        font-size: 2em;
-        margin-left: 40px;
-        margin-top: -10px;
-      }
-    .chamber{
-        font-size: 2em;
-        color: #FFF;
-        margin-top: -20px;   
-      }
+  }
+  /*  Branch  */
+  &__title-sub {
+    font-family: 'Lora', serif;
+    font-size: 1.6em;
+    padding-left: 30px;
+    margin-top: -18px;
+  }
+  /*  !  */
+  &__exclamation {
+    color: $discover-color;
+    font-family: 'Lora', serif;
+    font-size: 2.8em;
+    line-height: 10px;
+    padding-left: 140px;
+    margin-top: -44px;
+    margin-left: 110px;
+  }
+  &--branch {
+    background-color: $green;
+  }
+  &--senate {
+    background-color: $aqua;
+  }
+  &__play {
+    color: $discover-color;
+    font-size: 1.6em;
+    margin-left: 40px;
+    margin-top: -10px;
+  }
+  .chamber {
+    font-size: 1.8em;
+    color: #FFF;
+    margin-top: -20px;
+  }
 }
-
-.circle-click-on{
-    color:$main;
-    width:200px;
-    height:200px;
-    border-radius:50%;
-    border-color: #main;
-    border-style: solid;
-    margin-left: -70px;
-    position: absolute;
-    top:0;
-    right: 20px;
-
-    div{
-      padding: 30px 0 0 0px;
-    }
-    span{
-      padding: 0 0 0 80px;
-      i{
-        font-size: 2em;
-      }
-    }
+.circle-click-on {
+  color: $main;
+  background-color: $green;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-color: $main;
+  border-style: solid;
+  margin-left: -70px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  div {
+    padding: 30px 0 0;
   }
-.circle-answer{
-    color:$main;
-    width:380px;
-    height:380px;
-    border-radius:50%;
-    border-color: #main;
-    border-style: solid;
-    padding: 25px;
-    &__title{
-      font-size: 1.5em;
-      padding: 30px 0 0 0;
-      //margin: 20px 0 0 0;
+  span i {
+      font-size: 1.8em;
     }
-    &__answer{
-      padding: 30px 0 0 0;
-      font-size: .9em;
-    }
-    &--correct{
-      background-color: $aqua;
-    }
-    &--wrong{
-      background-color: $pink;
-    }
-    // &--wrong{
-    //   background-color: $aqua;
-    // }
-  }
 
+}
+.circle-container{
+  //margin-top: -40px;
+  //padding-left: 80px;
+}
+.circle-answer {
+  color: $main;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-color: #main;
+  border-style: solid;
+  padding: 20px 5px 5px 5px;
+  &__title {
+    font-size: .8em;
+    padding: 10px;
+    //margin: 20px 0 0 0;
+  }
+  &--correct {
+    background-color: $aqua;
+  }
+  &--wrong {
+    background-color: $pink;
+  }
+  // &--wrong{
+  //   background-color: $aqua;
+  // }
+}
 .slider {
-    position: absolute;
+  position: absolute;
 }
 .slider.ng-enter,
 .slider.ng-leave {
-    transition: all 2s ease;
-
+  transition: all 1s ease;
 }
 .slider.ng-enter {
-    left: 100%;
-    opacity: 0;
+  //bottom: 0;
+  opacity: 0;
 }
 .slider.ng-enter-active {
-    left: 0;
-    opacity: 1;
+  //bottom: 0;
+  opacity: 1;
 }
 .slider.ng-leave {
-    left: 0;
-    opacity: 1;
+  //bottom: 0;
+  opacity: 1;
 }
 .slider.ng-leave-active {
-    left: 100%;
-    opacity: 0;
+  //bottom: 0;
+  opacity: 0;
 }
 .slider.enable-animation.ng-leave.ng-leave-active {
-    //left: 100%;
-    //opacity: 0;
+  //left: 100%;
+  //opacity: 0;
 }
-
-// slider pull-right ng-scope ng-animate ng-enter ng-enter-active
-// slider pull-right ng-scope ng-animate ng-leave ng-leave-active
-
 @media only screen and (max-width: 680px) {
-    .circle-correct{
-    width: 200px;
-    height: 200px;
-    padding: 15px;
-    strong, p{
-      font-size: .6em;
-    }
-  }
+
 }

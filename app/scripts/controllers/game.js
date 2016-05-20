@@ -30,13 +30,13 @@ function makeDeck(tileNames) {
 
 
 function makeGrid(tileDeck) {
-  var gridDimension = Math.sqrt(tileDeck.length),
-  //var gridDimension = 2,
-    grid = [];
+  //var gridDimension = Math.sqrt(tileDeck.length),
+  //var gridDimension = 4,
+    var grid = [];
 
-  for (var row = 0; row < gridDimension; row++) {
+  for (var row = 0; row < 2; row++) {
     grid[row] = [];
-    for (var col = 0; col < gridDimension; col++) {
+    for (var col = 0; col < 8; col++) {
       grid[row][col] = removeRandomTile(tileDeck);
     }
   }

@@ -1,0 +1,25 @@
+<div id="myCapitolCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+  <li data-ng-repeat="slide in slides" data-target="#myCapitolCarousel" data-slide-to="{{$index}}"></li>
+</ol>
+
+<!-- Wrapper for slides -->
+<h4>{{slide.title | translate }}</h4>
+<div class="carousel-inner" role="listbox">
+  <div class="item {{ slide.class }}" data-ng-repeat="slide in slides">
+    <img class="img-responsive" data-ng-src="{{slide.image}}" alt="{slide.title | translate }">
+    <p class="image-caption"> {{slide.description | translate }} </p>
+
+  </div>
+</div>
+    <!-- Left and right controls -->
+    <span class="carousel-control left" href="#myCapitolCarousel" role="button" data-slide="prev">
+      <span class="arrow prev" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </span>
+    <span class="carousel-control right" href="#myCapitolCarousel" role="button" data-slide="next">
+      <span class="arrow next" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </span>
+  </div>

@@ -7,9 +7,6 @@ var Game;
 
 memoryGameApp.factory('game', function() {
 
-  // var tileNames = ['marlin', 'tarpon', 'goldfish', 'guadalupebass', 'capitol', 'flag',
-  //    'armadillo', 'bluebonnet'];
-
  var tileNames = ['capitol', 'flag', 'armadillo', 'bluebonnet', 'monarch', 'mockingbird', 'paperscroll', 'podium'];
 
   return new Game(tileNames);
@@ -34,7 +31,7 @@ memoryGameApp.directive('mgCard', function() {
     // index.html
     template: '<div class="container">' +
                 '<div class="card" ng-class="{flipped: tile.flipped}">' +
-                  '<img class="front" ng-src="img/back.png">' +
+                  '<img class="front" ng-src="img/card-back.png">' +
                   '<img class="back" ng-src="img/{{tile.title}}.png">' +
                 '</div>' +
               '</div>',

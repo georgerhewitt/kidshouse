@@ -5,14 +5,15 @@
 // }
 
 .flip-card-container {
-  width: 165px;
-  height: 200px;
+  width: 100px;
+  height: 150px;
   position: relative;
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
   -ms-perspective: 800px;
   -o-perspective: 800px;
   perspective: 800px;
+  border-color: #333;
 }
 
 .card {

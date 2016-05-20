@@ -1,0 +1,48 @@
+<div class="question col-sm-8 col-md-6 col-lg-8" data-ng-repeat="slide in slides">
+    <h4 class="question__title">Start Here <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></h4>
+    <div class="question__droplet">
+    <img src="images/droplet-explore.png" class="question__droplet__img pull-left">
+    <span class="question__droplet__num">1</span>
+    </div>
+
+<h5 class="question__sub-title">{{ slide.title | translate }}</h5>
+<p>{{ slide.p | translate }}</p>
+
+<h6 class="question__sub-question">{{ slide.question | translate }}</h6>
+<ul>
+    <li><a href="" ng-click="page='wrong'">{{ slide.wrong | translate }}</a></li>
+    <li><a href="" ng-click="page='correct'">{{ slide.answer | translate }}</a></li>
+    <li><a href="" ng-click="page='wrong2'">{{ slide.wrong1 | translate }}</a></li>
+</ul>
+
+<h4 class="question__title pull-right">Next <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></h4>
+</div>
+<div class="circle-container col-sm-4 col-md-4 col-lg-4">
+    <div ng-switch on="page">
+        <div ng-switch-when="correct" class="slider">
+            <div class="circle-answer circle-answer--correct text-center">
+                <strong class="circle-answer__title">Correct!</strong>
+                <p class="circle-answer__answer">More information about the answer goes here. More information about the answer goes here. More information about the answer.</p>
+                <a href="" ng-click="page=''" class="circle-answer__button">close</a>
+            </div>
+        </div>
+        <div ng-switch-when="wrong" class="slider">
+            <div class="circle-answer circle-answer--wrong text-center">
+                <strong class="circle-answer__title">Wrong!</strong>
+                <p class="circle-answer__answer">More information about the answer goes here. More information about the answer goes here. More information about the answer.</p>
+                <a href="#/explore/capitol-monuments-statues" class="circle-answer__button">close</a>
+            </div>
+        </div>
+        <div ng-switch-when="wrong2" class="slider">
+            <div class="circle-answer circle-answer--wrong text-center">
+                <strong class="circle-answer__title">Wrong!</strong>
+                <p class="circle-answer__answer">2More information about the answer goes here. More information about the answer goes here. More information about the answer.</p>
+                <a href="#/explore/capitol-monuments-statues" class="circle-answer__button">close</a>
+            </div>
+        </div>
+        <div ng-switch-default class="slider">
+            <img src="images/explore-tejano-monument.png" class="pull-left img-responsive">
+        </div>
+    </div>
+</div>
+</div>

@@ -1,21 +1,55 @@
 .question{
+  height: 400px;
 
     &__title{
-    }
-    &__droplet{
-
-        &__img{
-
-        }
-        &__num{
-            margin: 10px 0 0 -55px;
-            font-size: 3.0em;
-            font-family: 'Lora', serif;
-            color: $explore-color;
-            font-style: bold;
-        }
+    font-weight: bolder;
     }
     &__sub-title{
-    margin-top: -70px;
+    font-style: italic;
+    }
+    &__question{
+    font-style: italic;
+    }
+    &__pop{
+    }
+    &__answer{
+      display: block;
+      font-size: .8em;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      position: relative;
+      label{
+        cursor: pointer;
+        font-weight: normal;
+        margin-bottom: 0;
+        min-height: 20px;
+        padding-left: 10px;
+      }
+    }
+    &__answer--wrong{
+       input[type=radio]:checked + label{
+        text-decoration: line-through;
+        color: $discover-color;
+      }
+    }
+    &__answer--correct{
+       input[type=radio]:checked + label{
+        color: $explore-color;
+      }
+    }
+    &__left{
+      padding-top: 30px;
+      :hover{
+        cursor: pointer;
+      }
+    }
+    &__right{
+      padding-top: 30px;
+      :hover{
+        cursor: pointer;
+      }
+    }
+    &__nav{
+      padding: 40px 0 40px 0;
     }
 }

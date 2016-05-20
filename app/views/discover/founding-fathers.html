@@ -1,70 +1,27 @@
 <div class="main row" id="discover">
-    <div class="col-md-12">
-    <h3>DISCOVER THE FOUNDING FATHERS</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    <section class="col-sm-6 pull-left">
-    <div class="founding">
-    <img src="images/sam-houston.jpg" class="img-responsive">
-    <p>Sam Houston</p>
+
+  <h3>{{ 'DISCOVERPAGE.FOUNDING_FATHERS.PAGETITLE' | translate }}</h3>
+
+  <div class="col-md-12">
+
+    <div class="col-md-2 pull-left">
+      <img src="images/sam-houston.jpg" class="img-responsive">
+      <p class="image-caption">{{ 'DISCOVERPAGE.FOUNDING_FATHERS.IMAGE1' | translate }}</p>
     </div>
-    <div class="founding">
-    <img src="images/stephen-f-austin.jpg" class="img-responsive">
-    <p>Stephen F. Austin</p>
+    <div class="col-md-2 pull-left">
+      <img src="images/stephen-f-austin.jpg" class="img-responsive">
+      <p class="image-caption">{{ 'DISCOVERPAGE.FOUNDING_FATHERS.IMAGE2' | translate }}</p>
     </div>
-    </section>
+    <p>{{ 'DISCOVERPAGE.FOUNDING_FATHERS.P1' | translate }}</p>
+    <p>{{ 'DISCOVERPAGE.FOUNDING_FATHERS.P2' | translate }}</p>
+  </div>
+
+  <!-- <div class="col-md-12">
+    <h4>{{ 'DISCOVERPAGE.FOUNDING_FATHERS.QUESTION' | translate }}</h4>
     <ul>
-        <li><a href="#/discover/texas-state-government">TEXAS STATE GOVERNMENT</a></li>
-        <li><a href="#/discover/house-of-representatives">TEXAS HOUSE OF REPRESENTATIVES</a></li>
-        <li><a href="#/discover/how-a-bill-becomes-law">HOW A BILL BECOMES</br > A LAW</a></li>
-        <li><a href="#/discover/founding-fathers">FOUNDING FATHERS</a></li>
-        <li><a href="#/discover/six-flag-of-texas">SIX FLAGS OF TEXAS</a></li>
+      <li>{{ 'DISCOVERPAGE.FOUNDING_FATHERS.TRUE' | translate }}</li>
+      <li>{{ 'DISCOVERPAGE.FOUNDING_FATHERS.FALSE' | translate }}</li>
     </ul>
-
-    </div>
-
-    <div class="row border">
-
-    <div class="col-md-8 col-sm-8 col-xs-8">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <h5>Question about the Founding Fathers?</h5>
-    <ul>
-        <li><a href="" ng-click="page='wrong'">Wrong</a></li>
-        <li><a href="" ng-click="page='correct'">Correct</a></li>
-        <li><a href="" ng-click="page='wrong'">Wrong</a></li>
-    </ul>
-    
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-4">
-       <div ng-switch on="page">
-            <div ng-switch-when="correct" class="slider">
-                <div class="circle-answer circle-answer--correct text-center">
-                    <strong class="circle-answer__title">Correct!</strong>
-                    <p class="circle-answer__answer">More information about the answer goes here. More information about the answer goes here. More information about the answer.</p>
-                    <a href="" ng-click="page=''" class="circle-answer__button">close</a>
-                </div>
-            </div>
-            <div ng-switch-when="wrong" class="slider">
-                <div class="circle-answer circle-answer--wrong text-center">
-                    <strong class="circle-answer__title">Wrong!</strong>
-                    <p class="circle-answer__answer">More information about the answer goes here. More information about the answer goes here. More information about the answer.</p>
-                    <a href="#/explore/capitol-monuments-statues" class="circle-answer__button">close</a>
-                </div>
-            </div>
-            <div ng-switch-default class="slider">
-                <img src="images/explore-tejano-monument.png" class="pull-left img-responsive"> 
-            </div>
-        </div>
-    
-    </div>
-</div> <!-- discover -->
-
-        
-
+    </div> -->
+</div>
+<!-- discover -->

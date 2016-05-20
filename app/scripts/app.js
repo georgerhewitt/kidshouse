@@ -4,7 +4,7 @@
  *
  * Main module of the application.
  */
-var kidshouse = angular
+angular
   .module('kidshouse', [
     'ngAnimate',
     'ngCookies',
@@ -14,8 +14,13 @@ var kidshouse = angular
     'ngTouch',
     'ui.router',
     'cgBusy',
+    'slider',
+    'hsImageSlider', // images-slider.js
     'memoryGameApp',  //flip-cards.js
-    'wordSearchPuzzle'   // word-search-puzzle.js
+    'wordSearchPuzzle',
+    'translateApp',   // word-search-puzzle.js
+    'hsSliderMouments',
+    'hsSliderSymbols'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
 
@@ -26,7 +31,26 @@ var kidshouse = angular
           url: '/',
           templateUrl: 'views/home.html'
         })
-
+        .state('glossary', {
+        url: '/glossary',
+        name: 'glossary',
+        templateUrl: 'views/glossary.html'
+        })
+        .state('get-involved', {
+        url: '/get-involved',
+        name: 'get-involved',
+        templateUrl: 'views/get-involved.html'
+        })
+        .state('resources', {
+        url: '/resources',
+        name: 'resources',
+        templateUrl: 'views/resources.html'
+        })
+        .state('site-map', {
+        url: '/site-map',
+        name: 'site-map',
+        templateUrl: 'views/site-map.html'
+        })
         // discover section
         .state('discover', {
         url: '/discover/',
@@ -56,6 +80,11 @@ var kidshouse = angular
         url: '/discover/house-of-representatives',
         name: 'houseofrepresentatives',
         templateUrl : 'views/discover/house-of-representatives.html'
+        })
+        .state('senate', {
+        url: '/discover/senate',
+        name: 'senate',
+        templateUrl : 'views/discover/senate.html'
         })
         .state('texas-state-government', {
         url: '/discover/texas-state-government',
@@ -107,12 +136,12 @@ var kidshouse = angular
           name: 'texas-capitol',
           templateUrl : 'views/explore/texas-capitol.html'
         })
-        .state('texas-capitol.dome', {
-            url: '/dome',
-            name: 'texas-capitoldome',
+        .state('texas-capitol.rotunda', {
+            url: '/rotunda',
+            name: 'texas-capitolrotunda',
               views :{
                   'sub' : {
-                    templateUrl: 'views/explore/partials/dome.html'
+                    templateUrl: 'views/explore/partials/rotunda.html'
                   }
               }
         })
@@ -134,21 +163,21 @@ var kidshouse = angular
                   }
               }
         })
-        .state('texas-capitol.main', {
-            url: '/main',
-            name: 'texas-capitolmain',
+        .state('texas-capitol.capitol', {
+            url: '/capitol',
+            name: 'texas-capitolcapitol',
               views :{
                   'sub' : {
-                    templateUrl: 'views/explore/partials/main.html'
+                    templateUrl: 'views/explore/partials/capitol.html'
                   }
               }
         })
-        .state('texas-capitol.top', {
-            url: '/top',
-            name: 'texas-capitoltop',
+        .state('texas-capitol.goddess', {
+            url: '/goddess',
+            name: 'texas-capitolgoddess',
               views :{
                   'sub' : {
-                    templateUrl: 'views/explore/partials/top.html'
+                    templateUrl: 'views/explore/partials/goddess.html'
                   }
               }
         })
@@ -162,19 +191,74 @@ var kidshouse = angular
           name: 'capitol-monuments-statues',
           templateUrl : 'views/explore/capitol-monuments-statues.html'
         })
-        .state('capitol-monuments-statues.sub', {
-            url: '/sub',
-            name: 'capitol-monuments-statuessub',
+        .state('capitol-monuments-statues.tejano', {
+            url: '/tejano',
+            name: 'capitol-monuments-statuestejano',
               views :{
                   'sub' : {
-                    templateUrl: 'views/explore/partials/sub.html'
+                    templateUrl: 'views/explore/partials/monuments/tejano.html'
                   }
               }
+        })
+        .state('capitol-monuments-statues.texascowboy', {
+            url: '/texascowboy',
+            name: 'capitol-monuments-statuestexascowboy',
+              views :{
+                  'sub' : {
+                    templateUrl: 'views/explore/partials/monuments/texascowboy.html'
+                  }
+              }
+        })
+        .state('capitol-monuments-statues.volunteerfiremen', {
+            url: '/volunteerfiremen',
+            name: 'capitol-monuments-statuesvolunteerfiremen',
+              views :{
+                  'sub' : {
+                    templateUrl: 'views/explore/partials/monuments/volunteerfiremen.html'
+                  }
+              }
+        })
+        .state('capitol-monuments-statues.confederatesoldiers', {
+            url: '/confederatesoldiers',
+            name: 'capitol-monuments-statuesconfederatesoldiers',
+              views :{
+                  'sub' : {
+                    templateUrl: 'views/explore/partials/monuments/confederatesoldiers.html'
+                  }
+              }
+        })
+        .state('capitol-monuments-statues.texasrangers', {
+            url: '/texasrangers',
+            name: 'capitol-monuments-statuestexasrangers',
+              views :{
+                  'sub' : {
+                    templateUrl: 'views/explore/partials/monuments/texasrangers.html'
+                  }
+              }
+        })
+        .state('capitol-monuments-statues.liberty', {
+            url: '/liberty',
+            name: 'capitol-monuments-statuesliberty',
+              views :{
+                  'sub' : {
+                    templateUrl: 'views/explore/partials/monuments/liberty.html'
+                  }
+              }
+        })
+        .state('rotunda', {
+          url: '/explore/rotunda',
+          name: 'rotunda',
+          templateUrl : 'views/explore/rotunda.html'
         })
         .state('state-seal', {
           url: '/explore/state-seal',
           name: 'state-seal',
           templateUrl : 'views/explore/state-seal.html'
+        })
+        .state('state-flag', {
+          url: '/explore/state-flag',
+          name: 'state-flag',
+          templateUrl : 'views/explore/state-flag.html'
         })
         .state('state-symbols', {
           url: '/explore/state-symbols',

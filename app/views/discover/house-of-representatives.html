@@ -1,66 +1,45 @@
     <div class="main row" id="discover">
-    <h3>DISCOVER THE TEXAS HOUSE OF REPRESENTATIVES</h3>
+    <h3>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.PAGETITLE' | translate }}</h3>
     <div class="row">
 
-    <p>Bacon ipsum dolor sit amet sausage t-bone turducken, bresaola jowl andouille ham shank kielbasa drumstick meatloaf. Doner jowl sausage hamburger shankle. Ham hock rump pastrami ground round fatback.</p>
+    <p>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.TITLE' | translate }}</p>
 
-    <div class="col-md-4">
+    <div class="col-md-6">
         <ul>
-          <li>Cow drumstick</li>
-          <li>sausage ribeye ball 1</li>
+          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM1' | translate }}</li>
+          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM2' | translate }}</li>
         </ul>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <ul>
-          <li>Cow drumstick</li>
-          <li>sausage ribeye ball 2</li>
+          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM3' | translate }}</li>
+          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM4' | translate }}</li>
+          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM5' | translate }}</li>
         </ul>
     </div>
-    <div class="col-md-4">
-        <ul>
-          <li>Cow drumstick</li>
-          <li>sausage ribeye ball 3</li>
-        </ul>
-    </div>
-    <div class="col-lg-9 col-md-12 col-sm-12">
-  <div class="center">
-    <div ng-controller="SlideCtrl">
-    <div class="image-slider">
-      <img ng-repeat="slide in slides" class="image-slide"
-            ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
-        <a class="arrow prev" href="#{{ location.path() }}" ng-click="nextSlide()"></a>
-        <a class="arrow next" href="#{{ location.path() }}" ng-click="prevSlide()"></a>
-        <nav class="slider-nav">
-          <div class="slider-wrapper">
-            <ul class="dots">
-              <li class="dot" ng-repeat="slide in slides">
-              <a href="#{{ location.path() }}" ng-class="{'active':isCurrentSlideIndex($index)}"
-                    ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
-            </ul>
-          </div>
-        </nav>
-    </div>
+    <div class="col-sm-12 col-md-12 col-lg-9">
+  <div>
+    <div ng-controller="SliderHouseCtrl">
+     <div hs-slider-house></div>
     </div>
   </div>
     </div>
-    <div class="col-lg-2 col-md-10 col-sm-10">
-    <p  class="image-caption"><em>Bacon ipsum dolor sit amet sausage t-bone turducken, bresaola jowl andouille ham shank kielbasa drumstick meatloaf.</em></p>
+    <div class="col-sm-10 col-md-10 col-lg-2">
+    <p  class="image-caption"><em></em></p>
     <div class="circle circle--branch">
       <div>
-        <div class="circle__action">Click HERE</div>
-        <div class="circle__sub">to explore the</div>
-        <div class="circle__title circle__title--exec">House</div> 
-        <div class="circle__title">Chamber</div>
+        <div class="circle__action"><a href="http://www.house.texas.gov">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.TITLE' | translate }}</a></div>
+        <div class="circle__sub">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.ITEM1' | translate }}</div>
+        <div class="circle__title circle__title--exec">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.ITEM2' | translate }}</div>
+        <div class="circle__title">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.ITEM3' | translate }}</div>
         <div class="circle__play"><i class="glyphicon glyphicon-play"></i></div>
       </div>
     </div>
 
+  </div>
   </div>
 
     </div>
 
     </div> <!-- row -->
 </div> <!-- discover -->
-
-        
-

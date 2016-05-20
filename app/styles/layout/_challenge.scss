@@ -1,18 +1,21 @@
 #challenge {
-h3{
-  color: $blue-dark;
+  h3 {
+    color : $blue-dark;
   }
-  h4{
-  color: $start-color;
+  h4 {
+    color : $start-color;
   }
-  h5{
-  color: $blue-dark;
+  h5 {
+    color : $blue-dark;
   }
-  h6{
-  color: $start-color;
+  h6 {
+    color : $start-color;
   }
-  .border{
-    border: 5px $blue-dark;
-    border-bottom-style: dotted;
+  .border {
+    border              : 5px $blue-dark;
+    border-bottom-style : dotted;
+  }
+  .items {
+    list-style-type : none;
   }
 }

@@ -7,3 +7,5 @@ app/scripts/controllers/granicus.js
 app/scripts/controllers/granicusapi.js
 app/scripts/controllers/houseapi.js
 app/images
+app/i8n
+.tern-project
