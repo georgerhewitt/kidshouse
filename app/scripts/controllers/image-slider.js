@@ -26,10 +26,10 @@ hsImageSlider.directive('hsSliderFlags', function(){
 //state-seal
 hsImageSlider.controller('StateSealCtrl', ['$scope', function ($scope) {
     $scope.slides = [
-        {image: 'images/explore/stateseal/seal1.jpg', title: '', description: '', class: 'active'},
-        {image: 'images/explore/stateseal/seal2.jpg', title: '', description: '', class: ''},
-        {image: 'images/explore/stateseal/seal3.jpg', title: '', description: '', class: ''},
-        {image: 'images/explore/stateseal/seal4.jpg', title: '', description: '', class: ''}
+        {image: 'images/explore/stateseal/seal1.jpg', title: '', description: 'Members Lounge', class: 'active'},
+        {image: 'images/explore/stateseal/seal2.jpg', title: '', description: 'Outdoor Rotunda', class: ''},
+        {image: 'images/explore/stateseal/seal3.jpg', title: '', description: 'Capitol Gate', class: ''},
+        {image: 'images/explore/stateseal/seal4.jpg', title: '', description: 'House Chamber', class: ''}
     ];
   }]);
    // page slider 812x392
@@ -40,7 +40,7 @@ hsImageSlider.directive('hsStateSealSlider', function(){
         index: '@'
       },
       controller: 'StateSealCtrl',
-       templateUrl: 'views/templates/imageslider.tpl.html'
+       templateUrl: 'views/templates/imagesliderseal.tpl.html'
     };
 
   });
@@ -48,10 +48,9 @@ hsImageSlider.directive('hsStateSealSlider', function(){
 hsImageSlider.controller('SliderHouseCtrl', ['$scope', function($scope){
   $scope.slides =[
     {image: 'images/discover/slides/house-of-reps.jpg', title: '', description: 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.IMAGES.IMAGE', class: 'active'},
-    // {image: 'images/discover/slides/house-of-reps1.jpg', title: 'Title Description Needed', description: 'Description Needed', class: ''},
-    // {image: 'images/discover/slides/house-of-reps2.jpg', title: 'Title  Description Needed', description: 'Description Needed', class: ''},
-    {image: 'images/discover/slides/house-of-reps3.jpg', title: '', description: 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.IMAGES.IMAGE3', class: ''},
-    // {image: 'images/discover/slides/house-of-reps4.jpg', title: 'Title Description Needed', description: 'Description Needed', class: ''},
+    {image: 'images/discover/slides/house-of-reps1.jpg', title: '', description: 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.IMAGES.IMAGE1', class: ''},
+    {image: 'images/discover/slides/house-of-reps2.jpg', title: '', description: 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.IMAGES.IMAGE2', class: ''},
+    {image: 'images/discover/slides/house-of-reps4.jpg', title: '', description: 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.IMAGES.IMAGE4', class: ''},
     {image: 'images/discover/slides/house-of-reps5.jpg', title: '', description: 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.IMAGES.IMAGE5', class: ''}
   ];
 }]);
@@ -74,7 +73,7 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
     { title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE1', description: 'EXPLOREPAGE.CITY_AUSTIN.P1', class: 'active',
     'images':[
       {image: 'images/explore/city-austin/austin360bridge.jpg', class: 'active'},
-      {image: 'images/explore/city-austin/austinbartonsprings2.jpg', class: ''},
+      {image: 'images/explore/city-austin/photo-needed.jpg', class: ''}
     ]
     },
     {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE2', description: 'EXPLOREPAGE.CITY_AUSTIN.P2', class: '',
@@ -85,7 +84,8 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
     },
     {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE3', description: 'EXPLOREPAGE.CITY_AUSTIN.P3', class: '',
     'images':[
-      {image: 'images/explore/city-austin/austinbatbridge.jpg', class: 'active'}
+      {image: 'images/explore/city-austin/austinbatbridge.jpg', class: 'active'},
+      {image: 'images/explore/city-austin/photo-needed.jpg', class: ''}
     ]
     },
     {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE4', description: 'EXPLOREPAGE.CITY_AUSTIN.P4', class: '',
@@ -118,7 +118,8 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
     },
     {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE8', description: 'EXPLOREPAGE.CITY_AUSTIN.P8', class: '',
     'images':[
-      {image: 'images/explore/city-austin/austinmtbonnell.jpg', class: 'active'}
+      {image: 'images/explore/city-austin/austinmtbonnell.jpg', class: 'active'},
+      {image: 'images/explore/city-austin/photo-needed.jpg', class: ''}
     ]
     },
     {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE9', description: 'EXPLOREPAGE.CITY_AUSTIN.P9', class: '',
@@ -129,7 +130,8 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
     },
     {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE10', description: 'EXPLOREPAGE.CITY_AUSTIN.P10', class: '',
     'images':[
-      {image: 'images/explore/city-austin/austinvisitorscenter.jpg', class: 'active'}
+      {image: 'images/explore/city-austin/austinvisitorscenter.jpg', class: 'active'},
+      {image: 'images/explore/city-austin/photo-needed.jpg', class: ''}
     ]
     },
     {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE11', description: 'EXPLOREPAGE.CITY_AUSTIN.P11', class: '',

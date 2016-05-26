@@ -9,12 +9,12 @@
           <p>{{ 'EXPLOREPAGE.TEXAS_CAPITOL.CLICK_HERE' | translate }}</p>
         </div>
       </div>
-       <div id="img-top"><a href="#/explore/texas-capitol/goddess"><img src="images/capitol/top.png"></a></div>
-       <div id="img-senate"><a href="#/explore/texas-capitol/house"><img src="images/capitol/senate.png"></a></div>
-       <div id="img-main" ><a href="#/explore/texas-capitol/capitol"><img src="images/capitol/main2.png"></a></div>
-       <div id="img-dome"><a href="#/explore/texas-capitol/rotunda"><img src="images/capitol/dome.png"></a></div>
+       <div id="img-top"><a href="#/explore/texas-capitol/goddess" data-toggle="tooltip" title="The Goddess of Liberty"><img src="images/capitol/top.png"></a></div>
+       <div id="img-senate"><a href="#/explore/texas-capitol/house" data-toggle="tooltip" title="The West Wing"><img src="images/capitol/senate.png"></a></div>
+       <div id="img-main" ><a href="#/explore/texas-capitol/capitol" data-toggle="tooltip" title="The Capitol"><img src="images/capitol/main2.png"></a></div>
+       <div id="img-dome"><a href="#/explore/texas-capitol/rotunda" data-toggle="tooltip" title="The Rotunda"><img src="images/capitol/dome.png"></a></div>
        <div id="img-mainback"><img src="images/capitol/mainback.png"></div>
-       <div id="img-house"><a href="#/explore/texas-capitol/senate"><img src="images/capitol/house.png"></a></div>
+       <div id="img-house"><a href="#/explore/texas-capitol/senate" data-toggle="tooltip" title="The East Wing"><img src="images/capitol/house.png"></a></div>
     <div class="capitol-direction"><img src="images/capitol/direction-arrow.png"></div>
     </div>
 
@@ -32,3 +32,8 @@
    </div>
  </dig> <!-- col-md-12 -->
 </div> <!-- explore -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>

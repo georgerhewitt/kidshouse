@@ -1,8 +1,8 @@
 <div class="main row" id="challenge" ng-controller="GameCtrl">
-  <h3>Flip Cards</h3>
+  <h3>FLIP CARDS</h3>
   <div>Pairs left to match: {{game.unmatchedPairs}}</div>
   <div>Matching: {{game.firstPick.title}}</div>
-  <div class="table-responsive col-md-offset-1">
+  <div class="table-responsive">
     <table class="table">
       <tr ng-repeat="row in game.grid" class="visible-sm-block visible-md-block visible-lg-block">
         <td ng-repeat="tile in row" ng-click="game.flipTile(tile)">

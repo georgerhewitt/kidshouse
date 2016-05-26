@@ -6,10 +6,13 @@ h3{
   color: $start-color;
   }
   h5{
-  color: $green;
+  color: $start-color;
   }
   h6{
-  color: $main;
+  color: $start-color;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0;
   }
   .border{
     padding-bottom: 30px;
@@ -24,9 +27,6 @@ h3{
     color: $pink;
     font: bold;
   }
-  .image-caption{
-    font-size: .7em;
-  }
   .bill-images{
     padding: 10px;
     width: 150px;
@@ -35,11 +35,28 @@ h3{
 }
 #myFlagCarousel {
   .carousel-indicators {
-  bottom: 100px;
+  bottom: 80px;
   }
   .carousel-inner{
-    p{
-      height: 100px;
+  p{
+    height: 50px;
+  }
+  }
+}
+#myHouseCarousel {
+  .carousel-indicators {
+  bottom: 80px;
+  li {
+      border: 1px solid $main;
     }
+  .active {
+      background-color: $main;
+    }
+
+  }
+  .carousel-inner{
+  p{
+    height: 50px;
+  }
   }
 }

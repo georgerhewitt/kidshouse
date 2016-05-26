@@ -13,11 +13,13 @@ body {
   }
 }
 h1 {
-  font: 400 3.5em/125% 'Lobster', cursive;
+  font: 400 3em/125% 'Lobster', cursive;
   color: #FFF;
-  padding: 10px;
+  //padding: 10px;
+  margin-bottom: 0;
+  margin-top: 15px;
   font-size: 4.5em;
-  font-weight: 900;
+  font-weight: 800;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
   a,
   a:hover {
@@ -41,20 +43,21 @@ h5 {
 }
 h6 {
   font-family: 'Lato', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 // bootstrap-sass-official overrides
 .image-caption{
   font-style: italic;
+  font-size: .7em;
 }
-.carousel-indicators {
-  li {
-    border: 1px solid #000;
-  }
-  .active {
-    background-color: #000;
-  }
-}
+// .carousel-indicators {
+//   li {
+//     border: 1px solid #000;
+//   }
+//   .active {
+//     background-color: #000;
+//   }
+// }
 .carousel-inner > .item > img {
   width: 100%;
 }
@@ -66,11 +69,14 @@ h6 {
   background-image: none;
   text-shadow: none;
 }
+.carousel-control{
+  opacity: inherit;
+}
 .question .carousel-control {
   top: inherit;
 }
 #myCarousel {
   .carousel-indicators {
-    bottom: -15px;
+    bottom: 30px;
   }
 }

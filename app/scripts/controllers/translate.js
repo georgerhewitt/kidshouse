@@ -16,7 +16,7 @@ translateApp.config(['$translateProvider', function($translateProvider){
 });
 
   // Tell the module to store the language in the cookies
-  $translateProvider.useSanitizeValueStrategy('escape');
+  $translateProvider.useSanitizeValueStrategy(null);
   //$translateProvider.useCookieStorage();
   //$translateProvider.useUrlLoader('/i8n/locale-en.json');
 

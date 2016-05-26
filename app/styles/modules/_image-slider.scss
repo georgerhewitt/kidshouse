@@ -28,7 +28,7 @@
     display: block;
     top: 50%;
     margin-top: -35px;
-    width: 36px;
+    width: 86px;
     height: 71px;
     outline: none;
     cursor: pointer;
@@ -39,23 +39,23 @@
     //opacity: 0.2;
     left: 20px;
     background-image: url(../images/slider/paddle_prev_drop.png);
-    transition: 0.2s linear all;
+    //transition: 0.2s linear all;
 }
 
 .arrow.next {
     //opacity: 0.2;
     right: 20px;
     background-image: url(../images/slider/paddle_next_drop.png);
-    transition: 0.2s linear all;
+    //transition: 0.2s linear all;
 }
 
 .arrow.prev:hover {
-    opacity: 1;
+    //opacity: 1;
     background-image: url(../images/slider/paddle_prev_drop.png);
 }
 
 .arrow.next:hover {
-    opacity: 1;
+    //opacity: 1;
     background-image: url(../images/slider/paddle_next_drop.png);
 }
 

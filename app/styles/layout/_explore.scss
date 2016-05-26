@@ -102,10 +102,20 @@
   }
   #myCapitolCarousel {
     .carousel-indicators {
-      bottom: -20px;
+      bottom: 20px;
+
+    li {
+          border: 1px solid $main;
+        }
+    .active {
+          background-color: $main;
+        }
+
     }
-    p{
-      height: 60px;
+  }
+  #mySealCarousel {
+    .carousel-indicators {
+      bottom: 10px;
     }
 
   }

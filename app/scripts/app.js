@@ -13,6 +13,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.router',
+    'headroom',
     'cgBusy',
     'slider',
     'hsImageSlider', // images-slider.js

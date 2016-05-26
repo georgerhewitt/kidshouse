@@ -15,7 +15,7 @@
 <li data-slide-to="10" data-target="#myAustinCarousel" ng-class="{'active':isCurrentSlideIndex($index)}">Lady Bird Wildflower Center</li>
 </ul> -->
 <ol class="carousel-indicator">
-  <li class="{{ slide.class }}" data-ng-repeat="slide in slides" data-target="#myAustinCarousel" data-slide-to="{{$index}}">{{slide.title | translate }}</li>
+  <li  data-ng-repeat="slide in slides" data-target="#myAustinCarousel" data-slide-to="{{$index}}">{{slide.title | translate }}</li>
 </ol>
 
 <!-- Wrapper for slides -->
@@ -28,7 +28,8 @@
         <div class="carousel-inner" role="listbox">
         <div data-ng-repeat="images in slide.images" class="item {{ images.class }}">
               <img ng-src="{{ images.image }}" class="img-responsive">
-              <p>{{slide.title | translate }}</p>
+              <!-- <p>{{slide.title | translate }}</p> -->
+                <p class="image-caption">Address to the location or Google maps link?</p>
         </div>
         <span class="carousel-control left" href="#subCarousel{{ $index }}" role="button" data-slide="prev">
           <span class="arrow prev" aria-hidden="true"></span>

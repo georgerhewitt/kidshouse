@@ -46,17 +46,13 @@ slider.directive('hsRotundaSlider', function(){
 });
 slider.controller('ExploreCapitolCtrl', ['$scope', function ($scope) {
     $scope.slides = [
-        {image: 'images/explore/capitol/capitol.jpg', description: 'EXPLOREPAGE.CAPITOL.P', class: 'active'},
-        {image: 'images/explore/capitol/capitol1.jpg', description: 'EXPLOREPAGE.CAPITOL.P1', class: ''},
-        // {image: 'images/explore/capitol/capitol2.jpg', description: 'EXPLOREPAGE.CAPITOL.P2', class: ''},
-        // {image: 'images/explore/capitol/capitol3.jpg', description: 'EXPLOREPAGE.CAPITOL.P3', class: ''},
-        // {image: 'images/explore/capitol/capitol4.jpg', description: 'EXPLOREPAGE.CAPITOL.P4', class: ''},
-        // {image: 'images/explore/capitol/capitol5.jpg', description: 'EXPLOREPAGE.CAPITOL.P5', class: ''},
-        // {image: 'images/explore/capitol/capitol6.jpg', description: 'EXPLOREPAGE.CAPITOL.P6', class: ''},
+        {image: 'images/explore/capitol/photo-needed.jpg', description: 'Entrance photos needed', class: 'active'},
+        {image: 'images/explore/capitol/capitol13.jpg', description: 'The Capitol Treasury', class: ''},
+        {image: 'images/explore/capitol/capitol.jpg', description: 'EXPLOREPAGE.CAPITOL.P', class: ''},
         {image: 'images/explore/capitol/capitol7.jpg', description: 'EXPLOREPAGE.CAPITOL.P1', class: ''},
         {image: 'images/explore/capitol/capitol8.jpg', description: 'EXPLOREPAGE.CAPITOL.P1', class: ''},
         // {image: 'images/explore/capitol/capitol9.jpg', description: 'EXPLOREPAGE.CAPITOL.P9', class: ''},
-        {image: 'images/explore/capitol/capitol10.jpg', description: 'EXPLOREPAGE.CAPITOL.P12', class: ''},
+        {image: 'images/explore/capitol/capitol10.jpg', description: 'EXPLOREPAGE.CAPITOL.P12', class: ''}
         // {image: 'images/explore/capitol/capitol11.jpg', description: 'EXPLOREPAGE.CAPITOL.P12', class: ''}
     ];
   }]);
@@ -77,7 +73,15 @@ slider.controller('HouseCtrl', ['$scope', function ($scope) {
         {image: 'images/explore/house/house.jpg', description: 'EXPLOREPAGE.HOUSE.P', class: 'active'},
         {image: 'images/explore/house/house1.jpg', description: 'EXPLOREPAGE.HOUSE.P1', class: ''},
         {image: 'images/explore/house/house2.jpg', description: 'EXPLOREPAGE.HOUSE.P2', class: ''},
-        {image: 'images/explore/house/house3.jpg', description: 'EXPLOREPAGE.HOUSE.P3', class: ''}
+        {image: 'images/explore/house/house3.jpg', description: 'EXPLOREPAGE.HOUSE.P3', class: ''},
+        {image: 'images/explore/house/house4.jpg', description: 'EXPLOREPAGE.HOUSE.P4', class: ''},
+        {image: 'images/explore/house/house5.jpg', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
+        {image: 'images/explore/house/house6.jpg', description: 'EXPLOREPAGE.HOUSE.P6', class: ''},
+        {image: 'images/explore/house/agmuseum.jpg', description: 'EXPLOREPAGE.HOUSE.P7', class: ''}
+
+
+
+
     ];
   }]);
 // page slider 812x392
@@ -93,11 +97,14 @@ slider.directive('hsHouseSlider', function(){
 });
 slider.controller('SenateCtrl', ['$scope', function ($scope) {
     $scope.slides = [
-        {image: 'images/explore/senate/senate.jpg', description: 'EXPLOREPAGE.SENATE.P', class: 'active'},
-        {image: 'images/explore/senate/senate1.jpg', description: 'EXPLOREPAGE.SENATE.P1', class: ''},
-        {image: 'images/explore/senate/senate2.jpg', description: 'EXPLOREPAGE.SENATE.P2', class: ''},
-        {image: 'images/explore/senate/senate3.jpg', description: 'EXPLOREPAGE.SENATE.P3', class: ''},
-        {image: 'images/explore/senate/senate4.jpg', description: 'EXPLOREPAGE.SENATE.P4', class: ''},
+        {image: 'images/explore/senate/senate.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P', class: 'active'},
+        {image: 'images/explore/senate/senate1.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P1', class: ''},
+        {image: 'images/explore/senate/senate2.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P2', class: ''},
+        {image: 'images/explore/senate/senate3.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P3', class: ''},
+        {image: 'images/explore/senate/senate4.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P4', class: ''},
+        {image: 'images/explore/capitol/photo-needed.jpg', description: 'Alamo painting photo needed', class: ''},
+        {image: 'images/explore/senate/secofstate1.jpg', title: 'Secretary of State Texas', description: 'EXPLOREPAGE.SENATE.P5', class: ''},
+        {image: 'images/explore/senate/secofstate2.jpg', title: 'Secretary of State Texas', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
     ];
   }]);
 // page slider 812x392

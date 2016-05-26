@@ -51,7 +51,9 @@
   backface-visibility: hidden;
 }
 
-
+.card .front{
+  transform: rotateY( 0deg );
+}
 
 .card .back {
   background: blue;

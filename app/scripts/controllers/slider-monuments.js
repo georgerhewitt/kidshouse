@@ -90,6 +90,13 @@ hsSliderMouments.controller('SliderMoumentsCtrl', ['$scope', function($scope){
             {image: 'images/explore/monuments/veterans3.jpg', class: ''}
           ]
         },
+    {image: 'images/explore/monuments/vietnam1.jpg', title: 'EXPLOREPAGE.CAPITOL_MONUMENTS_STATUES.VIETNAM.TITLE', caption: 'EXPLOREPAGE.CAPITOL_MONUMENTS_STATUES.VIETNAM.CAPTION', description: 'EXPLOREPAGE.CAPITOL_MONUMENTS_STATUES.VIETNAM.P', question: 'EXPLOREPAGE.CAPITOL_MONUMENTS_STATUES.VIETNAM.QUESTION', answer:'EXPLOREPAGE.CAPITOL_MONUMENTS_STATUES.VIETNAM.ANSWER', wrong:'EXPLOREPAGE.CAPITOL_MONUMENTS_STATUES.VIETNAM.WRONG', wrong1:'EXPLOREPAGE.CAPITOL_MONUMENTS_STATUES.VIETNAM.WRONG1', class: '',
+    'images':[
+            {image: 'images/explore/monuments/vietnam1.jpg', class: 'active'},
+            {image: 'images/explore/monuments/vietnam2.jpg', class: ''},
+            {image: 'images/explore/monuments/vietnam3.jpg', class: ''}
+          ]
+        },
   ];
 }]);
 

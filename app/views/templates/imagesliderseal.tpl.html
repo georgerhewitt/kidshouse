@@ -1,0 +1,28 @@
+<div id="mySealCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox" data-ng-controler="FlagCtrl">
+    <div class="item {{ slide.class }}" data-ng-repeat="slide in slides">
+      <img ng-src="{{slide.image}}" alt="Texas Seal">
+      <H4>{{slide.title | translate }}</H4>
+      <p class="image-caption">{{slide.description | translate }}</p>
+    </div>
+  </div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-ng-repeat="slide in slides" data-target="#mySealCarousel" data-slide-to="{{$index}}"></li>
+  </ol>
+
+  <!-- Left and right controls -->
+  <span class="carousel-control left" href="#mySealCarousel" role="button" data-slide="prev">
+      <span class="arrow prev" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+  </span>
+  <span class="carousel-control right" href="#mySealCarousel" role="button" data-slide="next">
+      <span class="arrow next" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+  </span>
+</div>

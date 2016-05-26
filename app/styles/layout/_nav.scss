@@ -1,3 +1,35 @@
+
+// .headroom {
+//   will-change: transform, opacity;
+//   -webkit-transition: 800ms linear;
+//   -moz-transition: 800ms linear;
+//   -ms-transition: 800ms linear;
+//   -o-transition: 800ms linear;
+//   transition: 800ms linear;
+//
+//   }
+// .headroom--unpinned {
+//   -webkit-transform: translateY(-200%);
+//   -moz-transform: translateY(-200%);
+//   -ms-transform: translateY(-200%);
+//   -o-transform: translateY(-200%);
+//   transform: translateY(-200%);
+// }
+// .headroom--pinned {
+//   -webkit-transform: translateY(0%);
+//   -moz-transform: translateY(0%);
+//   -ms-transform: translateY(0%);
+//   -o-transform: translateY(0%);
+//   transform: translateY(0%);
+//
+// }
+
+// .headroom--unpinned {
+//   display: none;
+// }
+// .headroom--pinned {
+//   display: block;
+// }
 .navbar-brand{
   font: 400 3.5em/40% 'Just Another Hand', cursive;
   color: #FFF;
@@ -78,7 +110,7 @@
 
 .capitol-logo{
   width: 118px;
-  height: 100px;
+  height: 80px;
  background: url(../images/capitol-logo-home.svg) no-repeat center center;
 }
 .capitol-logo-home{
@@ -94,9 +126,16 @@
   background: url(../images/capitol-logo-challenge.svg) no-repeat center center;
 }
 
-body.explore-animate-add-active, body.discover-animate-add-active, body.challenge-animate-add-active {
-  transition: background-image 1s ease-in-out;
-  background-image: url(/images/stars45.png);
+body.home-animate-add-active {
+//body.explore-animate-add-active, body.discover-animate-add-active, body.challenge-animate-add-active {
+opacity: 0;
+ -webkit-transition: opacity 5s ease-in;
+ -moz-transition: opacity 5s ease-in;
+ -ms-transition: opacity 5s ease-in;
+ -o-transition: opacity 5s ease-in;
+ transition: opacity 5s ease-in;
+
+ background-image: url(/images/stars45.png);
   // all 1.5s ease-in-out;
 }
 
@@ -117,6 +156,7 @@ body.challenge-animate{
 }
 .home-animate{
   background-color: $home-color;
+  background-image: url(/images/stars45.png);
   //transition:all linear 1.5s;
 
 }
@@ -134,11 +174,11 @@ We only want a list of nav links on mobile devices
   .navbar-nav {
     float: none;
     vertical-align: top;
-    margin-top: 10px;
-    margin-bottom: -40px;
+    margin-top: 5px;
+    margin-bottom: -30px;
 
     > li.dropdown > a{
-      padding: 18px 0 9px 0;
+      padding: 22px 0 10px 0;
       font-family: 'Rokkitt', serif;
       font-size: 1.5em;
       font-style: bold;
