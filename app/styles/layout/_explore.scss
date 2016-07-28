@@ -23,7 +23,7 @@
 
   .capitol-layout{
     position: relative;
-    height: 450px;
+    height: 550px;
     width: 670px;
      margin: 0 auto;
   .capitol-direction{
@@ -42,35 +42,35 @@
     #img-top{
       position: absolute;
       top:0;
-      right: 332px;
+      right: 356px;
       background-image: url(../images/capitol/top-roll.png);
 
     }
     #img-senate{
       position: absolute;
-      top:200px;
-      right: 425px;
+      top:240px;
+      right: 465px;
       background-image: url(../images/capitol/senate-roll.png);
 
     }
     #img-dome{
       position: absolute;
-      top:55px;
-      right: 280px;
+      top:65px;
+      right: 295px;
       z-index: 997;
       background-image: url(../images/capitol/dome-roll.png);
 
     }
     #img-house{
       position: absolute;
-      top:200px;
-      right: 0px;
+      top:240px;
+      right: -40px;
       background-image: url(../images/capitol/house-roll.png);
 
     }
     #img-main{
       position: absolute;
-      top:175px;
+      top:210px;
       right: 215px;
       z-index: 998;
       background-image: url(../images/capitol/main-roll.png);
@@ -78,29 +78,48 @@
     }
     #img-mainback{
       position: absolute;
-      top:153px;
+      top:184px;
       right: 215px;
       z-index: 996;
 
+    }
+  }
+  #myCarousel{
+    .next {
+      right:0;
+    }
+    .prev {
+      left:0;
     }
   }
 
   #myAustinCarousel{
   .carousel-indicator{
     float: left;
+
+        ul{
+          list-style-type: disc;
+          columns: 3;
+          -webkit-columns: 3;
+          -moz-columns: 3;
+          list-style-position: inside;
+        }
     li{
+      float: left;
+      width: 30%;
       color: $challenge-color-light;
+      cursor: pointer;
+
     }
     li.active {
       color: $start-color;
     }
   }
-    .carousel-inner{
-      width: 600px;
-      float: right;
-    }
   }
   #myCapitolCarousel {
+    .slide-title .active{
+      display: none
+    }
     .carousel-indicators {
       bottom: 20px;
 
@@ -115,7 +134,7 @@
   }
   #mySealCarousel {
     .carousel-indicators {
-      bottom: 10px;
+      bottom: 30px;
     }
 
   }

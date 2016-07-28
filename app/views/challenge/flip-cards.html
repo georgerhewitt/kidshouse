@@ -1,45 +1,71 @@
-<div class="main row" id="challenge" ng-controller="GameCtrl">
-  <h3>FLIP CARDS</h3>
-  <div>Pairs left to match: {{game.unmatchedPairs}}</div>
-  <div>Matching: {{game.firstPick.title}}</div>
-  <div class="table-responsive">
-    <table class="table">
-      <tr ng-repeat="row in game.grid" class="visible-sm-block visible-md-block visible-lg-block">
-        <td ng-repeat="tile in row" ng-click="game.flipTile(tile)">
-          <div class="flip-card-container">
-            <div class="card" ng-class="{flipped: tile.flipped}">
-              <img class="front img-responsive" ng-src="images/flip-cards/mid/card-back.png">
-              <img class="back img-responsive" ng-src="images/flip-cards/mid/{{tile.title}}.png">
-            </div>
-          </div>
-        </td>
-      </tr>
-    </table>
+<div class="main row" id="challenge">
+  <div class="col-lg-12">
+  <a href="" data-toggle="modal" data-target="#myModal">
+    <img src="images/challenge/click-here-flip-cardsx900.png" alt="Flip card game" class="img-responsive center-block">
+  </a>
   </div>
+</div>
 
-  <div ng-if="game.message == 'Good job! Keep going.'">
-
-    <div id="myModal" class="modal hide fade in" role="dialog">
-    <div class="modal-dialog">
-    <!-- Modal content-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">FLIP CARDS</h3>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+
+
+        <div class="main row" id="challenge" ng-controller="GameCtrl">
+          <div>Pairs left to match: {{game.unmatchedPairs}}</div>
+          <div>Matching: {{game.firstPick.title}}</div>
+          <div class="table-responsive">
+            <table class="table">
+              <tr ng-repeat="row in game.grid" class="visible-sm-block visible-md-block visible-lg-block">
+                <td ng-repeat="tile in row" ng-click="game.flipTile(tile)">
+                  <div class="flip-card-container">
+                    <div id="card">
+                      <img class="card front img-responsive" ng-class="{flipped: tile.flipped}" ng-src="images/flip-cards/mid/card-back.png">
+                      <img class="card back img-responsive" ng-class="{flipped: tile.flipped}" ng-src="images/flip-cards/mid/{{tile.title}}.png">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div ng-if="game.message == 'Good job! Keep going.'">
+
+            <div id="myModal" class="modal hide fade in" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div ng-if="game.message != 'Good job! Keep going.'">
+          <div class="message">{{game.message}}</div>
+          </div>
+
+        </div>
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-    </div>
-    </div>
   </div>
-
-  <div ng-if="game.message != 'Good job! Keep going.'">
-  <div class="message">{{game.message}}</div>
-  </div>
-
 </div>

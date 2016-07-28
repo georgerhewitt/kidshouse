@@ -1,5 +1,5 @@
 <div class="main row" id="explore">
-    <div class="col-md-12  border">
+    <div class="col-md-12">
     <h3>{{ 'EXPLOREPAGE.TEXAS_CAPITOL.PAGETITLE' | translate }}</h3>
 
     <div class="capitol-layout">
@@ -9,31 +9,154 @@
           <p>{{ 'EXPLOREPAGE.TEXAS_CAPITOL.CLICK_HERE' | translate }}</p>
         </div>
       </div>
-       <div id="img-top"><a href="#/explore/texas-capitol/goddess" data-toggle="tooltip" title="The Goddess of Liberty"><img src="images/capitol/top.png"></a></div>
-       <div id="img-senate"><a href="#/explore/texas-capitol/house" data-toggle="tooltip" title="The West Wing"><img src="images/capitol/senate.png"></a></div>
-       <div id="img-main" ><a href="#/explore/texas-capitol/capitol" data-toggle="tooltip" title="The Capitol"><img src="images/capitol/main2.png"></a></div>
-       <div id="img-dome"><a href="#/explore/texas-capitol/rotunda" data-toggle="tooltip" title="The Rotunda"><img src="images/capitol/dome.png"></a></div>
-       <div id="img-mainback"><img src="images/capitol/mainback.png"></div>
-       <div id="img-house"><a href="#/explore/texas-capitol/senate" data-toggle="tooltip" title="The East Wing"><img src="images/capitol/house.png"></a></div>
+      <!-- <a href="" data-toggle="modal" data-target="#myModal"> -->
+       <div id="img-top"><a href="" data-toggle="modal" data-target="#myGoddessModal" data-tooltip="true" title="The Goddess of Liberty"><img src="images/capitol/top-large.png"></a></div>
+       <div id="img-senate"><a href="" data-toggle="modal" data-target="#myHouse_Modal" data-tooltip="true" title="The West Wing"><img src="images/capitol/senate-large.png"></a></div>
+       <div id="img-main" ><a href="" data-toggle="modal" data-target="#myCapitolModal" data-tooltip="true" title="South Wing / North Wing"><img src="images/capitol/main-large.png"></a></div>
+       <div id="img-dome"><a href="" data-toggle="modal" data-target="#myRotundaModal" data-tooltip="true" title="The Rotunda / Dome"><img src="images/capitol/dome-large.png"></a></div>
+       <div id="img-mainback"><img src="images/capitol/mainback-large.png"></div>
+       <div id="img-house"><a href="" data-toggle="modal" data-target="#mySenateModal" data-tooltip="true" title="The East Wing"><img src="images/capitol/house-large.png"></a></div>
     <div class="capitol-direction"><img src="images/capitol/direction-arrow.png"></div>
     </div>
+  </div>
+  <div class="modal fade" id="myGoddessModal" tabindex="-1" role="dialog" aria-labelledby="myGoddessModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="myGoddessModalLabel">{{ 'EXPLOREPAGE.GODDESS.TITLE' | translate }}</h3>
+        </div>
+        <div class="modal-body">
+          <div ng-controller="GoddessLibertyCtrl">
+          <div hs-slider></div>
+          </div>
 
+          <div class="capitol-p col-lg-12">
+          <p>{{ 'EXPLOREPAGE.GODDESS.SUBTITLE' | translate }}</p>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myHouse_Modal" tabindex="-1" role="dialog" aria-labelledby="myHouse_ModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="myHouse_ModalLabel">{{ 'EXPLOREPAGE.HOUSE.TITLE2' | translate }}</h3>
+        </div>
+        <div class="modal-body">
+          <div ng-controller="HouseCtrl">
+          <div hs-house-slider></div>
+          </div>
+
+          <div class="capitol-p col-lg-12">
+          <p>{{ 'EXPLOREPAGE.HOUSE.SUBTITLE' | translate }}</p>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myCapitolModal" tabindex="-1" role="dialog" aria-labelledby="myCapitolModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="myCapitolModalLabel">{{ 'EXPLOREPAGE.CAPITOL.TITLE' | translate }}</h3>
+        </div>
+        <div class="modal-body">
+          <div ng-controller="ExploreCapitolCtrl">
+          <div hs-explore-capitol-slider></div>
+          </div>
+
+          <div class="capitol-p col-lg-12">
+          <p>{{ 'EXPLOREPAGE.CAPITOL.SUBTITLE' | translate }}</p>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myRotundaModal" tabindex="-1" role="dialog" aria-labelledby="myRotundaModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="myRotundaModalLabel">{{ 'EXPLOREPAGE.ROTUNDA.TITLE' | translate }}</h3>
+        </div>
+        <div class="modal-body">
+          <div ng-controller="RotundaCtrl">
+          <div hs-rotunda-slider></div>
+          </div>
+
+          <div class="capitol-p col-lg-12">
+          <p>{{ 'EXPLOREPAGE.ROTUNDA.SUBTITLE' | translate }}</p>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="mySenateModal" tabindex="-1" role="dialog" aria-labelledby="mySenateModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="mySenateModalLabel">{{ 'EXPLOREPAGE.SENATE.TITLE2' | translate }}</h3>
+        </div>
+        <div class="modal-body">
+          <div ng-controller="SenateCtrl">
+          <div hs-senate-slider></div>
+          </div>
+
+          <div class="capitol-p col-lg-12">
+          <p>{{ 'EXPLOREPAGE.SENATE.SUBTITLE' | translate }}</p>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  $("#myGoddessModal").on('hidden.bs.modal', function (e) {
+      $("#myGoddessModal").attr("src", $("#myGoddessModal").attr("src"));
+  });
+  $("#myHouseModal").on('hidden.bs.modal', function (e) {
+      $("#myHouseModal").attr("src", $("#myHouseModal").attr("src"));
+  });
+  $("#myCapitolModal").on('hidden.bs.modal', function (e) {
+      $("#myCapitolModal").attr("src", $("#myCapitolModal").attr("src"));
+  });
+  $("#myRotundaModal").on('hidden.bs.modal', function (e) {
+      $("#myRotundaModal").attr("src", $("#myRotundaModal").attr("src"));
+  });
+  $("#mySenateModal").on('hidden.bs.modal', function (e) {
+      $("#mySenateModal").attr("src", $("#mySenateModal").attr("src"));
+  });
+  </script>
    </div> <!-- border -->
-   <div class="col-md-12">
-   <div ui-view="sub">
-     <h3>{{ 'EXPLOREPAGE.CAPITOL.TITLE' | translate }}</h3>
-     <div class="col-lg-12">
-       <div ng-controller="ExploreCapitolCtrl">
-         <div hs-explore-capitol-slider></div>
-     </div>
-     </div>
-     <!-- <p>{{ 'EXPLOREPAGE.TEXAS_CAPITOL.P3' | translate }}</p> -->
-   </div>
-   </div>
- </dig> <!-- col-md-12 -->
+ </div> <!-- col-md-12 -->
+
 </div> <!-- explore -->
 <script type="text/javascript">
   $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-tooltip="true"]').tooltip();
   });
 </script>

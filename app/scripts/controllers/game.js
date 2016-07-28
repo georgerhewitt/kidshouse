@@ -34,9 +34,9 @@ function makeGrid(tileDeck) {
   //var gridDimension = 4,
     var grid = [];
 
-  for (var row = 0; row < 2; row++) {
+  for (var row = 0; row < 4; row++) {
     grid[row] = [];
-    for (var col = 0; col < 8; col++) {
+    for (var col = 0; col < 4; col++) {
       grid[row][col] = removeRandomTile(tileDeck);
     }
   }

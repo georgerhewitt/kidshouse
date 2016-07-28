@@ -1,68 +1,139 @@
-
-
-// div {
-//   font-size: 30px;
-// }
-
+//
 .flip-card-container {
-  width: 100px;
-  height: 150px;
-  position: relative;
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -ms-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
-  border-color: #333;
+width: 100px;
+height: 150px;
+position: relative;
+//margin: 0 auto 40px;
+border: 1px solid #CCC;
+-ms-perspective: 1000;
+perspective: 1000;
 }
 
 .card {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-transform 1s;
-  -moz-transition: -moz-transform 1s;
-  -ms-transition: -ms-transform 1s;
-  -o-transition: -o-transform 1s;
-  transition: transform 1s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+display: block;
+height: 100%;
+width: 100%;
+line-height: 260px;
+color: white;
+text-align: center;
+font-weight: bold;
+font-size: 140px;
+position: absolute;
+transition: all 0.5s linear;
+backface-visibility: hidden;
 }
 
 .card.flipped {
-  -webkit-transform: rotateY( 180deg );
-  -moz-transform: rotateY( 180deg );
-  -ms-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg );
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
 }
 
-.card img {
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
+.front {
+    background: red;
+}
+.back {
+    background: #00f;
+    transform: rotateY( 180deg );
 }
 
-.card .front{
-  transform: rotateY( 0deg );
-}
 
-.card .back {
-  background: blue;
-  -webkit-transform: rotateY( 180deg );
-  -moz-transform: rotateY( 180deg );
-  -ms-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg );
-}
+
+
+// .flip-card-container {
+//   width: 100px;
+//   height: 150px;
+//   position: relative;
+//   -webkit-perspective: 800px;
+//   -moz-perspective: 800px;
+//   -ms-perspective: 800px;
+//   -o-perspective: 800px;
+//   perspective: 800px;
+//   border-color: #333;
+// }
+//
+// .card {
+//   width: 100%;
+//   height: 100%;
+//   -webkit-transition: -webkit-transform 1s ease-out;
+//   -moz-transition: -moz-transform 1s ease-out;
+//   -ms-transition: -ms-transform 1s ease-out;
+//   -o-transition: -o-transform 1s ease-out;
+//    transition: transform 1s ease-out;
+//   -webkit-transform-style: preserve-3d;
+//   -moz-transform-style: preserve-3d;
+//   -ms-transform-style: preserve-3d;
+//   -o-transform-style: preserve-3d;
+//   transform-style: preserve-3d;
+//   backface-visibility: visible;
+//   -webkit-backface-visibility: visible;
+//   -moz-backface-visibility: visible;
+//   -o-backface-visibility: visible;
+//   -ms-backface-visibility: visible;
+//
+// }
+//
+// .card.flipped {
+//   -webkit-transform: rotateY( 180deg );
+//   -moz-transform: rotateY( 180deg );
+//   -ms-transform: rotateY( 180deg );
+//   -o-transform: rotateY( 180deg );
+//   transform: rotateY( 180deg );
+// }
+//
+// .card img {
+//   display: block;
+//   height: 100%;
+//   width: 100%;
+//   position: absolute;
+//   -webkit-backface-visibility: hidden;
+//   -moz-backface-visibility: hidden;
+//   -ms-backface-visibility: visible;
+//   -o-backface-visibility: hidden;
+//   backface-visibility: hidden;
+// }
+//
+// .card .front{
+//   -webkit-transform: rotateY(0deg);
+//   -moz-transform: rotateY( 0deg );
+//   -ms-transform: rotateY( 0deg );
+//   -o-transform: rotateY( 0deg );
+//   transform: rotateY( 0deg );
+//
+// }
+//
+// .card .back {
+//   -webkit-transform: rotateY( -179.9deg );
+//   -moz-transform: rotateY( -179.9deg );
+//   -ms-transform: rotateY( -179.9deg );
+//   -o-transform: rotateY( -179.9deg );
+//   transform: rotateY( -179.9deg );
+//
+// }
+// .flip-card-container .card .front, .flip-card-container .card .flipped .back{
+//  animation: stayvisible 0.5s both;
+//  -webkit-animation: stayvisible 0.5s both;
+//  -moz-animation: stayvisible 0.5s both;
+//  -o-animation: stayvisible 0.5s both;
+//  -ms-animation: stayvisible 0.5s;
+//  -ms-transition: visibility 0s linear 0.17s;
+//  visibility: visible;
+//
+// }
+// .flip-card-container .card .flipped .front, .flip-card-container .card .back{
+//  animation: stayvisible 0.5s both;
+//  -webkit-animation: stayvisible 0.5s both;
+//  -moz-animation: stayvisible 0.5s both;
+//  -o-animation: stayvisible 0.5s both;
+//  -ms-animation: stayvisible 0.5s;
+//  -ms-transition: visibility 0s linear 0.17s;
+//  visibility: hidden;
+// }
+// @keyframes stayvisible { from { visibility: visible;} to { visibility: visible; } }
+// @-webkit-keyframes stayvisible { from { visibility: visible;} to { visibility: visible; } }
+// @-moz-keyframes stayvisible { from { visibility: visible;} to { visibility: visible; } }
+// @-o-keyframes stayvisible { from { visibility: visible;} to { visibility: visible; } }
+
+
 
 .message {
   width: 660px;

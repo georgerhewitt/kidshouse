@@ -22,6 +22,7 @@
 .main-header{
   padding-left: 0px;
   padding-right: 0px;
+  //padding-top: 50px;
 }
 
 .main.row.ng-scope{
@@ -30,9 +31,7 @@
 .main.row.ng-scope div.col-md-12 div.ng-scope{
   background-color: #FFF;
 }
-body.ng-scope{
-  background-color: $home-color;
-}
+
 
 footer{
   background-color: rgba(250, 250, 250, 0.8);

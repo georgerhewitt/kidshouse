@@ -1,0 +1,22 @@
+<nav class="navbar navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <h1 class="navbar-brand visible-xs-block"><a href="/#/">Texas Kids' Guide!</a></h1>
+    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse collapse nav-center bs-navbar-collapse">
+    <div class="nav-top">
+      <ul class="nav navbar-nav">
+        <li class="hidden-xs visible-sm-block visible-md-block visible-lg-block"><a href="/#/" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'HOME' | translate }}</a></li>
+        <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'GET_INVOLVED' | translate }}</a></li>
+        <li><a href="/#/resources" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'RESOURCES' | translate }}</a></li>
+        <li class="capitol-logo visible-sm-block visible-md-block visible-lg-block animated" ng-class="myCssVar2"></li>
+        <li><a href="/#/glossary" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'GLOSSARY' | translate }}</a></li>
+        <li><a href="/#/site-map" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'SITEMAP' | translate }}</a></li>
+        <li><a href="http://www.house.texas.gov" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'TEXAS HOUSE' | translate }}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

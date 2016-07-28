@@ -1,9 +1,12 @@
 <div class="main row" id="explore">
     <h3>{{ 'EXPLOREPAGE.STATE_SYMBOLS.PAGETITLE' | translate }}</h3>
     <div class="row border">
-    <p>{{ 'EXPLOREPAGE.STATE_SYMBOLS.P' | translate }}  <a href="http://texasalmanac.com/topics/flags-symbols">Texas Almanac</a></p>
+    <p>{{ 'EXPLOREPAGE.STATE_SYMBOLS.P' | translate }}
+      <a href="http://texasalmanac.com/topics/flags-symbols">Texas Almanac</a>
+    {{ 'EXPLOREPAGE.STATE_SYMBOLS.P1' | translate }}
+   </p>
     </div>
-    <div class="row border" ui-view="sub">
+    <div class="row" ui-view="sub">
       <div ng-controller="SliderSymbolsCtrl">
        <div hs-slider-symbols></div>
       </div>

@@ -1,15 +1,35 @@
 <div class="main row" id="challenge">
-  <h3>WORD SEARCH</h3>
-    <div class="col-md-offset-2" id="word-search" ng-controller="wordSearchCtrl" >
-      <ul class="words">
-        <li ng-repeat="word in puzzle.words" ng-class="{'found': word.found}">
-          {{word.name}}
-        </li>
-      </ul>
-      <word-search-puzzle matrix="matrix" words="words" api="puzzle"></word-search-puzzle>
-      <div class="status">
-    <!--     <button ng-click="puzzle.solve()" ng-show="!puzzle.solved" class="solve">solve</button>
-        <strong ng-show="puzzle.solved" ng-show="puzzle.solved">Solved!</strong> -->
+  <div class="col-lg-12">
+  <a href="" data-toggle="modal" data-target="#myModal">
+    <img src="images/challenge/click-here-word-searchx900.png" alt="Flip card game" class="img-responsive center-block">
+  </a>
+  </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="myModalLabel">WORD SEARCH</h3>
+        </div>
+        <div class="modal-body">
+        <div id="word-search" class="main row" ng-controller="wordSearchCtrl" >
+          <ul class="words">
+            <li ng-repeat="word in puzzle.words" ng-class="{'found': word.found}">
+              {{word.name}}
+            </li>
+          </ul>
+          <word-search-puzzle matrix="matrix" words="words" api="puzzle"></word-search-puzzle>
+          <div class="status">
+        <!--     <button ng-click="puzzle.solve()" ng-show="!puzzle.solved" class="solve">solve</button>
+            <strong ng-show="puzzle.solved" ng-show="puzzle.solved">Solved!</strong> -->
+          </div>
+        </div>
+        </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>

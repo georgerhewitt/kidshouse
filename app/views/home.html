@@ -1,31 +1,33 @@
-<div class="main row" id="discover">
-  <h3>{{ 'HOMEPAGE.PAGETITLE' | translate }}</h3>
 
+<div class="main row" id="discover">
+  <h3>{{ 'HOMEPAGE.PAGETITLE-N' | translate }}</h3>
   <div class="col-lg-8">
-  <p>{{ 'HOMEPAGE.P1' | translate }}</p>
+  <p>{{ 'HOMEPAGE.P1-N' | translate }}</p>
+  <ul>
+    <li>{{ 'HOMEPAGE.How_A_Bill' | translate }}</li>
+    <li>{{ 'HOMEPAGE.TOUR' | translate }}</li>
+    <li>{{ 'HOMEPAGE.DISCOVER' | translate }}</li>
+    <li>{{ 'HOMEPAGE.DESCRIPTIONS' | translate }}</li>
+    <li>{{ 'HOMEPAGE.INTERACTIVE' | translate }}</li>
+    <li>{{ 'HOMEPAGE.GAMES' | translate }}</li>
+  </ul>
   </div>
   <div class="col-lg-4">
-    <div class="circle circle--branch">
-      <div>
-        <div class="circle__action"><a href="" data-toggle="modal" data-target="#myModal">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.TITLE' | translate }}</a></div>
-        <div class="circle__sub">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.ITEM1' | translate }}</div>
-        <div class="circle__title circle__title--exec">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.ITEM2' | translate }}</div>
-        <div class="circle__title">Welcome Video</div>
+    <div class="circle circle--branch animated bounce">
+      <a href="" data-toggle="modal" data-target="#myModal">
+        <div>
+        <div class="circle__action">{{ 'HOMEPAGE.CLICK_HERE.TITLE' | translate }}</div>
+        <div class="circle__sub">{{ 'HOMEPAGE.CLICK_HERE.ITEM1' | translate }}</div>
+        <div class="circle__title circle__title--exec">{{ 'HOMEPAGE.CLICK_HERE.ITEM2' | translate }}</div>
         <div class="circle__play"><i class="glyphicon glyphicon-play"></i></div>
       </div>
+     </a>
     </div>
     </div>
   <div class="col-sm-12 col-md-12 col-lg-12">
-    <p>{{ 'HOMEPAGE.P2' | translate }}</p>
-    <ul>
-      <li>{{ 'HOMEPAGE.How_A_Bill' | translate }}</li>
-      <li>{{ 'HOMEPAGE.TOUR' | translate }}</li>
-      <li>{{ 'HOMEPAGE.DISCOVER' | translate }}</li>
-      <li>{{ 'HOMEPAGE.DESCRIPTIONS' | translate }}</li>
-      <li>{{ 'HOMEPAGE.INTERACTIVE' | translate }}</li>
-      <li>{{ 'HOMEPAGE.GAMES' | translate }}</li>
-    </ul>
-    <p>{{ 'HOMEPAGE.HAVE' | translate }}</p>
+    <!-- <p>{{ 'HOMEPAGE.P2' | translate }}</p> -->
+
+    <!-- <p>{{ 'HOMEPAGE.HAVE' | translate }}</p> -->
   </div>
 
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -36,9 +38,9 @@
           <h3 class="modal-title" id="myModalLabel">WELCOME!</h3>
         </div>
         <div class="modal-body">
-
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="http://tlchouse.granicus.com/videos/11928/player?autoplay=1&captions=false" frameborder="0" allowfullscreen></iframe>
+
+            <iframe class="embed-responsive-item" src="http://tlchouse.granicus.com/videos/11928/player?autoplay=0&captions=false&splash=true&poster=true" frameborder="0" allowfullscreen></iframe>
           </div>
 
         </div>
@@ -50,4 +52,9 @@
   </div>
 
 </div>
+<script type="text/javascript">
+$("#myModal").on('hidden.bs.modal', function (e) {
+    $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+});
+</script>
 <!-- home -->

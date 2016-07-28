@@ -1,35 +1,19 @@
+.nav-main{
+  // -webkit-transition: all 1s ease;
+  // -moz-transition: all 1s ease;
+  // -ms-transition: all 1s ease;
+  // -o-transition: all 1s ease;
+  // transition: all 1s ease;
+  // &.ng-enter{
+  //   .bobby{
+  //     @include effect(fadeInUp);
+  //   }
+  // }
+}
+.main-header{
+  //padding-top: 60px;
+}
 
-// .headroom {
-//   will-change: transform, opacity;
-//   -webkit-transition: 800ms linear;
-//   -moz-transition: 800ms linear;
-//   -ms-transition: 800ms linear;
-//   -o-transition: 800ms linear;
-//   transition: 800ms linear;
-//
-//   }
-// .headroom--unpinned {
-//   -webkit-transform: translateY(-200%);
-//   -moz-transform: translateY(-200%);
-//   -ms-transform: translateY(-200%);
-//   -o-transform: translateY(-200%);
-//   transform: translateY(-200%);
-// }
-// .headroom--pinned {
-//   -webkit-transform: translateY(0%);
-//   -moz-transform: translateY(0%);
-//   -ms-transform: translateY(0%);
-//   -o-transform: translateY(0%);
-//   transform: translateY(0%);
-//
-// }
-
-// .headroom--unpinned {
-//   display: none;
-// }
-// .headroom--pinned {
-//   display: block;
-// }
 .navbar-brand{
   font: 400 3.5em/40% 'Just Another Hand', cursive;
   color: #FFF;
@@ -42,7 +26,6 @@
 
   .navbar-nav {
     display: inline-block;
-     margin: 0;
 
     > li > a {
        color: $body;
@@ -109,57 +92,41 @@
 // capitol logo
 
 .capitol-logo{
-  width: 118px;
+  width: 110px;
   height: 80px;
  background: url(../images/capitol-logo-home.svg) no-repeat center center;
 }
-.capitol-logo-home{
-  background: url(../images/capitol-logo-home.svg) no-repeat center center;
+body{
+  background-image: url(/images/stars45.png);
+  background-attachment: fixed;
+  background-color: $home-color;
 }
-.capitol-logo-discover{
-  background: url(../images/capitol-logo-discover.svg) no-repeat center center;
+body.ng-scope{
+  background-color: $home-color;
+  //background-image: url(/images/stars45.png);
 }
-.capitol-logo-explore{
-  background: url(../images/capitol-logo-explore.svg) no-repeat center center;
-}
-.capitol-logo-challenge{
-  background: url(../images/capitol-logo-challenge.svg) no-repeat center center;
-}
-
-body.home-animate-add-active {
-//body.explore-animate-add-active, body.discover-animate-add-active, body.challenge-animate-add-active {
-opacity: 0;
- -webkit-transition: opacity 5s ease-in;
- -moz-transition: opacity 5s ease-in;
- -ms-transition: opacity 5s ease-in;
- -o-transition: opacity 5s ease-in;
- transition: opacity 5s ease-in;
-
- background-image: url(/images/stars45.png);
-  // all 1.5s ease-in-out;
-}
-
 body.discover-animate{
   background-color: $discover-color-light;
-  //transition:all linear 1.5s;
 }
-
 body.explore-animate{
   background-color: $explore-color-light;
-  //transition:all linear 1.5s;
-
 }
 body.challenge-animate{
   background-color: $challenge-color-light;
-  //transition:all linear 1.5s;
-
 }
 .home-animate{
+  opacity: 1;
   background-color: $home-color;
   background-image: url(/images/stars45.png);
+  -webkit-transition: background .5s ease-out;
+  -moz-transition: background .5s ease-out;
+  -ms-transition: background .5s ease-out;
+  -o-transition: background .5s ease-out;
+  transition: background .5s ease-out;
   //transition:all linear 1.5s;
 
 }
+
 
 /**
 reponsive change to sub nav to remove the images so it can be more inline with top nav.
@@ -167,18 +134,215 @@ We only want a list of nav links on mobile devices
 **/
 
 @media screen and (min-width: 768px){
-.nav > li > a {
-    //padding: 15px 0 12px 0;
+.glyphicon, .glyphicon-home{
+  font-size: 20px;
 }
+.state1{
+  .dropdown{
+    margin-top: -80px;
+  }
+  .navbar{
+  margin-bottom: 0px;
+  }
+}
+.state2{
+  .nav-main{
+    padding-bottom: 40px;
+    //margin-bottom: 20px;
+  }
+  .navbar{
+  margin-bottom: 0px;
+  }
+
+}
+.state3{
+  h1{
+    font:'Lobster', cursive, sans-serif;
+    font-size: 1.4vw;
+    padding-top: 12px;
+    text-shadow: none;
+    a,a:hover{
+      text-decoration: none;
+    }
+  }
+  .navbar{
+  margin-bottom: 0px;
+  .navbar-nav > li.dropdown > a{
+    font-size: 1em;
+  }
+  ul.dropdown-menu {
+  font-size: 10px;
+  }
+  }
+  .nav-main{
+    padding-left:0px;
+    &__logo{
+      padding-left:0px;
+      padding-right:0px;
+      a,a:hover{
+        text-decoration: none;
+      }
+    }
+    &__home{
+      background-size: contain;
+      height: 60px;
+      width: 80px;
+      &:hover{
+        background: none;
+      }
+      &:hover .nav-main__home-link{
+        display: block;
+      }
+      &--main{
+        background: url(../images/capitol-logo-home-small.svg) no-repeat center;
+      }
+      &--discover{
+        background: url(../images/capitol-logo-discover-small.svg) no-repeat center;
+      }
+      &--explore{
+        background: url(../images/capitol-logo-explore-small.svg) no-repeat center;
+      }
+      &--challenge{
+        background: url(../images/capitol-logo-challenge-small.svg) no-repeat center;
+      }
+    }
+   &__home-link{
+     padding-top: 24px;
+     padding-left: 20px;
+     display: none;
+     font-family: 'Lato', sans-serif;
+     font-size: .7em;
+     font-weight: 400;
+     color: $main;
+
+
+    //  &:hover{
+    //      display: block;
+    // }
+   }
+  }
+  .explore{
+    .dropdown{
+      width: 190px;
+      height: 60px;
+      background: url(../images/ribbon-explore-small-ex.svg) no-repeat center;
+     }
+   }
+   .challenge {
+     .dropdown{
+       width: 190px;
+       height: 60px;
+        background: url(../images/ribbon-challenge-small-ex.svg) no-repeat center;
+      }
+    }
+    .discover{
+     .dropdown{
+       width: 190px;
+       height: 60px;
+        background: url(../images/ribbon-discover-small-ex.svg) no-repeat center;
+      }
+    }
+ }
+.state4{
+  h1{
+    font:'Lobster', cursive, sans-serif;
+    font-size: 1.4vw;
+    padding-top: 12px;
+    text-shadow: none;
+    a,a:hover{
+      text-decoration: none;
+    }
+  }
+  .navbar{
+  margin-bottom: 0px;
+  .navbar-nav > li.dropdown > a{
+    font-size: 1em;
+  }
+  ul.dropdown-menu {
+  font-size: 10px;
+  }
+  }
+  .nav-main{
+    padding-left:0px;
+    &__logo{
+      padding-left:0px;
+      padding-right:0px;
+      a,a:hover{
+        text-decoration: none;
+      }
+    }
+    &__home{
+      background-size: contain;
+      height: 60px;
+      width: 80px;
+      &:hover{
+        background: none;
+      }
+      &:hover .nav-main__home-link{
+        display: block;
+      }
+      &--main{
+        background: url(../images/capitol-logo-home-small.svg) no-repeat center;
+      }
+      &--discover{
+        background: url(../images/capitol-logo-discover-small.svg) no-repeat center;
+      }
+      &--explore{
+        background: url(../images/capitol-logo-explore-small.svg) no-repeat center;
+      }
+      &--challenge{
+        background: url(../images/capitol-logo-challenge-small.svg) no-repeat center;
+      }
+    }
+   &__home-link{
+     padding-top: 24px;
+     padding-left: 20px;
+     display: none;
+     font-family: 'Lato', sans-serif;
+     font-size: .7em;
+     font-weight: 400;
+     color: $main;
+
+
+    //  &:hover{
+    //      display: block;
+    // }
+   }
+  }
+  .explore{
+    .dropdown{
+      width: 244px;
+      height: 60px;
+      background: url(../images/ribbon-explore-small.svg) no-repeat center;
+     }
+   }
+   .challenge {
+     .dropdown{
+       width: 244px;
+       height: 60px;
+        background: url(../images/ribbon-challenge-small.svg) no-repeat center;
+      }
+    }
+    .discover{
+     .dropdown{
+       width: 244px;
+       height: 60px;
+        background: url(../images/ribbon-discover-small.svg) no-repeat center;
+      }
+    }
+ }
+
+.nav-top .navbar-nav{
+  margin-bottom: -30px;
+}
+
 .navbar{
   .navbar-nav {
     float: none;
     vertical-align: top;
-    margin-top: 5px;
-    margin-bottom: -30px;
 
     > li.dropdown > a{
-      padding: 22px 0 10px 0;
+      padding: 18px 0 10px 0;
       font-family: 'Rokkitt', serif;
       font-size: 1.5em;
       font-style: bold;
@@ -186,15 +350,45 @@ We only want a list of nav links on mobile devices
     }
   } //navbar-nav
 }
-.mainpage{
 
-  .nav3{
-  height: 255px;
-  padding-top: 181px;
-  text-align: center;
-  z-index: 1000;
+  .header{
+    //padding-top: 60px;
+  }
+  .hidden-header {
+  padding-top: 0;
+  opacity: 0;
+  height: 0px;
+  margin: 0 auto;
   }
 
+  .scroller{
+    height: 255px;
+    transition: all .5s linear;
+    transition-property: opacity, height, margin;
+    display: block;
+    position: relative;
+  }
+  .hidden-scroll {
+    background: none !important;
+    height:0px !important;
+    padding-top:0px !important;
+    opacity: 0 !important;
+    margin: 0 auto !important;
+    top: 100px;
+  }
+  .navbar-fixed-top .dropdown{
+    margin-top: 0px !important;
+  }
+  .nav3{
+  text-align: center;
+  float: left;
+  }
+  .dropdown{
+    z-index: 1040;
+    //margin-top: -70px;
+    width: 292px;
+    height: 60px;
+  }
   .dropdown-menu{
   font-size: 12px;
   text-align: center;
@@ -204,9 +398,13 @@ We only want a list of nav links on mobile devices
   padding: 4px;
   float: none;
   position: static;
+  margin-left: 20px;
+  margin-right: 25px;
 
     > ul{
       padding: 5px;
+      display: table;
+      margin:0px auto 0px auto;
     }
 
     > li > a{
@@ -217,14 +415,36 @@ We only want a list of nav links on mobile devices
       padding: 5px;
       text-align:center;
       color: #666;
+      .home{
+        padding:0;
+      }
     }
   } //dropdown-menu
 
+  .discover-normal{
+    background: url(../images/discover-icon.png) no-repeat center;
+  }
+  .discover-scroll{
+    background: url(../images/ribbon-discover.svg) no-repeat center;
+  }
+  .explore-normal{
+    background: url(../images/explore-icon.png) no-repeat center;
+  }
+  .explore-scroll{
+    background: url(../images/ribbon-explore.svg) no-repeat center;
+  }
+  .challenge-normal{
+    background: url(../images/challenge-icon.png) no-repeat center;
+  }
+  .challenge-scroll{
+    background: url(../images/ribbon-challenge.svg) no-repeat center;
+  }
 .discover{
- background: url(../images/discover-image-ribbon.png) no-repeat center;
+ .dropdown{
+    background: url(../images/ribbon-discover.svg) no-repeat center;
+  }
   .dropdown-menu{
     background-color: $discover-color;
-
     li {
     background-color: $discover-color;
     color: $discover-color;
@@ -242,8 +462,9 @@ We only want a list of nav links on mobile devices
 }
 
 .explore{
-  background: url(../images/explore-image-ribbon.png) no-repeat center;
-
+  .dropdown{
+     background: url(../images/ribbon-explore.svg) no-repeat center;
+   }
    .dropdown-menu{
     background-color: $explore-color;
 
@@ -263,10 +484,10 @@ We only want a list of nav links on mobile devices
     }
   }
 }
-
 .challenge {
-  background: url(../images/challenge-image-ribbon2.png) no-repeat center;
-
+  .dropdown{
+     background: url(../images/ribbon-challenge.svg) no-repeat center;
+   }
     .dropdown-menu{
     background-color: $challenge-color;
 
@@ -286,7 +507,7 @@ We only want a list of nav links on mobile devices
   }
 }
 }
-}
+
 @media screen and (max-width: 768px){
     .dropdown-menu > li > a {
       color: #337ab7;

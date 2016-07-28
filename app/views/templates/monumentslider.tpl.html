@@ -1,30 +1,22 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner" role="listbox">
     <div data-ng-repeat="slide in slides" class="item {{ slide.class }}">
-      <div class="question col-sm-6 col-md-6 col-lg-6">
+      <div class="question {{ slide.align }} col-sm-6 col-md-6 col-lg-6">
         <h5 class="question__sub-title">{{ slide.title | translate }}</h5>
-        <p>{{ slide.description | translate }}</p>
+        <p class="question__description">{{ slide.description | translate }}</p>
         <h6 class="question__question">{{ slide.question | translate }}</h6>
-        <div class="col-lg-8">
+        <div class="col-lg-10">
           <form action="">
-            <div class="question__answer question__answer--wrong">
-              <input id="wrong" type="radio" name="name" value="" ng-click="page='wrong'">
-              <label for="wrong">{{ slide.wrong | translate }}</label>
-            </div>
-            <div class="question__answer question__answer--correct">
-              <input id="correct" type="radio" name="name" value="" ng-click="page='correct'">
-              <label for="correct">{{ slide.answer | translate }}</label>
-            </div>
-            <div class="question__answer question__answer--wrong">
-              <input id="wrong1" type="radio" name="name" value="" ng-click="page='wrong'">
-              <label for="wrong1">{{ slide.wrong1 | translate }}</label>
-            </div>
+              <div class="question__answer question__answer--{{ answers.type }}" data-ng-repeat="answers in slide.answers">
+                <input type="radio" name="name" value="" ng-click="$parent.page='{{ answers.type }}'">
+                <label for="{{ answers.type }}">{{ answers.answer | translate }}</label>
+                </div>
           </form>
         </div>
-        <div class="question__pop col-lg-4">
+        <div class="question__pop">
           <div ng-switch on="page">
             <div ng-switch-when="correct" class="slider">
-                <img src="images/correct-star-left.png" alt="Correct">
+              <img src="images/correct-star-left.png" alt="Correct">
             </div>
             <div ng-switch-when="wrong">
 
@@ -40,7 +32,7 @@
             </div>
             <span class="carousel-control left" href="#subCarousel{{ $index }}" role="button" data-slide="prev">
         <span class="arrow prev" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">Back</span>
             </span>
             <span class="carousel-control right" href="#subCarousel{{ $index }}" role="button" data-slide="next">
         <span class="arrow next" aria-hidden="true"></span>
@@ -54,7 +46,7 @@
       </div>
       <nav class="question__nav col-lg-12">
         <span class="question__left carousel-control left" href="#myCarousel" role="button" data-slide="prev">
-  <h4><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Previous</h4>
+  <h4><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back</h4>
         </span>
         <span class="question__right carousel-control right" href="#myCarousel" role="button" data-slide="next">
   <h4>Next <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></h4>

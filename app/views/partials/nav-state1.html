@@ -1,0 +1,76 @@
+<div class="state1">
+<nav class="navbar" role="navigation">
+  <div class="navbar-header">
+    <h1 class="navbar-brand visible-xs-block"><a href="/#/">Texas Kids' Guide!</a></h1>
+    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse collapse nav-center bs-navbar-collapse">
+    <div class="nav-top">
+      <ul class="nav navbar-nav">
+        <li class="hidden-xs visible-sm-block visible-md-block visible-lg-block"><a href="/#/" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'HOME' | translate }}</a></li>
+        <li><a href="/#/get-involved" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'GET_INVOLVED' | translate }}</a></li>
+        <li><a href="/#/resources" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'RESOURCES' | translate }}</a></li>
+        <li class="capitol-logo visible-sm-block visible-md-block visible-lg-block animated" ng-class="myCssVar2"></li>
+        <li><a href="/#/glossary" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'GLOSSARY' | translate }}</a></li>
+        <li><a href="/#/site-map" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'SITEMAP' | translate }}</a></li>
+        <li><a href="http://www.house.texas.gov" ng-click="myCssVar='home-animate'; myCssVar2='capitol-logo-home'">{{ 'TEXAS HOUSE' | translate }}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="nav-main navbar col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" role="navigation">
+  <header class="header animated">
+    <h1 class="text-center visible-sm-block visible-md-block visible-lg-block">Texas Kids' Guide!</h1>
+  </header>
+  <div class="nav-lower">
+  <div class="col-sm-4 col-md-4 nav3">
+    <div class="scroller discover-normal"></div>
+    <ul class="nav navbar-nav discover">
+      <li class="dropdown">
+        <a href="" data-toggle="dropdown" class="dropdown-toggle" id="discovermenu">{{ 'DISCOVER' | translate }}<b class="caret"></b></a>
+        <ul class="dropdown-menu removenav" role="menu" aria-labelledby="discovermenu">
+          <li><a href="#/discover/texas-state-government" role="menuitem" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover shake'">{{ 'TEXAS_STATE_GOVERNMENT' | translate }}</a></li>
+          <li><a href="#/discover/house-of-representatives" role="menuitem" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover bounce'">{{ 'TEXAS_HOUSE_OF_REPRESENTATIVES' | translate }}</a></li>
+          <li><a href="#/discover/senate" role="menuitem" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover flash'">{{ 'TEXASSENATE' | translate }}</a></li>
+          <li><a href="#/discover/how-a-bill-becomes-law" role="menuitem" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover pulse'">{{ 'HOW_A_BILL_BECOMES_A_LAW' | translate }}</a></li>
+          <li><a href="#/discover/founding-fathers" role="menuitem" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover rubberBand'">{{ 'FOUNDING_FATHERS' | translate }}</a></li>
+          <li><a href="#/discover/six-flags-of-texas" role="menuitem" ng-click="myCssVar='discover-animate'; myCssVar2='capitol-logo-discover tada'">{{ 'SIX_FLAGS_OF_TEXAS' | translate }}</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-4 col-md-4 nav3">
+    <div class="scroller explore-normal"></div>
+    <ul class="nav navbar-nav explore">
+      <li class="dropdown">
+        <a href="" data-toggle="dropdown" class="dropdown-toggle" id="exploremenu">{{ 'EXPLORE' | translate }}<b class="caret"></b></a>
+        <ul class="dropdown-menu removenav" role="menu" aria-labelledby="exploremenu">
+          <li><a href="#/explore/texas-capitol" role="menuitem" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore wobble'">{{ 'TEXAS_CAPITOL' | translate }}</a></li>
+          <li><a href="#/explore/capitol-grounds" role="menuitem" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore jello'">{{ 'CAPITOL_GROUNDS' | translate }}</a></li>
+          <li><a href="#/explore/capitol-monuments-statues" role="menuitem" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore shake'">{{ 'MONUMENTS_STATUES' | translate }}</a></li>
+          <li><a href="#/explore/rotunda" role="menuitem" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore tada'">{{ 'ROTUNDA' | translate }}</a></li>
+          <li><a href="#/explore/state-seal" role="menuitem" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore flash'">{{ 'STATE_SEAL' | translate }}</a></li>
+          <li><a href="#/explore/state-symbols" role="menuitem" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore bounce'">{{ 'STATE_SYMBOLS' | translate }}</a></li>
+          <li><a href="#/explore/city-of-austin" role="menuitem" ng-click="myCssVar='explore-animate'; myCssVar2='capitol-logo-explore rubberBand'">{{ 'ABOUT_AUSTIN' | translate }}</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-4 col-md-4 nav3">
+    <div class="scroller challenge-normal"></div>
+    <ul class="nav navbar-nav challenge">
+      <li class="dropdown">
+        <a href="" data-toggle="dropdown" class="dropdown-toggle" id="challengemenu">{{ 'CHALLENGE' | translate }}<b class="caret"></b></a>
+        <ul class="dropdown-menu removenav" role="menu" aria-labelledby="challengemenu">
+          <li><a href="#/challenge/flip-cards" role="menuitem" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge swing'">{{ 'FLIP_CARD' | translate }}</a></li>
+          <li><a href="#/challenge/word-search-puzzle" role="menuitem" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge flash'">{{ 'WORD_SEARCH' | translate }}</a></li>
+          <li><a href="#/" role="menuitem" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge tada'">More games soon...</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
