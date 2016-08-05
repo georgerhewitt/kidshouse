@@ -4,11 +4,11 @@ var slider = angular.module('slider',[]);
 
 slider.controller('GoddessLibertyCtrl', ['$scope', function ($scope) {
     $scope.slides = [
-        {image: 'images/explore/goddessliberty/goddessliberty5x392.jpg', description: 'EXPLOREPAGE.GODDESS.P', class: 'active'},
-        {image: 'images/explore/goddessliberty/goddessliberty2x392.jpg', description: 'EXPLOREPAGE.GODDESS.P1', class: ''},
-        {image: 'images/explore/goddessliberty/goddessliberty3x392.jpg', description: 'EXPLOREPAGE.GODDESS.P2', class: ''},
-        {image: 'images/explore/goddessliberty/goddessliberty4x392.jpg', description: 'EXPLOREPAGE.GODDESS.P3', class: ''},
-        {image: 'images/explore/goddessliberty/goddessliberty1x392.jpg', description: 'EXPLOREPAGE.GODDESS.P4', class: ''}
+        {image: 'images/explore/goddessliberty/goddessliberty1.jpg', description: 'EXPLOREPAGE.GODDESS.P', class: 'active'},
+        {image: 'images/explore/goddessliberty/goddessliberty2.jpg', description: 'EXPLOREPAGE.GODDESS.P1', class: ''},
+        {image: 'images/explore/goddessliberty/goddessliberty3.jpg', description: 'EXPLOREPAGE.GODDESS.P2', class: ''},
+        {image: 'images/explore/goddessliberty/goddessliberty4.jpg', description: 'EXPLOREPAGE.GODDESS.P3', class: ''},
+        {image: 'images/explore/goddessliberty/goddessliberty5.jpg', description: 'EXPLOREPAGE.GODDESS.P4', class: ''}
     ];
     $scope.name = 'Goddess';
 }]);
@@ -47,13 +47,14 @@ slider.directive('hsRotundaSlider', function(){
 });
 slider.controller('ExploreCapitolCtrl', ['$scope', function ($scope) {
     $scope.slides = [
-        {image: 'images/explore/capitol/capitolentrance.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE1', description: 'EXPLOREPAGE.CAPITOL.P1', class: 'active'},
+        {image: 'images/explore/capitol/capitolentrance1.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE9', description: 'EXPLOREPAGE.CAPITOL.P9', class: 'active'},
+        {image: 'images/explore/capitol/capitolentrance.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE1', description: 'EXPLOREPAGE.CAPITOL.P1', class: ''},
         {image: 'images/explore/capitol/treasury1.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE2', description: 'EXPLOREPAGE.CAPITOL.P2', class: ''},
-        {image: 'images/explore/capitol/treasury2.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE3', description: 'EXPLOREPAGE.CAPITOL.P3', class: ''},
         {image: 'images/explore/capitol/capitol.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE4', description: 'EXPLOREPAGE.CAPITOL.P4', class: ''},
-        {image: 'images/explore/capitol/capitol10.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE5', description: 'EXPLOREPAGE.CAPITOL.P5', class: ''},
         {image: 'images/explore/capitol/capitol7.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE6', description: 'EXPLOREPAGE.CAPITOL.P6', class: ''},
-        {image: 'images/explore/capitol/capitol8.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE7', description: 'EXPLOREPAGE.CAPITOL.P7', class: ''}
+        {image: 'images/explore/capitol/capitol8.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE7', description: 'EXPLOREPAGE.CAPITOL.P7', class: ''},
+        {image: 'images/explore/capitol/supreme-court3.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE8', description: 'The Latine phrase in the Original Supreme Court courtroom means "as to our fathers May God be to us".', class: ''},
+        {image: 'images/explore/capitol/supreme-court.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE8', description: 'EXPLOREPAGE.CAPITOL.P8', class: ''}
     ];
     $scope.name = 'Capitol';
   }]);
@@ -76,6 +77,12 @@ slider.controller('HouseCtrl', ['$scope', function ($scope) {
         {image: 'images/explore/house/house3.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P3', class: ''},
         {image: 'images/explore/house/house4.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P4', class: ''},
         {image: 'images/explore/house/house5.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
+        {image: 'images/explore/house/house7.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
+        {image: 'images/explore/house/house8.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P8', class: ''},
+        {image: 'images/explore/house/house9.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
+        {image: 'images/explore/house/house10.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
+        {image: 'images/explore/house/house11.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
+        {image: 'images/explore/house/house12.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE4', description: 'EXPLOREPAGE.HOUSE.P12', class: ''},
         {image: 'images/explore/house/agmuseum.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE3', description: 'EXPLOREPAGE.HOUSE.P7', class: ''},
         {image: 'images/explore/house/agmuseum1.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE3', description: 'EXPLOREPAGE.HOUSE.P7', class: ''}
     ];
@@ -100,6 +107,7 @@ slider.controller('SenateCtrl', ['$scope', function ($scope) {
         {image: 'images/explore/senate/senate3.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P3', class: ''},
         {image: 'images/explore/senate/senate4.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P4', class: ''},
         {image: 'images/explore/senate/senate5.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P5', class: ''},
+        {image: 'images/explore/senate/secofstate.jpg', title: 'Secretary of State Texas', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
         {image: 'images/explore/senate/secofstate1.jpg', title: 'Secretary of State Texas', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
         {image: 'images/explore/senate/secofstate2.jpg', title: 'Secretary of State Texas', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
     ];

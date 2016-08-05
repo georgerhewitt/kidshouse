@@ -4,10 +4,12 @@
       <h3>{{ 'DISCOVERPAGE.TEXAS_STATE_GOVERNMENT.PAGETITLE' | translate }}</h3>
       <h4><strong>{{ 'DISCOVERPAGE.TEXAS_STATE_GOVERNMENT.TITLE' | translate }}</strong>: <em>{{ 'DISCOVERPAGE.TEXAS_STATE_GOVERNMENT.TITLE1' | translate }}</em></h4>
       </div>
-    <section class="col-sm-12 col-md-6 col-lg-6 pull-right">
-      <img src="images/discover/discover-texas-state-government.jpg" class="img-responsive">
-      <!-- <p class="image-caption">{{ "DISCOVERPAGE.TEXAS_STATE_GOVERNMENT.TITLE" | translate }}</p> -->
-    </section>
+    <div class="col-sm-12 col-md-6 col-lg-6 pull-right">
+      <figure>
+      <img src="images/discover/discover-texas-state-government.jpg" class="img-responsive" alt="Governor at there desk">
+      <!-- <figcaption class="image-caption">{{ "DISCOVERPAGE.TEXAS_STATE_GOVERNMENT.TITLE" | translate }}</figcaption> -->
+      </figure>
+    </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
     <div class="circle circle--branch pull-left">
       <a href="http://gov.texas.gov" target="_blank">
@@ -26,8 +28,10 @@
     </div>
     <div class="row border">
     <div class="col-sm-2 col-md-2">
-      <img src="images/discover/governor.jpg" class="img-responsive">
-      <p class="image-caption">Governor Greg Abbott</p>
+      <figure>
+      <img src="images/discover/governor.jpg" class="img-responsive" alt="Governor Greg Abbott">
+      <figcaption class="image-caption">Governor Greg Abbott</figcaption>
+    </figure>
     </div>
 
     <div class="col-sm-9 col-md-9">
@@ -39,10 +43,12 @@
     <div class="col-lg-12">
     <h4><strong>{{ "DISCOVERPAGE.LEGISLATIVE_BRANCH.PAGETITLE" | translate }}</strong>: <em>{{ "DISCOVERPAGE.LEGISLATIVE_BRANCH.TITLE3" | translate }}</em></h4>
     </div>
-    <section class="col-sm-4 pull-left">
-      <img src="images/discover/senate.jpg" class="img-responsive">
-      <p class="image-caption">{{ "DISCOVERPAGE.LEGISLATIVE_BRANCH.TITLE3" | translate }}</p>
-    </section>
+    <div class="col-sm-4 pull-left">
+      <figure>
+      <img src="images/discover/senate.jpg" class="img-responsive" alt="The Texas Senate">
+      <figcaption class="image-caption">{{ "DISCOVERPAGE.LEGISLATIVE_BRANCH.TITLE3" | translate }}</figcaption>
+    </figure>
+    </div>
     <div class="col-md-8">
     <div class="circle circle--senate pull-right">
       <a href="http://www.senate.texas.gov" target="_blank">
@@ -64,8 +70,10 @@
     </div> <!-- row -->
     <div class="row border">
     <div class="col-sm-2 col-md-2">
-      <img src="images/discover/lieutenant-governor.jpg" class="img-responsive pull-left">
-      <p class="image-caption">Lieutenant Governor Dan Patrick</p>
+      <figure>
+      <img src="images/discover/lieutenant-governor.jpg" class="img-responsive pull-left" alt="Lieutenant Governor Dan Patrick">
+      <figcaption class="image-caption">Lieutenant Governor Dan Patrick</figcaption>
+    </figure>
     </div>
     <div class="col-sm-9 col-md-9">
       <h6>{{ 'DISCOVERPAGE.LEGISLATIVE_BRANCH.TITLE4' | translate }}</h6>
@@ -99,14 +107,16 @@
 
     </div>
 
-    <section class="col-sm-6 pull-right">
-      <img src="images/discover/texas-house.jpg" class="img-responsive">
-      <p class="image-caption">{{ 'DISCOVERPAGE.LEGISLATIVE_BRANCH.TITLE' | translate }}</p>
-    </section>
+    <div class="col-sm-6 pull-right">
+      <figure>
+      <img src="images/discover/texas-house.jpg" class="img-responsive" alt="The Texas House of Representatives">
+      <figcaption class="image-caption">{{ 'DISCOVERPAGE.LEGISLATIVE_BRANCH.TITLE' | translate }}</figcaption>
+      </figure>
+    </div>
     </div>
     <div class="row border">
     <div class="col-sm-2 col-md-2">
-      <img src="images/discover/speaker.jpg" class="img-responsive">
+      <img src="images/discover/speaker.jpg" class="img-responsive" alt="Speaker Joe Straus">
       <p class="image-caption">Speaker Joe Straus</p>
     </div>
     <div class="col-sm-9 col-md-9">
@@ -119,8 +129,14 @@
         <h4><strong>{{ 'DISCOVERPAGE.SUPREME_COURT.PAGETITLE' | translate }}</strong>: <em>{{ 'DISCOVERPAGE.SUPREME_COURT.TITLE' | translate }}</em></h4>
       </div>
       <div class="col-md-5">
-        <img src="images/discover/judicial-branch.jpg" class="img-responsive">
-        <p class="image-caption">{{ "DISCOVERPAGE.SUPREME_COURT.ITEM" | translate }}</p>
+        <figure>
+          <img src="images/discover/judicial-branch.jpg" class="img-responsive" alt="Members of the Texas Supreme Court ">
+          <figcaption class="image-caption">
+            {{ "DISCOVERPAGE.SUPREME_COURT.ITEM" | translate }}
+          </figcaption>
+        </figure>
+        <!-- <img src="images/discover/judicial-branch.jpg" class="img-responsive" alt='{{ "DISCOVERPAGE.SUPREME_COURT.ITEM" | translate }}'>
+        <p class="image-caption">{{ "DISCOVERPAGE.SUPREME_COURT.ITEM" | translate }}</p> -->
       </div>
     <section class="col-md-7">
       <div class="circle circle--branch pull-right">

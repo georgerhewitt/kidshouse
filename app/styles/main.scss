@@ -33,6 +33,9 @@ $green-dark: #8CB533;
 $blue-dark: #214B76;
 $blue-light: #3B69A2;
 
+$lgsize: "1690px";
+$mdsize: "1200px";
+
 @mixin effect($effect){
   -webkit-animation-name: $effect;
   animation-name: $effect;
