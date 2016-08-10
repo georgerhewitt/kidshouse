@@ -28,7 +28,7 @@
         <div id="subCarousel{{ $index }}" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div data-ng-repeat="images in slide.images" class="item {{ images.class }}">
-              <img ng-src="{{ images.image }}" class="img-responsive">
+              <img ng-src="{{ images.image }}" class="img-responsive" alt="{{ slide.caption | translate }}">
             </div>
             <span class="carousel-control left" href="#subCarousel{{ $index }}" role="button" data-slide="prev">
         <span class="arrow prev" aria-hidden="true"></span>

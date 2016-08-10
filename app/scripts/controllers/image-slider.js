@@ -95,7 +95,8 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
     {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE3', description: 'EXPLOREPAGE.CITY_AUSTIN.P3', address: '100 S Congress Ave Austin, TX 78701', class: '',
     'images':[
       {image: 'images/explore/city-austin/austinbatbridge1.jpg', class: 'active'},
-      {image: 'images/explore/city-austin/austinbatbridge2.jpg', class: ''}
+      {image: 'images/explore/city-austin/austinbatbridge2.jpg', class: ''},
+      {image: 'images/explore/city-austin/austinbatbridge3.jpg', class: ''}
     ]
     },
     {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE4', description: 'EXPLOREPAGE.CITY_AUSTIN.P4', address: '1800 Congress Ave, Austin, TX 78701', class: '',

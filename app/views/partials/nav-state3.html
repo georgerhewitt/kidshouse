@@ -4,7 +4,7 @@
   <!-- <div class="nav-main__logo"> -->
   <div class="nav-main__logo col-sm-3 col-md-3">
     <header class="header animated">
-      <a href="#/">
+      <a href="#/" role="button" aria-label="link back to home page">
       <div class="nav-main__home {{ logo }} animated pull-left">
         <span class="nav-main__home-link">HOME</span>
       </div>
@@ -50,7 +50,7 @@
         <ul class="dropdown-menu removenav" role="menu" aria-labelledby="challengemenu">
           <li><a ui-sref="flip-cards" role="menuitem" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge swing'">{{ 'FLIP_CARD' | translate }}</a></li>
           <li><a ui-sref="word-search-puzzle" role="menuitem" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge flash'">{{ 'WORD_SEARCH' | translate }}</a></li>
-          <li><a ui-sref="texas-government-test" role="menuitem" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge tada'">{{ 'TEXAS_GOVERMENT_TEST' | translate }}</a></li>
+          <li><a href="#/" role="menuitem" ng-click="myCssVar='challenge-animate'; myCssVar2='capitol-logo-challenge tada'">More games soon...</a></li>
         </ul>
       </li>
     </ul>

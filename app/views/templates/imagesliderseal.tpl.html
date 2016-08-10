@@ -5,7 +5,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox" data-ng-controler="FlagCtrl">
     <div class="item {{ slide.class }}" data-ng-repeat="slide in slides">
-      <img ng-src="{{slide.image}}" alt="Texas Seal">
+      <img ng-src="{{slide.image}}" alt="{{slide.description | translate }}">
       <H4>{{slide.title | translate }}</H4>
       <p class="image-caption">{{slide.description | translate }}</p>
     </div>

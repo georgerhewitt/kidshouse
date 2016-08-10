@@ -53,7 +53,7 @@ slider.controller('ExploreCapitolCtrl', ['$scope', function ($scope) {
         {image: 'images/explore/capitol/capitol.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE4', description: 'EXPLOREPAGE.CAPITOL.P4', class: ''},
         {image: 'images/explore/capitol/capitol7.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE6', description: 'EXPLOREPAGE.CAPITOL.P6', class: ''},
         {image: 'images/explore/capitol/capitol8.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE7', description: 'EXPLOREPAGE.CAPITOL.P7', class: ''},
-        {image: 'images/explore/capitol/supreme-court3.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE8', description: 'The Latine phrase in the Original Supreme Court courtroom means "as to our fathers May God be to us".', class: ''},
+        {image: 'images/explore/capitol/supreme-court3.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE8', description: 'The Latin phrase in the Original Supreme Court courtroom means "as to our fathers May God be to us".', class: ''},
         {image: 'images/explore/capitol/supreme-court.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE8', description: 'EXPLOREPAGE.CAPITOL.P8', class: ''}
     ];
     $scope.name = 'Capitol';
@@ -77,14 +77,14 @@ slider.controller('HouseCtrl', ['$scope', function ($scope) {
         {image: 'images/explore/house/house3.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P3', class: ''},
         {image: 'images/explore/house/house4.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P4', class: ''},
         {image: 'images/explore/house/house5.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
-        {image: 'images/explore/house/house7.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
+        {image: 'images/explore/house/house7.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P6', class: ''},
         {image: 'images/explore/house/house8.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P8', class: ''},
-        {image: 'images/explore/house/house9.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
-        {image: 'images/explore/house/house10.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
-        {image: 'images/explore/house/house11.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P5', class: ''},
+        {image: 'images/explore/house/house9.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P7', class: ''},
+        {image: 'images/explore/house/house10.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.TITLE', class: ''},
+        {image: 'images/explore/house/house11.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE', description: 'EXPLOREPAGE.HOUSE.P11', class: ''},
         {image: 'images/explore/house/house12.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE4', description: 'EXPLOREPAGE.HOUSE.P12', class: ''},
-        {image: 'images/explore/house/agmuseum.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE3', description: 'EXPLOREPAGE.HOUSE.P7', class: ''},
-        {image: 'images/explore/house/agmuseum1.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE3', description: 'EXPLOREPAGE.HOUSE.P7', class: ''}
+        {image: 'images/explore/house/agmuseum.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE3', description: 'EXPLOREPAGE.HOUSE.P9', class: ''},
+        {image: 'images/explore/house/agmuseum1.jpg', title: 'EXPLOREPAGE.HOUSE.TITLE3', description: 'EXPLOREPAGE.HOUSE.P9', class: ''}
     ];
     $scope.name = 'House_';
   }]);
