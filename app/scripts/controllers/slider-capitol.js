@@ -53,7 +53,7 @@ slider.controller('ExploreCapitolCtrl', ['$scope', function ($scope) {
         {image: 'images/explore/capitol/capitol.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE4', description: 'EXPLOREPAGE.CAPITOL.P4', class: ''},
         {image: 'images/explore/capitol/capitol7.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE6', description: 'EXPLOREPAGE.CAPITOL.P6', class: ''},
         {image: 'images/explore/capitol/capitol8.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE7', description: 'EXPLOREPAGE.CAPITOL.P7', class: ''},
-        {image: 'images/explore/capitol/supreme-court3.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE8', description: 'The Latin phrase in the Original Supreme Court courtroom means "as to our fathers May God be to us".', class: ''},
+        {image: 'images/explore/capitol/supreme-court3.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE8', description: 'The Latin phrase in the Original Supreme Court courtroom means "as to our fathers May God be to us."', class: ''},
         {image: 'images/explore/capitol/supreme-court.jpg', title: 'EXPLOREPAGE.CAPITOL.TITLE8', description: 'EXPLOREPAGE.CAPITOL.P8', class: ''}
     ];
     $scope.name = 'Capitol';
@@ -107,9 +107,9 @@ slider.controller('SenateCtrl', ['$scope', function ($scope) {
         {image: 'images/explore/senate/senate3.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P3', class: ''},
         {image: 'images/explore/senate/senate4.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P4', class: ''},
         {image: 'images/explore/senate/senate5.jpg', title: 'EXPLOREPAGE.SENATE.TITLE', description: 'EXPLOREPAGE.SENATE.P5', class: ''},
-        {image: 'images/explore/senate/secofstate.jpg', title: 'Secretary of State Texas', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
-        {image: 'images/explore/senate/secofstate1.jpg', title: 'Secretary of State Texas', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
-        {image: 'images/explore/senate/secofstate2.jpg', title: 'Secretary of State Texas', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
+        {image: 'images/explore/senate/secofstate.jpg', title: 'EXPLOREPAGE.SENATE.TITLE3', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
+        {image: 'images/explore/senate/secofstate1.jpg', title: 'EXPLOREPAGE.SENATE.TITLE3', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
+        {image: 'images/explore/senate/secofstate2.jpg', title: 'EXPLOREPAGE.SENATE.TITLE3', description: 'EXPLOREPAGE.SENATE.P6', class: ''},
     ];
     $scope.name = 'Senate';
   }]);

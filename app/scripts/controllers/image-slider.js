@@ -26,14 +26,15 @@ hsImageSlider.directive('hsSliderFlags', function(){
 //state-seal
 hsImageSlider.controller('StateSealCtrl', ['$scope', function ($scope) {
     $scope.slides = [
-        {image: 'images/explore/stateseal/seal1.jpg', title: '', description: 'Members Lounge', class: 'active'},
+        {image: 'images/explore/stateseal/seal9.jpg', title: '', description: 'House Chamber Chairs', class: 'active'},
+        {image: 'images/explore/stateseal/seal1.jpg', title: '', description: 'Members Lounge', class: ''},
         {image: 'images/explore/stateseal/seal2.jpg', title: '', description: 'Outdoor Rotunda', class: ''},
         {image: 'images/explore/stateseal/seal3.jpg', title: '', description: 'Capitol Gate', class: ''},
         {image: 'images/explore/stateseal/seal4.jpg', title: '', description: 'House Chamber', class: ''},
         {image: 'images/explore/stateseal/seal5.jpg', title: '', description: 'Floor of the Rotunda', class: ''},
         {image: 'images/explore/stateseal/seal6.jpg', title: '', description: 'Floor of the Extension', class: ''},
-        {image: 'images/explore/stateseal/seal8.jpg', title: '', description: 'Seals on the north side of the Capitol', class: ''},
-        {image: 'images/explore/stateseal/seal9.jpg', title: '', description: 'House Chamber Chairs', class: ''}
+        {image: 'images/explore/stateseal/seal8.jpg', title: '', description: 'Seals on the north side of the Capitol', class: ''}
+
     ];
   }]);
    // page slider 812x392
@@ -111,7 +112,6 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
       {image: 'images/explore/city-austin/austindowntown1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austindowntown2.jpg', class: ''},
       {image: 'images/explore/city-austin/austindowntown3.jpg', class: ''},
-      {image: 'images/explore/city-austin/austindowntown4.jpg', class: ''},
       {image: 'images/explore/city-austin/austindowntown5.jpg', class: ''}
     ]
     },
