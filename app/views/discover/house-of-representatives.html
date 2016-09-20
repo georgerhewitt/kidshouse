@@ -2,17 +2,8 @@
     <h3>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.PAGETITLE' | translate }}</h3>
     <div class="row">
 
-    <p>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.TITLE' | translate }}</p>
+    <p>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.P' | translate }}</p>
 
-    <div class="col-md-12">
-        <ul>
-          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM1' | translate }}</li>
-          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM2' | translate }}</li>
-          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM3' | translate }}</li>
-          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM4' | translate }}</li>
-          <li>{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.ITEM5' | translate }}</li>
-        </ul>
-    </div>
     <div class="col-sm-12 col-md-12 col-lg-9">
   <div>
     <div ng-controller="SliderHouseCtrl">
@@ -21,18 +12,19 @@
   </div>
     </div>
     <div class="col-sm-10 col-md-10 col-lg-2">
-    <p  class="image-caption"><em></em></p>
-    <div class="circle circle--branch">
-      <div>
+
+      <div class="circle circle--senate">
         <a href="http://www.house.texas.gov" target="_blank">
-        <div class="circle__action">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.TITLE' | translate }}</div>
-        <div class="circle__sub">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.ITEM1' | translate }}</div>
-        <div class="circle__title circle__title--exec">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.ITEM2' | translate }}</div>
-        <div class="circle__title">{{ 'DISCOVERPAGE.THE_TEXAS_HOUSE_OF_REPRESENTATIVES.CLICK_HERE.ITEM3' | translate }}</div>
-        <div class="circle__play"><i class="glyphicon glyphicon-play"></i></div>
+        <div>
+          <div class="circle__action">{{ "DISCOVERPAGE.LEGISLATIVE_BRANCH.CLICK_HERE.TITLE" | translate }}</div>
+          <div class="circle__sub">{{ "DISCOVERPAGE.LEGISLATIVE_BRANCH.CLICK_HERE.ITEM1" | translate }}</div>
+          <div class="circle__sub2">{{ "DISCOVERPAGE.LEGISLATIVE_BRANCH.CLICK_HERE.ITEM2" | translate }}</div>
+          <div class="circle__title circle__title--texas">{{ "DISCOVERPAGE.LEGISLATIVE_BRANCH.CLICK_HERE.ITEM3" | translate }}</div>
+          <div class="circle__title-sub">{{ "DISCOVERPAGE.LEGISLATIVE_BRANCH.CLICK_HERE.ITEM5" | translate }}</div>
+          <div class="circle__exclamation">!</div>
+        </div>
         </a>
       </div>
-    </div>
 
   </div>
   </div>

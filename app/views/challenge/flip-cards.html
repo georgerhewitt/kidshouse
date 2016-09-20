@@ -6,17 +6,15 @@
   </div>
 </div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal" ng-controller="GameCtrl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h3 class="modal-title" id="myModalLabel">FLIP CARDS</h3>
+        <p>Please click to match card pairs!</p>
       </div>
       <div class="modal-body">
-
-
-        <div ng-controller="GameCtrl">
           <div>Pairs left to match: {{game.unmatchedPairs}}</div>
           <div>Matching: {{game.firstPick.title}}</div>
           <div class="table-responsive">
@@ -33,34 +31,14 @@
               </tr>
             </table>
           </div>
-
+          {{game.tileNames}}
           <div ng-if="game.message == 'Good job! Keep going.'">
-
-            <div id="myModal" class="modal hide fade in" role="dialog">
-            <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-              </div>
-              <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            </div>
-            </div>
+          <div class="message">You found a match!</div>
           </div>
 
           <div ng-if="game.message != 'Good job! Keep going.'">
           <div class="message">{{game.message}}</div>
           </div>
-
-        </div>
-
 
       </div>
       <div class="modal-footer">
@@ -69,3 +47,8 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  $('#myModal').on('hidden.bs.modal', function () {
+    location.reload();
+  });
+</script>

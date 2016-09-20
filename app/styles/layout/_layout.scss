@@ -1,3 +1,20 @@
+body {
+  background-image: url("/images/stars45.png");
+  background-attachment: fixed;
+  background-color: $home-color;
+}
+// body.ng-scope {
+//   background-color: $home-color;
+// }
+body.discover-animate {
+  background-color: $discover-color-light;
+}
+body.explore-animate {
+  background-color: $explore-color-light;
+}
+body.challenge-animate {
+  background-color: $challenge-color-light;
+}
 .traspartent{
   background: rgba(255,255,255,0.5);
   height: 25px;
@@ -18,32 +35,13 @@
 .main{
   padding: 0 30px 30px 30px;
 }
-
 .main-header{
   padding-left: 0px;
   padding-right: 0px;
-  //padding-top: 50px;
 }
-
 .main.row.ng-scope{
   background-color: #FFF;
 }
 .main.row.ng-scope div.col-md-12 div.ng-scope{
   background-color: #FFF;
-}
-
-
-footer{
-  background-color: rgba(250, 250, 250, 0.8);
-  display: block;
-  padding-top: 10px;
-}
-
-@media (min-width: 768px){
-  .main{
-    //padding: 0 30px 30px 30px;
-  }
-  .nav-top {
-    //margin-top: 30px;
-  }
 }

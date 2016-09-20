@@ -1,8 +1,6 @@
 'use strict';
 /* Memory Game Models and Business Logic */
 
-
-
 function Tile(title) {
   this.title = title;
   this.flipped = false;
