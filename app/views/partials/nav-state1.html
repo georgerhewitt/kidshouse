@@ -1,75 +1,83 @@
-<div class="state1 row">
-<nav class="navbar" role="navigation">
-  <div class="navbar-header">
-    <h1 class="navbar-brand visible-xs-block"><a href="/#/">Texas Kids' Guide!</a></h1>
-    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+<div class="{{ nav }}">
+  <nav class="navbar nav-top" role="navigation">
+    <div class="navbar-header">
+      <h1 class="visible-xs-block"><a href="/#/">Texas Kids' Guide!</a></h1>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
       <span class="sr-only">Toggle navigation</span>
       <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
     </button>
-  </div>
-  <div class="navbar-collapse collapse nav-center bs-navbar-collapse">
-    <div class="nav-top">
-      <ul class="nav navbar-nav">
-        <li class="hidden-xs visible-sm-block visible-md-block visible-lg-block"><a href="/#/" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'HOME' | translate }}</a></li>
-        <li><a href="/#/get-involved" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'GET_INVOLVED' | translate }}</a></li>
-        <li><a href="/#/resources" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'RESOURCES' | translate }}</a></li>
-        <li class="capitol-logo visible-sm-block visible-md-block visible-lg-block animated" ng-class="myCssVar2"></li>
-        <li><a href="/#/glossary" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'GLOSSARY' | translate }}</a></li>
-        <li><a href="/#/site-map" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'SITEMAP' | translate }}</a></li>
-        <li><a href="http://www.house.texas.gov" ng-click="myCssVar2='capitol-logo-home'" target="_blank">{{ 'TEXAS HOUSE' | translate }}</a></li>
-      </ul>
     </div>
-  </div>
-</nav>
-<nav class="nav-main navbar col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" role="navigation">
-  <header class="header animated">
-    <h1 class="text-center visible-sm-block visible-md-block visible-lg-block">Texas Kids' Guide!</h1>
-  </header>
-  <div class="nav-lower">
-  <div class="col-sm-4 col-md-4 nav3">
-    <div class="scroller discover-normal"></div>
-    <ul class="nav navbar-nav discover">
-      <li class="dropdown">
-        <a href="" data-toggle="dropdown" class="dropdown-toggle" id="discovermenu" tabindex="0">{{ 'DISCOVER' | translate }}<b class="caret"></b></a>
-        <ul class="dropdown-menu removenav" role="menu" aria-labelledby="discovermenu">
-          <li><a href="#/discover/texas-state-government" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover shake'">{{ 'TEXAS_STATE_GOVERNMENT' | translate }}</a></li>
-          <li><a href="#/discover/house-of-representatives" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover bounce'">{{ 'TEXASHOUSE' | translate }}</a></li>
-          <li><a href="#/discover/senate" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover flash'">{{ 'TEXASSENATE' | translate }}</a></li>
-          <li><a href="#/discover/how-a-bill-becomes-law" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover pulse'">{{ 'HOW_A_BILL_BECOMES_A_LAW' | translate }}</a></li>
-          <li><a href="#/discover/founding-fathers" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover rubberBand'">{{ 'FOUNDING_FATHERS' | translate }}</a></li>
-          <li><a href="#/discover/six-flags-of-texas" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover tada'">{{ 'SIX_FLAGS_OF_TEXAS' | translate }}</a></li>
+    <div class="navbar-collapse collapse nav-center bs-navbar-collapse">
+      <div class="nav-bar-top">
+        <ul class="nav navbar-nav">
+          <li class="hidden-xs visible-sm-block visible-md-block visible-lg-block"><a href="/#/" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'HOME' | translate }}</a></li>
+          <li><a href="/#/get-involved" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'GET_INVOLVED' | translate }}</a></li>
+          <li><a href="/#/resources" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'RESOURCES' | translate }}</a></li>
+          <li class="capitol-logo visible-sm-block visible-md-block visible-lg-block animated" ng-class="myCssVar2"></li>
+          <li><a href="/#/glossary" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'GLOSSARY' | translate }}</a></li>
+          <li><a href="/#/site-map" ng-click="myCssVar2='capitol-logo-home'" tabindex="0">{{ 'SITEMAP' | translate }}</a></li>
+          <li><a href="http://www.house.texas.gov" ng-click="myCssVar2='capitol-logo-home'" target="_blank">{{ 'TEXAS HOUSE' | translate }}</a></li>
         </ul>
-      </li>
-    </ul>
-  </div>
-  <div class="col-sm-4 col-md-4 nav3">
-    <div class="scroller explore-normal"></div>
-    <ul class="nav navbar-nav explore">
-      <li class="dropdown">
-        <a href="" data-toggle="dropdown" class="dropdown-toggle" id="exploremenu" tabindex="0" >{{ 'EXPLORE' | translate }}<b class="caret"></b></a>
-        <ul class="dropdown-menu removenav" role="menu" aria-labelledby="exploremenu">
-          <li><a href="#/explore/texas-capitol" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore wobble'">{{ 'TEXAS_CAPITOL' | translate }}</a></li>
-          <li><a href="#/explore/capitol-grounds" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore jello'">{{ 'CAPITOL_GROUNDS' | translate }}</a></li>
-          <li><a href="#/explore/capitol-monuments-statues" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore shake'">{{ 'MONUMENTS_STATUES' | translate }}</a></li>
-          <li><a href="#/explore/rotunda" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore tada'">{{ 'ROTUNDA' | translate }}</a></li>
-          <li><a href="#/explore/state-seal" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore flash'">{{ 'STATE_SEAL' | translate }}</a></li>
-          <li><a href="#/explore/state-symbols" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore bounce'">{{ 'STATE_SYMBOLS' | translate }}</a></li>
-          <li><a href="#/explore/city-of-austin" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore rubberBand'">{{ 'ABOUT_AUSTIN' | translate }}</a></li>
+      </div>
+    </div>
+  </nav>
+  <nav class="nav-main navbar col-lg-10 col-lg-offset-1" role="navigation">
+    <header class="header animated">
+      <h1 class="text-center">Texas Kids' Guide!</h1>
+    </header>
+    <div class="navbar-collapse collapse nav-center bs-navbar-collapse">
+      <div class="nav-main__logo">
+          <a href="#/" role="button" aria-label="link back to home page">
+          <div class="nav-main__home {{ logo }} animated pull-left">
+            <span class="nav-main__home-link">HOME</span>
+          </div>
+          </a>
+      </div>
+      <div class="col-sm-4 nav3">
+        <div class="scroller discover-normal"></div>
+        <ul class="nav navbar-nav discover">
+          <li class="dropdown">
+            <a href="" data-toggle="dropdown" class="dropdown-toggle" id="discovermenu" tabindex="0">{{ 'DISCOVER' | translate }}<b class="caret"></b></a>
+            <ul class="dropdown-menu removenav" role="menu" aria-labelledby="discovermenu">
+              <li><a href="#/discover/texas-state-government" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover shake'">{{ 'TEXAS_STATE_GOVERNMENT' | translate }}</a></li>
+              <li><a href="#/discover/house-of-representatives" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover bounce'">{{ 'TEXASHOUSE' | translate }}</a></li>
+              <li><a href="#/discover/senate" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover flash'">{{ 'TEXASSENATE' | translate }}</a></li>
+              <li><a href="#/discover/how-a-bill-becomes-law" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover pulse'">{{ 'HOW_A_BILL_BECOMES_A_LAW' | translate }}</a></li>
+              <li><a href="#/discover/founding-fathers" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover rubberBand'">{{ 'FOUNDING_FATHERS' | translate }}</a></li>
+              <li><a href="#/discover/six-flags-of-texas" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-discover tada'">{{ 'SIX_FLAGS_OF_TEXAS' | translate }}</a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-    </ul>
-  </div>
-  <div class="col-sm-4 col-md-4 nav3">
-    <div class="scroller challenge-normal"></div>
-    <ul class="nav navbar-nav challenge">
-      <li class="dropdown">
-        <a href="" data-toggle="dropdown" class="dropdown-toggle" id="challengemenu" tabindex="0" >{{ 'CHALLENGE' | translate }}<b class="caret"></b></a>
-        <ul class="dropdown-menu removenav" role="menu" aria-labelledby="challengemenu">
-          <li><a href="#/challenge/flip-cards" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-challenge swing'">{{ 'FLIP_CARD' | translate }}</a></li>
-          <li><a href="#/challenge/word-search-puzzle" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-challenge flash'">{{ 'WORD_SEARCH' | translate }}</a></li>
+      </div>
+      <div class="col-sm-4 nav3">
+        <div class="scroller explore-normal"></div>
+        <ul class="nav navbar-nav explore">
+          <li class="dropdown">
+            <a href="" data-toggle="dropdown" class="dropdown-toggle" id="exploremenu" tabindex="0">{{ 'EXPLORE' | translate }}<b class="caret"></b></a>
+            <ul class="dropdown-menu removenav" role="menu" aria-labelledby="exploremenu">
+              <li><a href="#/explore/texas-capitol" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore wobble'">{{ 'TEXAS_CAPITOL' | translate }}</a></li>
+              <li><a href="#/explore/capitol-grounds" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore jello'">{{ 'CAPITOL_GROUNDS' | translate }}</a></li>
+              <li><a href="#/explore/capitol-monuments-statues" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore shake'">{{ 'MONUMENTS_STATUES' | translate }}</a></li>
+              <li><a href="#/explore/rotunda" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore tada'">{{ 'ROTUNDA' | translate }}</a></li>
+              <li><a href="#/explore/state-seal" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore flash'">{{ 'STATE_SEAL' | translate }}</a></li>
+              <li><a href="#/explore/state-symbols" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore bounce'">{{ 'STATE_SYMBOLS' | translate }}</a></li>
+              <li><a href="#/explore/city-of-austin" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-explore rubberBand'">{{ 'ABOUT_AUSTIN' | translate }}</a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-    </ul>
+      </div>
+      <div class="col-sm-4 nav3">
+        <div class="scroller challenge-normal"></div>
+        <ul class="nav navbar-nav challenge">
+          <li class="dropdown">
+            <a href="" data-toggle="dropdown" class="dropdown-toggle" id="challengemenu" tabindex="0">{{ 'CHALLENGE' | translate }}<b class="caret"></b></a>
+            <ul class="dropdown-menu removenav" role="menu" aria-labelledby="challengemenu">
+              <li><a href="#/challenge/flip-cards" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-challenge swing'">{{ 'FLIP_CARD' | translate }}</a></li>
+              <li><a href="#/challenge/word-search-puzzle" tabindex="0" role="menuitem" ng-click="myCssVar2='capitol-logo-challenge flash'">{{ 'WORD_SEARCH' | translate }}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  </nav>
   </div>
-</nav>
 </div>

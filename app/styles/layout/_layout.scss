@@ -3,9 +3,9 @@ body {
   background-attachment: fixed;
   background-color: $home-color;
 }
-// body.ng-scope {
-//   background-color: $home-color;
-// }
+body.home-animate {
+  background-color: $home-color;
+}
 body.discover-animate {
   background-color: $discover-color-light;
 }
@@ -31,6 +31,10 @@ body.challenge-animate {
     margin-left: 0;
     margin-right: 0;
     padding: 10px 0 10px 0;
+    @media screen and (max-width: 768px) {
+      // remove padding on mobl to tightn up spacing
+      padding: 0;
+    }
 }
 .main{
   padding: 0 30px 30px 30px;

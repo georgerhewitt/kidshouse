@@ -14,21 +14,21 @@
     <h3>VIDEOS</h3>
     <ul>
       <li><a href="" data-toggle="modal" data-target="#myWelcomeModal">Welcome</a></li>
-      <li><a href="" data-toggle="modal" data-target="#myExploreModal">Explore The Capitol Grounds</li>
-      <li><a href="" data-toggle="modal" data-target="#myBillModal">How A Bill Becomes A Law</li>
-      <li><a href="" data-toggle="modal" data-target="#mySenateModal">Senate Chamber</li>
-      <li><a href="" data-toggle="modal" data-target="#myRotundaModal">Rotunda</li>
+      <li><a href="" data-toggle="modal" data-target="#myExploreModal">Explore The Capitol Grounds</a></li>
+      <li><a href="" data-toggle="modal" data-target="#myBillModal">How A Bill Becomes A Law</a></li>
+      <li><a href="" data-toggle="modal" data-target="#mySenateModal">Senate Chamber</a></li>
+      <li><a href="" data-toggle="modal" data-target="#myRotundaModal">Rotunda</a></li>
     </ul>
   </div>
     <div class="col-md-9">
       <h3>REFERENCE GUIDES</h3>
     <div class="col-md-5">
       <h5>A Kids' Guide</h5>
-      <a href="assets/texas-house-kids-guide.pdf" target="_blank"><img src="images/kids-guide.jpg" alt="Kids Guide"></a>
+      <a href="assets/texas-house-kids-guide.pdf" target="_blank"><img src="images/kids-guide.jpg" alt="Kids Guide PDF"></a>
     </div>
     <div class="col-md-6">
       <h5>Discover Texas History</h5>
-    <a href="assets/texas-house-kids-scavenger-hunt.pdf" target="_blank"><img src="images/kids-scavenger-hunt.jpg" alt="Kids Guide"></a>
+    <a href="assets/texas-house-kids-scavenger-hunt.pdf" target="_blank"><img src="images/kids-scavenger-hunt.jpg" alt="Scavenger Hunt PDF"></a>
     </div>
     </div>
     </div>
@@ -58,7 +58,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="myExploreModalLabel">WELCOME!</h3>
+            <h3 class="modal-title" id="myExploreModalLabel">Explore The Capitol Grounds</h3>
           </div>
           <div class="modal-body">
             <div class="embed-responsive embed-responsive-16by9">
@@ -79,7 +79,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="myBillModalLabel">WELCOME!</h3>
+            <h3 class="modal-title" id="myBillModalLabel">How A Bill Becomes A Law</h3>
           </div>
           <div class="modal-body">
             <div class="embed-responsive embed-responsive-16by9">
@@ -100,7 +100,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="mySenateModalLabel">WELCOME!</h3>
+            <h3 class="modal-title" id="mySenateModalLabel">Senate Chamber</h3>
           </div>
           <div class="modal-body">
             <div class="embed-responsive embed-responsive-16by9">
@@ -121,7 +121,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h3 class="modal-title" id="myRotundaModalLabel">WELCOME!</h3>
+            <h3 class="modal-title" id="myRotundaModalLabel">Rotunda</h3>
           </div>
           <div class="modal-body">
             <div class="embed-responsive embed-responsive-16by9">
@@ -138,7 +138,19 @@
     </div>
 </div>
 <script type="text/javascript">
-$(".modal").on('hidden.bs.modal', function (e) {
-    $(".modal iframe").attr("src", $(".modal iframe").attr("src"));
+$("#myWelcomeModal").on('hidden.bs.modal', function (e) {
+    $("#myWelcomeModal iframe").attr("src", $("#myWelcomeModal iframe").attr("src"));
+});
+$("#myExploreModal").on('hidden.bs.modal', function (e) {
+    $("#myExploreModal iframe").attr("src", $("#myExploreModal iframe").attr("src"));
+});
+$("#myBillModal").on('hidden.bs.modal', function (e) {
+    $("#myBillModal iframe").attr("src", $("#myBillModal iframe").attr("src"));
+});
+$("#mySenateModal").on('hidden.bs.modal', function (e) {
+    $("#mySenateModal iframe").attr("src", $("#mySenateModal iframe").attr("src"));
+});
+$("#myRotundaModal").on('hidden.bs.modal', function (e) {
+    $("#myRotundaModal iframe").attr("src", $("#myRotundaModal iframe").attr("src"));
 });
 </script>

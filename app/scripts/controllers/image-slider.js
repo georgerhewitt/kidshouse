@@ -86,21 +86,21 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
       {image: 'images/explore/city-austin/austin360bridge2.jpg', class: ''},
     ]
     },
-    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE2', description: 'EXPLOREPAGE.CITY_AUSTIN.P2', address: '2201 Barton Springs Rd, Austin, TX 78746', class: '',
+    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE2', description: 'EXPLOREPAGE.CITY_AUSTIN.P2', address: '2201 Barton Springs Rd. Austin, TX 78746', class: '',
     'images':[
       {image: 'images/explore/city-austin/austinbartonsprings1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austinbartonsprings2.jpg', class: ''},
       {image: 'images/explore/city-austin/austinbartonsprings3.jpg', class: ''}
     ]
     },
-    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE4', description: 'EXPLOREPAGE.CITY_AUSTIN.P4', address: '1800 Congress Ave, Austin, TX 78701', class: '',
+    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE4', description: 'EXPLOREPAGE.CITY_AUSTIN.P4', address: '1800 Congress Ave. Austin, TX 78701', class: '',
     'images':[
       {image: 'images/explore/city-austin/austinbullockmuseum1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austinbullockmuseum2.jpg', class: ''},
       {image: 'images/explore/city-austin/austinbullockmuseum3.jpg', class: ''}
     ]
     },
-    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE5', description: 'EXPLOREPAGE.CITY_AUSTIN.P5', address: 'Congress Ave Austin, TX 78701', class: '',
+    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE5', description: 'EXPLOREPAGE.CITY_AUSTIN.P5', address: 'Congress Ave. Austin, TX 78701', class: '',
     'images':[
       {image: 'images/explore/city-austin/austindowntown1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austindowntown2.jpg', class: ''},
@@ -108,7 +108,7 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
       {image: 'images/explore/city-austin/austindowntown5.jpg', class: ''}
     ]
     },
-    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE6', description: 'EXPLOREPAGE.CITY_AUSTIN.P6', address: '1010 Colorado St, Austin, TX 78701', class: '',
+    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE6', description: 'EXPLOREPAGE.CITY_AUSTIN.P6', address: '1010 Colorado St. Austin, TX 78701', class: '',
     'images':[
       {image: 'images/explore/city-austin/austingovernorsmansion1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austingovernorsmansion2.jpg', class: ''},
@@ -116,7 +116,7 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
       {image: 'images/explore/city-austin/austingovernorsmansion4.jpg', class: ''}
     ]
     },
-    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE7', description: 'EXPLOREPAGE.CITY_AUSTIN.P7', address: '2313 Red River St, Austin, TX 78705', class: '',
+    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE7', description: 'EXPLOREPAGE.CITY_AUSTIN.P7', address: '2313 Red River St. Austin, TX 78705', class: '',
     'images':[
       {image: 'images/explore/city-austin/austinlbjlibrary1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austinlbjlibrary2.jpg', class: ''},
@@ -126,7 +126,7 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
       {image: 'images/explore/city-austin/austinlbjlibrary6.jpg', class: ''}
     ]
     },
-    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE8', description: 'EXPLOREPAGE.CITY_AUSTIN.P8', address: '3800 Mt. Bonnell Rd Austin, TX 78731', class: '',
+    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE8', description: 'EXPLOREPAGE.CITY_AUSTIN.P8', address: '3800 Mt. Bonnell Rd. Austin, TX 78731', class: '',
     'images':[
       {image: 'images/explore/city-austin/austinmtbonnell1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austinmtbonnell2.jpg', class: ''},
@@ -142,21 +142,21 @@ hsImageSlider.controller('ExploreAustinCtrl', ['$scope', function($scope){
       {image: 'images/explore/city-austin/austintownlake4.jpg', class: ''}
     ]
     },
-    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE10', description: 'EXPLOREPAGE.CITY_AUSTIN.P10', address: '112 E 11th St, Austin, TX 78701', class: '',
+    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE10', description: 'EXPLOREPAGE.CITY_AUSTIN.P10', address: '112 E 11th St. Austin, TX 78701', class: '',
     'images':[
       {image: 'images/explore/city-austin/austinvisitorscenter1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austinvisitorscenter2.jpg', class: ''},
       {image: 'images/explore/city-austin/austinvisitorscenter3.jpg', class: ''}
     ]
     },
-    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE3', description: 'EXPLOREPAGE.CITY_AUSTIN.P3', address: '100 S Congress Ave Austin, TX 78701', class: '',
+    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE3', description: 'EXPLOREPAGE.CITY_AUSTIN.P3', address: '100 S Congress Ave. Austin, TX 78701', class: '',
     'images':[
       {image: 'images/explore/city-austin/austinbatbridge1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austinbatbridge2.jpg', class: ''},
       {image: 'images/explore/city-austin/austinbatbridge3.jpg', class: ''}
     ]
     },
-    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE11', description: 'EXPLOREPAGE.CITY_AUSTIN.P11', address: '4801 La Crosse Ave, Austin, TX 78739', class: '',
+    {title: 'EXPLOREPAGE.CITY_AUSTIN.TITLE11', description: 'EXPLOREPAGE.CITY_AUSTIN.P11', address: '4801 La Crosse Ave. Austin, TX 78739', class: '',
     'images':[
       {image: 'images/explore/city-austin/austinwildflowercenter1.jpg', class: 'active'},
       {image: 'images/explore/city-austin/austinwildflowercenter2.jpg', class: ''},

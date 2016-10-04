@@ -37,19 +37,6 @@ $blue-light: #3B69A2;
 $lgsize: "1690px";
 $mdsize: "1200px";
 
-// @mixin effect($effect){
-//   -webkit-animation-name: $effect;
-//   animation-name: $effect;
-// }
-// @mixin animation(){
-//   -webkit-animation-duration: 1s;
-//   -o-animation-duration: 1s;
-//   animation-duration: 1s;
-//   -webkit-animation-fill-mode: both;
-//   -o-animation-fill-mode: both;
-//   animation-fill-mode: both;
-// }
-
 @import "base/_base";
 @import "layout/_layout";
 @import "layout/_nav";
@@ -59,9 +46,7 @@ $mdsize: "1200px";
 @import "layout/_discover";
 @import "modules/_image-slider";
 @import "modules/_circles";
-@import "modules/_ribbon";
 @import "modules/_question";
 @import "libs/_flip-cards";
 @import "libs/_puzzle";
-@import "libs/_headroom";
 @import "libs/_arrow";

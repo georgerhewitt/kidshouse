@@ -1,48 +1,50 @@
-// .navbar-brand {
-//   font: 400 3.5em/40% 'Just Another Hand', cursive;
-//   color: #FFF;
-//   padding: 30px 0 0 5px;
-// }
 .navbar {
   border-radius: 0;
   border: none;
+
   .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
+
     > li.dropdown > a {
       padding: 18px 0 10px;
       font-family: 'Rokkitt', serif;
       font-size: 1.5em;
-      font-style: bold;
       color: #FFF;
     }
+
     > li > a {
       color: $body;
     }
+
     > li > a:hover a:active {
       background-color: transparent;
       color: $challenge-color-light;
     }
+
     .open > a,
     a:focus,
     a:hover {
       background-color: transparent;
       color: $challenge-color-light;
     }
-   }
+  }
 
-  .nav-top {
+  .nav-bar-top {
     background-color: rgba(250, 250, 250, 0.8);
     display: block;
   }
+
   .navbar-header button span {
     font-size: 1.8em;
   }
+
   .navbar-collapse {
     text-align: center;
     padding: 0;
   }
+
   .navbar-toggle {
     border: 1px solid #FFF;
     color: #FFF;
@@ -53,15 +55,12 @@
     margin-bottom: 8px;
   }
 }
-
 // capitol logo
 .capitol-logo {
   width: 110px;
   height: 80px;
   background: url("../images/capitol-logo-home.svg") no-repeat center center;
 }
-
-
 /**
 Apply if the media type is screen and the viewport is 768px wide or wider.
 **/
@@ -70,24 +69,24 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
   .glyphicon-home {
     font-size: 20px;
   }
-  .nav-top .navbar-nav {
+
+  .nav-bar-top .navbar-nav {
     margin-bottom: -30px;
   }
 
-  .scroller {
-    height: 255px;
-  }
   .nav3 {
+    float: left;
     text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
-
+    padding-left: 0;
+    padding-right: 0;
   }
+
   .dropdown {
     z-index: 1040;
     width: 292px;
     height: 60px;
   }
+
   .dropdown-menu {
     //font-size: 12px;
     text-align: center;
@@ -99,11 +98,13 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
     position: static;
     margin-left: 20px;
     margin-right: 25px;
+
     > ul {
       padding: 5px;
       display: table;
       margin: 0 auto;
     }
+
     > li > a {
       background-color: #FFF;
       font-family: 'Lato', sans-serif;
@@ -112,123 +113,141 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
       padding: 5px;
       text-align: center;
       color: #666;
+
       .home {
         padding: 0;
       }
     }
   }
+
+
+  .nav-main {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__logo {
+      padding-left: 0;
+      padding-right: 0;
+
+      a,
+      a:hover {
+        text-decoration: none;
+      }
+    }
+
+    &__home {
+      background-size: contain;
+      height: 80px;
+      width: 100px;
+
+      &:hover {
+        background: none;
+      }
+
+      &:hover .nav-main__home-link {
+        display: block;
+      }
+
+      &--main {
+        background: url("../images/capitol-logo-home-small.svg") no-repeat center;
+      }
+
+      &--discover {
+        background: url("../images/capitol-logo-discover-small.svg") no-repeat center;
+      }
+
+      &--explore {
+        background: url("../images/capitol-logo-explore-small.svg") no-repeat center;
+      }
+
+      &--challenge {
+        background: url("../images/capitol-logo-challenge-small.svg") no-repeat center;
+      }
+    }
+
+    &__home-link {
+      padding-top: 34px;
+      padding-left: 5px;
+      display: none;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7em;
+      font-weight: 400;
+      color: $main;
+    }
+  }
+  //dropdown-menu
   .state1 {
+    .nav-main__logo{
+      display: none;
+    }
     .dropdown {
       margin-top: -80px;
     }
     .navbar {
       margin-bottom: 0;
     }
-  }
-  .state1.row{
-    padding: 0px;
+    .scroller {
+      height: 255px;
+    }
+    .discover-normal {
+      background: url("../images/discover-icon.png") no-repeat center;
+    }
+
+    .explore-normal {
+      background: url("../images/explore-icon.png") no-repeat center;
+    }
+
+    .challenge-normal {
+      background: url("../images/challenge-icon.png") no-repeat center;
+    }
   }
   .state2 {
+    .scroller {
+      height: 0px;
+    }
+    .nav-main__logo{
+      display: none;
+    }
     .nav-main {
-      padding-bottom: 40px;
-      //margin-bottom: 20px;
+      padding-bottom: 10px;
     }
     .navbar {
       margin-bottom: 0;
-    }
-  }
-  .state2.row{
-    padding: 0px;
-  }
-  .state3 {
-    padding: 5px 0 5px 0;
-    h1 {
-      font-size: 1.7vw;
-      margin-top: 0;
-      @media screen and (max-width: $mdsize) {
-      font-size: 1em;
-      }
-      padding-top: 12px;
-      text-shadow: none;
-      a,
-      a:hover {
-        text-decoration: none;
-      }
-    }
-    .navbar {
-      margin-bottom: 0;
-      .nav3{
-        padding-top: 10px;
-      }
-      }
-    }
-    .nav-main {
-      padding-left: 0;
-      padding-right: 0;
-      &__logo {
-        padding-left: 0;
-        padding-right: 0;
-        a,
-        a:hover {
-          text-decoration: none;
-        }
-      }
-      &__home {
-        background-size: contain;
-        height: 80px;
-        width: 100px;
-        &:hover {
-          background: none;
-        }
-        &:hover .nav-main__home-link {
-          display: block;
-        }
-        &--main {
-          background: url("../images/capitol-logo-home-small.svg") no-repeat center;
-        }
-        &--discover {
-          background: url("../images/capitol-logo-discover-small.svg") no-repeat center;
-        }
-        &--explore {
-          background: url("../images/capitol-logo-explore-small.svg") no-repeat center;
-        }
-        &--challenge {
-          background: url("../images/capitol-logo-challenge-small.svg") no-repeat center;
-        }
-      }
-      &__home-link {
-        padding-top: 34px;
-        padding-left: 25px;
-        display: none;
-        font-family: 'Lato', sans-serif;
-        font-size: 0.7em;
-        font-weight: 400;
-        color: $main;
-      }
     }
   }
 
-  //dropdown-menu
-  .discover-normal {
-    background: url("../images/discover-icon.png") no-repeat center;
-  }
-  .explore-normal {
-    background: url("../images/explore-icon.png") no-repeat center;
-  }
-  .challenge-normal {
-    background: url("../images/challenge-icon.png") no-repeat center;
+
+  .state3 {
+    padding: 5px 0;
+    .nav-top{
+      display: none;
+    }
+    .header{
+      display: none;
+    }
+    .navbar {
+      margin-bottom: 0;
+    .nav3{
+      margin-left: -40px;
+      padding-top: 10px;
+     }
+    }
   }
   .discover {
     .dropdown {
       background: url("../images/ribbon-discover.svg") no-repeat center;
     }
+
     .dropdown-menu {
       background-color: $discover-color;
+
       li {
         background-color: $discover-color;
         color: $discover-color;
+
         a {
           color: $discover-color;
+
           &:hover {
             color: #FFF;
             background-color: $discover-color;
@@ -237,18 +256,23 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
       }
     }
   }
+
   .explore {
     .dropdown {
       background: url("../images/ribbon-explore.svg") no-repeat center;
     }
+
     .dropdown-menu {
       background-color: $explore-color;
+
       li {
         background-color: $explore-color;
         color: $explore-color;
+
         a {
           //background-color: #FFF;
           color: $explore-color;
+
           &:hover {
             color: #FFF;
             background-color: $explore-color;
@@ -257,17 +281,22 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
       }
     }
   }
+
   .challenge {
     .dropdown {
       background: url("../images/ribbon-challenge.svg") no-repeat center;
     }
+
     .dropdown-menu {
       background-color: $challenge-color;
+
       li {
         background-color: $challenge-color;
         color: $challenge-color;
+
         a {
           color: $challenge-color;
+
           &:hover {
             color: #FFF;
             background-color: $challenge-color;
@@ -276,48 +305,71 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
       }
     }
   }
+}
 
-@media screen and (max-width: 768px) { // When the width of this document is less than 768px
+
+@media screen and (max-width: 768px) {
+  // When the width of this document is less than 768px
+  h1{
+      margin-top: 0;
+  }
+  .nav-main__logo{
+    display: none;
+  }
+  .navbar-collapse{
+    padding-top: 0px;
+  }
+  .nav-main{
+    background-color: rgba(250, 250, 250, 0.8);
+  }
   .navbar {
+    min-height: 0px;
+    margin-bottom: 0px;
+    header {
+      padding-bottom: 10px;
+    }
+    .nav-bar-top{
+     font-size: 1.2em;
+    }
+    .navbar-header h1{
+      float: left;
+    }
+    .header{
+      display: none;
+    }
     .navbar-nav {
       display: block;
+      margin: 0;
+
       > li.dropdown > a {
-        font-family: 'Rokkitt', serif;
-        font-size: 1.5em;
-        font-style: bold;
-        //color: #FFF;
+        color: $body;
+        padding-top: 10px;
       }
+
       > li > a {
         color: $body;
       }
+
       > li > a:hover a:active {
         background-color: transparent;
-        color: $challenge-color-light;
-
       }
+
       .open > a,
       a:focus,
       a:hover {
         background-color: transparent;
-        color: $challenge-color-light;
         text-decoration: underline;
       }
-     }
-  // .nav3 .dropdown-menu > li > a {
-  //   color: #FFF;
-  //   &:focus,
-  //   &:hover {
-  //     color: #FFF;
-  //     text-decoration: underline;
-  //   }
-  // }
-  .dropdown-menu > li > a {
-    text-align: center;
-    margin-left: -20px;
+    }
+
+    .dropdown-menu > li > a {
+      text-align: center;
+      margin-left: -20px;
+    }
+
+    .navbar-collapse {
+      border-top: none;
+      box-shadow: none;
+    }
   }
-  .navbar-collapse {
-    border-top: none;
-    box-shadow: none;
-  }
-}
 }

@@ -3,12 +3,12 @@ html {
 }
 body {
   font-family: 'Lato', sans-serif;
-  @media all and (min-width: 900px) {
+  @media all and (min-width: 930px) {
     font-size: 20px;
   }
-  @media all and (max-width: 900px) {
-    font-size: 16px;
-  }
+  // @media all and (max-width: 900px) {
+  //   font-size: 14px;
+  // }
 }
 h1 {
   font: 400 3em/125% 'Lobster', cursive;
@@ -42,6 +42,7 @@ h6 {
   font-size: 1.1em;
 }
 // bootstrap-sass-official overrides
+
 .image-caption{
   font-style: italic;
   font-size: .7em;

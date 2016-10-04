@@ -38,13 +38,14 @@ angular
 
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state1.html'
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state1';
+                $rootScope.location = 'home-animate';
+              }],
             },
             content: {
-                templateUrl: 'views/home.html',
-                controller: ['$rootScope', function($rootScope) {
-                  $rootScope.location = 'home-animate';
-                }],
+                templateUrl: 'views/home.html'
             }
           }
         })
@@ -53,7 +54,11 @@ angular
         name: 'glossary',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state2.html'
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state2';
+              $rootScope.location = 'home-animate';
+            }],
           },
           content: {
             templateUrl: 'views/glossary.html'
@@ -66,7 +71,11 @@ angular
         name: 'get-involved',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state2.html'
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state2';
+              $rootScope.location = 'home-animate';
+            }],
           },
           content: {
             templateUrl: 'views/get-involved.html'
@@ -78,7 +87,11 @@ angular
         name: 'resources',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state2.html'
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state2';
+              $rootScope.location = 'home-animate';
+            }],
           },
           content: {
             templateUrl: 'views/resources.html'
@@ -90,41 +103,31 @@ angular
         name: 'site-map',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state2.html'
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state2';
+              $rootScope.location = 'home-animate';
+            }],
           },
           content: {
             templateUrl: 'views/site-map.html'
           }
         }
         })
-        // discover section
-        // .state('discover', {
-        // url: '/discover/',
-        // name: 'discover',
-        // views:{
-        //   navtop:{
-        //     templateUrl: 'views/partials/nav-state3-sub.html'
-        //   },
-        //   content: {
-        //     templateUrl: 'views/discover/discover.html'
-        //   }
-        // }
-        // })
         .state('house-of-representatives', {
         url: '/discover/house-of-representatives',
         name: 'house-of-representatives',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state3.html',
-            controller: ['$scope', function($scope) {
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state3';
               $scope.logo = 'nav-main__home--discover wobble';
+              $rootScope.location = 'discover-animate';
             }],
           },
           content: {
             templateUrl : 'views/discover/house-of-representatives.html',
-            controller: ['$rootScope', function($rootScope) {
-              $rootScope.location = 'discover-animate';
-            }],
           }
         }
         })
@@ -133,16 +136,15 @@ angular
         name: 'senate',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state3.html',
-            controller: ['$scope', function($scope) {
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state3';
               $scope.logo = 'nav-main__home--discover wobble';
+              $rootScope.location = 'discover-animate';
             }],
           },
           content: {
             templateUrl : 'views/discover/senate.html',
-            controller: ['$rootScope', function($rootScope) {
-              $rootScope.location = 'discover-animate';
-            }],
           }
         }
         })
@@ -151,16 +153,15 @@ angular
         name: 'texas-state-government',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state3.html',
-            controller: ['$scope', function($scope) {
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state3';
               $scope.logo = 'nav-main__home--discover wobble';
+              $rootScope.location = 'discover-animate';
             }],
           },
           content: {
             templateUrl : 'views/discover/texas-state-government.html',
-            controller: ['$rootScope', function($rootScope) {
-              $rootScope.location = 'discover-animate';
-            }],
           }
         }
         })
@@ -169,16 +170,15 @@ angular
         name: 'how-a-bill-becomes-law',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state3.html',
-            controller: ['$scope', function($scope) {
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state3';
               $scope.logo = 'nav-main__home--discover wobble';
+              $rootScope.location = 'discover-animate';
             }],
           },
           content: {
             templateUrl : 'views/discover/how-a-bill-becomes-law.html',
-            controller: ['$rootScope', function($rootScope) {
-              $rootScope.location = 'discover-animate';
-            }],
           }
         }
         })
@@ -187,16 +187,15 @@ angular
         name: 'founding-fathers',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state3.html',
-            controller: ['$scope', function($scope) {
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state3';
               $scope.logo = 'nav-main__home--discover wobble';
+              $rootScope.location = 'discover-animate';
             }],
           },
           content: {
             templateUrl : 'views/discover/founding-fathers.html',
-            controller: ['$rootScope', function($rootScope) {
-              $rootScope.location = 'discover-animate';
-            }],
           }
         }
         })
@@ -205,16 +204,15 @@ angular
         name: 'six-flags-of-texas',
         views:{
           navtop:{
-            templateUrl: 'views/partials/nav-state3.html',
-            controller: ['$scope', function($scope) {
+            templateUrl: 'views/partials/nav-state1.html',
+            controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+              $scope.nav = 'state3';
               $scope.logo = 'nav-main__home--discover wobble';
+              $rootScope.location = 'discover-animate';
             }],
           },
           content: {
             templateUrl : 'views/discover/six-flags-of-texas.html',
-            controller: ['$rootScope', function($rootScope) {
-              $rootScope.location = 'discover-animate';
-            }],
           }
         }
         })
@@ -225,16 +223,15 @@ angular
           name: 'expolre',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
                 $scope.logo = 'nav-main__home--explore jello';
+                $rootScope.location = 'explore-animate';
               }],
             },
             content: {
               templateUrl: 'views/explore/explore.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -243,16 +240,15 @@ angular
           name: 'texas-capitol',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
                 $scope.logo = 'nav-main__home--explore jello';
+                $rootScope.location = 'explore-animate';
               }],
             },
             content: {
               templateUrl : 'views/explore/texas-capitol.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -261,9 +257,11 @@ angular
             name: 'texas-capitolrotunda',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
                   $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               sub : {
@@ -277,9 +275,11 @@ angular
             name: 'texas-capitolhouse',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
                   $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               'sub' : {
@@ -292,9 +292,11 @@ angular
             name: 'texas-capitolsenate',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
                   $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               'sub' : {
@@ -307,9 +309,11 @@ angular
             name: 'texas-capitolcapitol',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
                   $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               sub: {
@@ -322,9 +326,11 @@ angular
             name: 'texas-capitolgoddess',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
                   $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               sub: {
@@ -337,16 +343,15 @@ angular
           name: 'capitol-grounds',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
                 $scope.logo = 'nav-main__home--explore jello';
+                $rootScope.location = 'explore-animate';
               }],
             },
             content: {
               templateUrl : 'views/explore/capitol-grounds.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -355,16 +360,15 @@ angular
           name: 'capitol-monuments-statues',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
                 $scope.logo = 'nav-main__home--explore jello';
+                $rootScope.location = 'explore-animate';
               }],
             },
             content: {
               templateUrl : 'views/explore/capitol-monuments-statues.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -373,9 +377,11 @@ angular
             name: 'capitol-monuments-statuestejano',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
-                  $scope.logo = 'nav-main__home--explore';
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
+                  $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               sub: {
@@ -388,9 +394,11 @@ angular
             name: 'capitol-monuments-statuestexascowboy',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
-                  $scope.logo = 'nav-main__home--explore';
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
+                  $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               sub: {
@@ -403,9 +411,11 @@ angular
             name: 'capitol-monuments-statuesvolunteerfiremen',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
-                  $scope.logo = 'nav-main__home--explore';
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
+                  $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               sub: {
@@ -418,9 +428,11 @@ angular
             name: 'capitol-monuments-statuesconfederatesoldiers',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
-                  $scope.logo = 'nav-main__home--explore';
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
+                  $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               sub: {
@@ -433,9 +445,11 @@ angular
             name: 'capitol-monuments-statuestexasrangers',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
-                  $scope.logo = 'nav-main__home--explore';
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
+                  $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               sub: {
@@ -448,9 +462,11 @@ angular
             name: 'capitol-monuments-statuesliberty',
             views:{
               navtop:{
-                templateUrl: 'views/partials/nav-state3.html',
-                controller: ['$scope', function($scope) {
-                  $scope.logo = 'nav-main__home--explore';
+                templateUrl: 'views/partials/nav-state1.html',
+                controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                  $scope.nav = 'state3';
+                  $scope.logo = 'nav-main__home--explore jello';
+                  $rootScope.location = 'explore-animate';
                 }],
               },
               sub: {
@@ -463,16 +479,15 @@ angular
           name: 'rotunda',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
                 $scope.logo = 'nav-main__home--explore jello';
+                $rootScope.location = 'explore-animate';
               }],
             },
             content: {
               templateUrl : 'views/explore/rotunda.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -481,16 +496,15 @@ angular
           name: 'state-seal',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
                 $scope.logo = 'nav-main__home--explore jello';
+                $rootScope.location = 'explore-animate';
               }],
             },
             content: {
               templateUrl : 'views/explore/state-seal.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -499,16 +513,15 @@ angular
           name: 'state-flag',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
                 $scope.logo = 'nav-main__home--explore jello';
+                $rootScope.location = 'explore-animate';
               }],
             },
             content: {
               templateUrl : 'views/explore/state-flag.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -517,16 +530,15 @@ angular
           name: 'state-symbols',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
                 $scope.logo = 'nav-main__home--explore jello';
+                $rootScope.location = 'explore-animate';
               }],
             },
             content: {
               templateUrl : 'views/explore/state-symbols.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -535,16 +547,15 @@ angular
           name: 'city-of-austin',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
                 $scope.logo = 'nav-main__home--explore jello';
+                $rootScope.location = 'explore-animate';
               }],
             },
             content: {
               templateUrl : 'views/explore/city-of-austin.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -554,16 +565,15 @@ angular
           name: 'challenge',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
-                $scope.logo = 'nav-main__home--challenge shake';
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
+                $scope.logo = 'nav-main__home--challenge jello';
+                $rootScope.location = 'challenge-animate';
               }],
             },
             content: {
               templateUrl: 'views/challenge/challenge.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'explore-animate';
-              }],
             }
           }
         })
@@ -572,16 +582,15 @@ angular
           name: 'flip-cards',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
-                $scope.logo = 'nav-main__home--challenge shake';
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
+                $scope.logo = 'nav-main__home--challenge jello';
+                $rootScope.location = 'challenge-animate';
               }],
             },
             content: {
               templateUrl : 'views/challenge/flip-cards.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'challenge-animate';
-              }],
             }
           }
         })
@@ -590,55 +599,16 @@ angular
           name: 'word-search-puzzle',
           views:{
             navtop:{
-              templateUrl: 'views/partials/nav-state3.html',
-              controller: ['$scope', function($scope) {
-                $scope.logo = 'nav-main__home--challenge shake';
+              templateUrl: 'views/partials/nav-state1.html',
+              controller: ['$rootScope', '$scope', function($rootScope, $scope) {
+                $scope.nav = 'state3';
+                $scope.logo = 'nav-main__home--challenge jello';
+                $rootScope.location = 'challenge-animate';
               }],
             },
             content: {
               templateUrl : 'views/challenge/word-search-puzzle.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'challenge-animate';
-              }],
-            }
-          }
-        })
-        .state('texas-government-test', {
-          url: '/challenge/texas-government-test',
-          name: 'texas-government-test',
-          views:{
-            navtop:{
-              templateUrl: 'views/partials/nav-state3-1.html',
-              controller: ['$scope', function($scope) {
-                $scope.logo = 'nav-main__home--challenge shake';
-              }],
-            },
-            content: {
-              templateUrl : 'views/challenge/texas-government-test.html',
-              controller: ['$rootScope', function($rootScope) {
-                $rootScope.location = 'challenge-animate';
-              }],
             }
           }
         });
       });
-// Granicus
-        // .state('granicus', {
-        //   url: '/granicus',
-        //   templateUrl: 'views/granicus.html'
-        // })
-        //
-        // .state('granicusapi', {
-        //   url: '/granicusapi',
-        //   templateUrl: 'views/granicusapi.html'
-        // })
-        //
-        // .state('slider', {
-        //   url: '/slider',
-        //   templateUrl: 'views/slider.html'
-        // })
-
-        // .state('houseapi', {
-        //   url: '/houseapi',
-        //   templateUrl: 'views/houseapi.html'
-        // });

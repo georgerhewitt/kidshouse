@@ -22,35 +22,36 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
+
 <body ng-app="kidshouse" ng-class="myCssVar" class="{{ location }}">
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="nav-top" ui-view="navtop"></div>
+  <div class="nav-top" ui-view="navtop"></div>
   <!--/.container -->
 
-    <div class="col-lg-8 col-lg-offset-2 main-header">
-      <div class="traspartent"></div>
-      <div ui-view="content">
+  <div class="col-lg-10 col-lg-offset-1 main-header">
+    <div class="traspartent"></div>
+    <div ui-view="content">
 
-      </div>
     </div>
-    <!-- main -->
+  </div>
+  <!-- main -->
 
   <!-- Footer -->
-  <footer class="col-lg-8 col-lg-offset-2">
+  <footer class="col-lg-10 col-lg-offset-1">
     <!-- <div class="col-md-10 col-md-offset-1 text-center"> -->
     <!-- <div class="col-md-10 col-md-offset-2"> -->
-      <ul class="nav navbar-nav">
-        <li><a href="/#/" ng-click="myCssVar='home-animate';">{{ 'HOME' | translate }}</a></li>
-        <li><a href="/#/get-involved" class="nav-items" ng-click="myCssVar='home-animate';">{{ 'GET_INVOLVED' | translate }}</a></li>
-        <li><a href="/#/resources" ng-click="myCssVar='home-animate';">{{ 'RESOURCES' | translate }}</a></li>
-        <li><a href="/#/glossary" ng-click="myCssVar='home-animate';">{{ 'GLOSSARY' | translate }}</a></li>
-        <li><a href="/#/site-map" ng-click="myCssVar='home-animate';">{{ 'SITEMAP' | translate }}</a></li>
-        <li><a href="http://www.house.texas.gov" ng-click="myCssVar='home-animate';">{{ 'TEXAS HOUSE' | translate }}</a></li>
-      </ul>
+    <ul class="nav navbar-nav">
+      <li><a href="/#/" ng-click="myCssVar='home-animate';">{{ 'HOME' | translate }}</a></li>
+      <li><a href="/#/get-involved" class="nav-items" ng-click="myCssVar='home-animate';">{{ 'GET_INVOLVED' | translate }}</a></li>
+      <li><a href="/#/resources" ng-click="myCssVar='home-animate';">{{ 'RESOURCES' | translate }}</a></li>
+      <li><a href="/#/glossary" ng-click="myCssVar='home-animate';">{{ 'GLOSSARY' | translate }}</a></li>
+      <li><a href="/#/site-map" ng-click="myCssVar='home-animate';">{{ 'SITEMAP' | translate }}</a></li>
+      <li><a href="http://www.house.texas.gov" target='_blank'>{{ 'TEXAS HOUSE' | translate }}</a></li>
+    </ul>
     <!-- </div> -->
     <div class="col-lg-8 col-lg-offset-2 text-center">
       <p>{{ "FOOTER" | translate }} <br> &copy; 2016</p>
