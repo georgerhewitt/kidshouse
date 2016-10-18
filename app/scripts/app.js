@@ -13,15 +13,13 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'cgBusy',
     'slider',
     'hsImageSlider', // images-slider.js
     'memoryGameApp',  //flip-cards.js
     'wordSearchPuzzle',
     'translateApp',   // word-search-puzzle.js
     'hsSliderMouments',
-    'hsSliderSymbols',
-    'hsNavClassToggle' //
+    'hsSliderSymbols'//
   ])
   // .run(function($rootScope){
   //   $rootScope.site = '';

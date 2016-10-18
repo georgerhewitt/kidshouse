@@ -61,6 +61,43 @@
   height: 80px;
   background: url("../images/capitol-logo-home.svg") no-repeat center center;
 }
+.discover {
+  .dropdown {
+    background: url("../images/ribbon-discover.svg") no-repeat center;
+  }
+}
+.explore {
+  .dropdown {
+    background: url("../images/ribbon-explore.svg") no-repeat center;
+  }
+}
+.challenge {
+  .dropdown {
+    background: url("../images/ribbon-challenge.svg") no-repeat center;
+  }
+}
+/**
+Apply if the media type is screen and the viewport is 930px wide or wider.
+**/
+@media screen and (max-width: 992px) {
+  .state3{
+  .discover {
+    .dropdown {
+      background: url("../images/ribbon-discover-small.svg") no-repeat center;
+    }
+  }
+  .explore {
+    .dropdown {
+      background: url("../images/ribbon-explore-small.svg") no-repeat center;
+    }
+  }
+  .challenge {
+    .dropdown {
+      background: url("../images/ribbon-challenge-small.svg") no-repeat center;
+    }
+  }
+  }
+}
 /**
 Apply if the media type is screen and the viewport is 768px wide or wider.
 **/
@@ -234,10 +271,6 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
     }
   }
   .discover {
-    .dropdown {
-      background: url("../images/ribbon-discover.svg") no-repeat center;
-    }
-
     .dropdown-menu {
       background-color: $discover-color;
 
@@ -258,10 +291,6 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
   }
 
   .explore {
-    .dropdown {
-      background: url("../images/ribbon-explore.svg") no-repeat center;
-    }
-
     .dropdown-menu {
       background-color: $explore-color;
 
@@ -283,10 +312,6 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
   }
 
   .challenge {
-    .dropdown {
-      background: url("../images/ribbon-challenge.svg") no-repeat center;
-    }
-
     .dropdown-menu {
       background-color: $challenge-color;
 
@@ -306,12 +331,29 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
     }
   }
 }
-
+  // @media all and (min-width: 930px) {
+  //   .discover {
+  //     .dropdown {
+  //       background: url("../images/ribbon-discover-small-ex.svg") no-repeat center;
+  //     }
+  //   }
+  //   .explore {
+  //     .dropdown {
+  //       background: url("../images/ribbon-explore-small-ex.svg") no-repeat center;
+  //     }
+  //   }
+  //   .challenge {
+  //     .dropdown {
+  //       background: url("../images/ribbon-challenge-small-ex.svg") no-repeat center;
+  //     }
+  //   }
+  // }
 
 @media screen and (max-width: 768px) {
   // When the width of this document is less than 768px
   h1{
       margin-top: 0;
+      font-size: 2.5em;
   }
   .nav-main__logo{
     display: none;
@@ -370,6 +412,21 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
     .navbar-collapse {
       border-top: none;
       box-shadow: none;
+    }
+    .discover {
+      .dropdown {
+        background: none;
+      }
+    }
+    .explore {
+      .dropdown {
+        background: none;
+      }
+    }
+    .challenge {
+      .dropdown {
+        background: none;
+      }
     }
   }
 }

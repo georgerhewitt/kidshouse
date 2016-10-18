@@ -100,22 +100,27 @@
 
         ul{
           // list-style-type: disc;
-          columns: 3;
-          -webkit-columns: 3;
-          -moz-columns: 3;
-          list-style-position: inside;
-        }
-    li{
-      float: left;
-      width: 32%;
-      padding-right: 25px;
-      color: $challenge-color-light;
-      cursor: pointer;
 
-    }
-    li.active {
-      color: $start-color;
-    }
+          // columns: 3;
+          // -webkit-columns: 3;
+          // -moz-columns: 3;
+          // list-style-position: inside;
+
+        }
+        li{
+          float: left;
+          width: 32%;
+          padding-right: 25px;
+          color: $challenge-color-light;
+          cursor: pointer;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+
+        }
+        li.active {
+          color: $start-color;
+        }
   }
   }
   #myCapitolCarousel {

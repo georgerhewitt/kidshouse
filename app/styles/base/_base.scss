@@ -3,7 +3,7 @@ html {
 }
 body {
   font-family: 'Lato', sans-serif;
-  @media all and (min-width: 930px) {
+  @media all and (min-width: 992px) {
     font-size: 20px;
   }
   // @media all and (max-width: 900px) {
@@ -60,6 +60,9 @@ h6 {
 }
 .carousel-control{
   opacity: inherit;
+  @media screen and (max-width: 992px) {
+    font-size: 15px;
+  }
 }
 .question .carousel-control {
   top: inherit;
