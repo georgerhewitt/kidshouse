@@ -7,27 +7,32 @@
     float: none;
     vertical-align: top;
 
+    > li > a {
+      color: $body;
+      &:hover,
+      &:focus {
+        color: $blue-light;
+        background-color: $navbar-default-link-hover-bg;
+      }
+    }
+
+
     > li.dropdown > a {
       padding: 18px 0 10px;
       font-family: 'Rokkitt', serif;
       font-size: 1.5em;
       color: #FFF;
-    }
-
-    > li > a {
-      color: $body;
-    }
-
-    > li > a:hover a:active {
-      background-color: transparent;
-      color: $challenge-color-light;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
 
     .open > a,
     a:focus,
     a:hover {
       background-color: transparent;
-      color: $challenge-color-light;
+      color: #FFF;
     }
   }
 
@@ -56,21 +61,25 @@
   }
 }
 // capitol logo
+
 .capitol-logo {
   width: 110px;
   height: 80px;
   background: url("../images/capitol-logo-home.svg") no-repeat center center;
 }
+
 .discover {
   .dropdown {
     background: url("../images/ribbon-discover.svg") no-repeat center;
   }
 }
+
 .explore {
   .dropdown {
     background: url("../images/ribbon-explore.svg") no-repeat center;
   }
 }
+
 .challenge {
   .dropdown {
     background: url("../images/ribbon-challenge.svg") no-repeat center;
@@ -80,22 +89,24 @@
 Apply if the media type is screen and the viewport is 930px wide or wider.
 **/
 @media screen and (max-width: 992px) {
-  .state3{
-  .discover {
-    .dropdown {
-      background: url("../images/ribbon-discover-small.svg") no-repeat center;
+  .state3 {
+    .discover {
+      .dropdown {
+        background: url("../images/ribbon-discover-small.svg") no-repeat center;
+      }
     }
-  }
-  .explore {
-    .dropdown {
-      background: url("../images/ribbon-explore-small.svg") no-repeat center;
+
+    .explore {
+      .dropdown {
+        background: url("../images/ribbon-explore-small.svg") no-repeat center;
+      }
     }
-  }
-  .challenge {
-    .dropdown {
-      background: url("../images/ribbon-challenge-small.svg") no-repeat center;
+
+    .challenge {
+      .dropdown {
+        background: url("../images/ribbon-challenge-small.svg") no-repeat center;
+      }
     }
-  }
   }
 }
 /**
@@ -157,7 +168,6 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
     }
   }
 
-
   .nav-main {
     padding-left: 0;
     padding-right: 0;
@@ -214,18 +224,22 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
   }
   //dropdown-menu
   .state1 {
-    .nav-main__logo{
+    .nav-main__logo {
       display: none;
     }
+
     .dropdown {
       margin-top: -80px;
     }
+
     .navbar {
       margin-bottom: 0;
     }
+
     .scroller {
       height: 255px;
     }
+
     .discover-normal {
       background: url("../images/discover-icon.png") no-repeat center;
     }
@@ -238,38 +252,46 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
       background: url("../images/challenge-icon.png") no-repeat center;
     }
   }
+
   .state2 {
     .scroller {
-      height: 0px;
+      height: 0;
     }
-    .nav-main__logo{
+
+    .nav-main__logo {
       display: none;
     }
+
     .nav-main {
       padding-bottom: 10px;
     }
+
     .navbar {
       margin-bottom: 0;
     }
   }
-
 
   .state3 {
     padding: 5px 0;
-    .nav-top{
+
+    .nav-top {
       display: none;
     }
-    .header{
+
+    .header {
       display: none;
     }
+
     .navbar {
       margin-bottom: 0;
-    .nav3{
-      margin-left: -40px;
-      padding-top: 10px;
-     }
+
+      .nav3 {
+        margin-left: -40px;
+        padding-top: 10px;
+      }
     }
   }
+
   .discover {
     .dropdown-menu {
       background-color: $discover-color;
@@ -299,7 +321,6 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
         color: $explore-color;
 
         a {
-          //background-color: #FFF;
           color: $explore-color;
 
           &:hover {
@@ -331,54 +352,62 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
     }
   }
 }
-  // @media all and (min-width: 930px) {
-  //   .discover {
-  //     .dropdown {
-  //       background: url("../images/ribbon-discover-small-ex.svg") no-repeat center;
-  //     }
-  //   }
-  //   .explore {
-  //     .dropdown {
-  //       background: url("../images/ribbon-explore-small-ex.svg") no-repeat center;
-  //     }
-  //   }
-  //   .challenge {
-  //     .dropdown {
-  //       background: url("../images/ribbon-challenge-small-ex.svg") no-repeat center;
-  //     }
-  //   }
-  // }
-
+// @media all and (min-width: 930px) {
+//   .discover {
+//     .dropdown {
+//       background: url("../images/ribbon-discover-small-ex.svg") no-repeat center;
+//     }
+//   }
+//   .explore {
+//     .dropdown {
+//       background: url("../images/ribbon-explore-small-ex.svg") no-repeat center;
+//     }
+//   }
+//   .challenge {
+//     .dropdown {
+//       background: url("../images/ribbon-challenge-small-ex.svg") no-repeat center;
+//     }
+//   }
+// }
 @media screen and (max-width: 768px) {
   // When the width of this document is less than 768px
-  h1{
-      margin-top: 0;
-      font-size: 2.5em;
+  h1 {
+    margin-top: 0;
+    font-size: 2.5em;
   }
-  .nav-main__logo{
+
+  .nav-main__logo {
     display: none;
   }
-  .navbar-collapse{
-    padding-top: 0px;
+
+  .navbar-collapse {
+    padding-top: 0;
   }
-  .nav-main{
+
+  .nav-main {
     background-color: rgba(250, 250, 250, 0.8);
   }
+
   .navbar {
-    min-height: 0px;
-    margin-bottom: 0px;
+    min-height: 0;
+    margin-bottom: 0;
+
     header {
       padding-bottom: 10px;
     }
-    .nav-bar-top{
-     font-size: 1.2em;
+
+    .nav-bar-top {
+      font-size: 1.2em;
     }
-    .navbar-header h1{
+
+    .navbar-header h1 {
       float: left;
     }
-    .header{
+
+    .header {
       display: none;
     }
+
     .navbar-nav {
       display: block;
       margin: 0;
@@ -413,16 +442,19 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
       border-top: none;
       box-shadow: none;
     }
+
     .discover {
       .dropdown {
         background: none;
       }
     }
+
     .explore {
       .dropdown {
         background: none;
       }
     }
+
     .challenge {
       .dropdown {
         background: none;
