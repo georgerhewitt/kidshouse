@@ -11,7 +11,8 @@
       color: $body;
       &:hover,
       &:focus {
-        color: $blue-light;
+        color: $body;
+        text-decoration: underline;
         background-color: $navbar-default-link-hover-bg;
       }
     }
@@ -352,23 +353,7 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
     }
   }
 }
-// @media all and (min-width: 930px) {
-//   .discover {
-//     .dropdown {
-//       background: url("../images/ribbon-discover-small-ex.svg") no-repeat center;
-//     }
-//   }
-//   .explore {
-//     .dropdown {
-//       background: url("../images/ribbon-explore-small-ex.svg") no-repeat center;
-//     }
-//   }
-//   .challenge {
-//     .dropdown {
-//       background: url("../images/ribbon-challenge-small-ex.svg") no-repeat center;
-//     }
-//   }
-// }
+
 @media screen and (max-width: 768px) {
   // When the width of this document is less than 768px
   h1 {
@@ -418,16 +403,18 @@ Apply if the media type is screen and the viewport is 768px wide or wider.
       }
 
       > li > a {
-        color: $body;
+        //color: $body;
       }
 
       > li > a:hover a:active {
-        background-color: transparent;
+        color: $body;
+        //background-color: transparent;
       }
 
       .open > a,
       a:focus,
       a:hover {
+        color: $body;
         background-color: transparent;
         text-decoration: underline;
       }

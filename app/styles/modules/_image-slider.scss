@@ -27,6 +27,9 @@
     outline: none;
     cursor: pointer;
     background: url(../images/slider/blank.gif) no-repeat;
+    @media screen and (max-width: 768px) {
+      top: 40%;  
+    }
 }
 
 .arrow.prev {

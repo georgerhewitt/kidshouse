@@ -134,37 +134,31 @@ animation-iteration-count: 2;
   &--wrong {
     background-color: $pink;
   }
-  // &--wrong{
-  //   background-color: $aqua;
-  // }
 }
-.slider {
-  position: absolute;
-}
-.slider.ng-enter,
-.slider.ng-leave {
-  transition: all 1s ease;
-}
-.slider.ng-enter {
-  //bottom: 0;
-  opacity: 0;
-}
-.slider.ng-enter-active {
-  //bottom: 0;
-  opacity: 1;
-}
-.slider.ng-leave {
-  //bottom: 0;
-  opacity: 1;
-}
-.slider.ng-leave-active {
-  //bottom: 0;
-  opacity: 0;
-}
-.slider.enable-animation.ng-leave.ng-leave-active {
-  //left: 100%;
-  //opacity: 0;
-}
-@media only screen and (max-width: 680px) {
-
-}
+// .slider {
+//   position: absolute;
+// }
+// .slider.ng-enter,
+// .slider.ng-leave {
+//   transition: all 1s ease;
+// }
+// .slider.ng-enter {
+//   //bottom: 0;
+//   opacity: 0;
+// }
+// .slider.ng-enter-active {
+//   //bottom: 0;
+//   opacity: 1;
+// }
+// .slider.ng-leave {
+//   //bottom: 0;
+//   opacity: 1;
+// }
+// .slider.ng-leave-active {
+//   //bottom: 0;
+//   opacity: 0;
+// }
+// .slider.enable-animation.ng-leave.ng-leave-active {
+//   //left: 100%;
+//   //opacity: 0;
+// }
